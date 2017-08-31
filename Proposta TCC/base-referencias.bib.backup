@@ -2,18 +2,6 @@
 % Encoding: UTF-8
 
 
-@PhdThesis{POLA2010,
-  Title                    = {Explorando conceitos da teoria de espa{\c c}os m\'etricos em consultas por similaridade sobre dados complexos},
-  Author                   = {Ives Renê Venturini Pola},
-  School                   = {Instituto de Ci\^encias Matem\'aticas e de Computa{\c c}\~ao, Universidade de S\~ao Paulo},
-  Year                     = {2010},
-
-  Address                  = {São Carlos},
-  Type                     = {Doutorado em Ci{\^e}ncia da Computa{\c c}\~ao},
-  doi 			   = {10.11606/T.55.2010.tde-22092010-144202},
-  Timestamp                = {2017.08.30},
-  Year-presented           = {Agosto 2010},
-}
 
 
 @article {Barioni2009,
