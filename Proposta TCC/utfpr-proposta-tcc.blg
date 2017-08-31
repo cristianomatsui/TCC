@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: utfpr-proposta-tcc.aux
-A level-1 auxiliary file: estrutura/textuais/proposta-de-tcc.aux
 A level-1 auxiliary file: estrutura/textuais/descricao-da-proposta.aux
 A level-1 auxiliary file: estrutura/pos-textuais/referencias.aux
 The style file: abntex2-alf.bst
@@ -25,44 +24,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 12 entries,
+You've used 9 entries,
             6714 wiz_defined-function locations,
-            1248 strings with 10606 characters,
-and the built_in function-call counts, 8650 in all, are:
-= -- 919
-> -- 206
-< -- 98
-+ -- 224
-- -- 65
-* -- 544
-:= -- 1121
-add.period$ -- 29
-call.type$ -- 13
-change.case$ -- 87
-chr.to.int$ -- 24
-cite$ -- 6
-duplicate$ -- 517
-empty$ -- 610
-format.name$ -- 296
-if$ -- 2003
-int.to.chr$ -- 6
+            1231 strings with 10076 characters,
+and the built_in function-call counts, 5949 in all, are:
+= -- 649
+> -- 102
+< -- 76
++ -- 156
+- -- 32
+* -- 341
+:= -- 765
+add.period$ -- 15
+call.type$ -- 10
+change.case$ -- 52
+chr.to.int$ -- 22
+cite$ -- 3
+duplicate$ -- 346
+empty$ -- 448
+format.name$ -- 145
+if$ -- 1395
+int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 168
-newline$ -- 35
-num.names$ -- 30
-pop$ -- 178
+missing$ -- 116
+newline$ -- 25
+num.names$ -- 15
+pop$ -- 107
 preamble$ -- 1
-purify$ -- 43
+purify$ -- 31
 quote$ -- 0
-skip$ -- 809
+skip$ -- 639
 stack$ -- 1
-substring$ -- 274
-swap$ -- 193
-text.length$ -- 3
+substring$ -- 228
+swap$ -- 132
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 41
+while$ -- 25
 width$ -- 0
-write$ -- 103
+write$ -- 59
