@@ -18,9 +18,18 @@ recebem como parâmetro um elemento $s_q$ do domínio de dados (elemento central
 central da consulta por no máximo a dissimilaridade indicada.\par
 
 Uma consulta aos k-vizinhos mais próximos \textit{kNNq($s_q$, $k$)} também recebe como um de seus parâmetros um elemento central da consulta $s_q$, e um número inteiro $k$ de vizinhos desejados, e retorna
-como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em relação ao elemento central da consulta $s_q$ \cite{POLA2010}.
+como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em relação ao elemento central da consulta $s_q$ \cite{POLA2010}. 
 
 Sugere-se fortemente que a  introdução contenha os seguintes itens expressos em parágrafos:
+
+%SGBDR não suporta essas consultas
+%Modelo de custo
+%SGBDR não possui modelo de custo, impossível de usar técnicas
+%OMNI
+%B-tree
+%várias bases
+%extração de métricas e características
+%modelagem do problema
 
 P1. Contextualização do Projeto
 
@@ -74,13 +83,8 @@ Podem ser considerados com subprodutos do objetivo geral.
 
 (substitua este texto pelos objetivos específicos do trabalho)
 
-\section{Justificativa}
-\label{sec:justif}
-
-Something something. \\ \\
-
   
-
+%otimização e indexação
 
 %-----------------------------------------------------------------------------------------
 
@@ -215,6 +219,7 @@ Destacar as dificuldades encontradas e previstas;
 Fazer o fechamento do trabalho destacando sua importância.
 
 (substitua este texto pelo de estado da arte do trabalho)
+%Viabilidade
 %-----------------------------------------------------------------------------------------
  \\ \\
  
