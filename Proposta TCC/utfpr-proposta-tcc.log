@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  1 SEP 2017 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  1 SEP 2017 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,41 +1359,59 @@ File: dados/figuras/rq-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: dados/figuras/rq-eps-converted-to.pdf used on input li
 ne 23.
 (pdftex.def)             Requested size: 136.50139pt x 119.66972pt.
+Package epstopdf Info: Source file: <dados/figuras/knnq.eps>
+(epstopdf)                    date: 2017-09-01 17:48:53
+(epstopdf)                    size: 17383 bytes
+(epstopdf)             Output file: <dados/figuras/knnq-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-09-01 17:49:33
+(epstopdf)                    size: 7510 bytes
+(epstopdf)             Command: <repstopdf --outfile=dados/figuras/knnq-eps-con
+verted-to.pdf dados/figuras/knnq.eps>
+(epstopdf)             \includegraphics on input line 35.
+Package epstopdf Info: Output file is already uptodate.
+
+<dados/figuras/knnq-eps-converted-to.pdf, id=23, 154.5775pt x 135.50626pt>
+File: dados/figuras/knnq-eps-converted-to.pdf Graphic file (type pdf)
+
+<use dados/figuras/knnq-eps-converted-to.pdf>
+Package pdftex.def Info: dados/figuras/knnq-eps-converted-to.pdf used on input 
+line 35.
+(pdftex.def)             Requested size: 136.50139pt x 119.66972pt.
  [1
 
 
 
  <./dados/figuras/rq-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[2 <./dados/figuras/knnq-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--234
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--234
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
  []
 
-(./dados/quadros/quadro1.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
+
+ []
+
+[3] (./dados/quadros/quadro1.tex
 Overfull \hbox (2.39093pt too wide) in paragraph at lines 6--6
 []|\T1/aess/bx/n/12 Mar| 
  []
@@ -1428,10 +1446,7 @@ Overfull \hbox (9.00572pt too wide) in paragraph at lines 4--23
 [][] 
  []
 
-)) [3]
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 42.
- [4]
+)) [4]
 \openout2 = `estrutura/pos-textuais/referencias.aux'.
 
  (./estrutura/pos-textuais/referencias.tex (./utfpr-proposta-tcc.bbl
@@ -1462,11 +1477,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 16339 strings out of 493029
- 245073 string characters out of 6136234
- 428170 words of memory out of 5000000
- 19287 multiletter control sequences out of 15000+600000
- 50630 words of font info for 253 fonts, out of 8000000 for 9000
+ 16333 strings out of 493029
+ 245141 string characters out of 6136234
+ 425308 words of memory out of 5000000
+ 19289 multiletter control sequences out of 15000+600000
+ 48409 words of font info for 247 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  52i,13n,44p,649b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
@@ -1475,13 +1490,12 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb>
-Output written on utfpr-proposta-tcc.pdf (6 pages, 114784 bytes).
+ts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb>
+Output written on utfpr-proposta-tcc.pdf (6 pages, 111185 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 52318 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 48227 words of extra memory for PDF output out of 51595 (max. 10000000)
 
