@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  1 SEP 2017 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  5 SEP 2017 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **utfpr-proposta-tcc.tex
 (./utfpr-proposta-tcc.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
 (./configuracoes/utfpr-abntex2.cls
 Document Class: configuracoes/utfpr-abntex2 2016/07/07 v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -25,10 +25,8 @@ ment class
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ifetex/ifetex.sty
-Package: ifetex 2011/12/15 v1.2 ifetex
+Class memoir Info: An `ifetex' package is being emulated on input line 265.
 
-(/usr/share/texlive/texmf-dist/tex/plain/ifetex/ifetex.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -318,6 +316,7 @@ Package delarray [2008/07/23] emulated by memoir.
 Package enumerate [2008/07/23] emulated by memoir.
 Package epigraph [2008/07/23] emulated by memoir.
 Package ifmtarg [2008/07/23] emulated by memoir.
+Package ifetex [2008/07/23] emulated by memoir.
 Package index [2008/07/23] emulated by memoir.
 Package makeidx [2008/07/23] emulated by memoir.
 Package moreverb [2008/07/23] emulated by memoir.
@@ -1342,10 +1341,10 @@ Overfull \hbox (1.04799pt too wide) in paragraph at lines 37--37
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
 (Font)              Font shape `T1/aess/m/sl' tried instead on input line 16.
 Package epstopdf Info: Source file: <dados/figuras/rq.eps>
-(epstopdf)                    date: 2017-09-01 15:55:46
+(epstopdf)                    date: 2017-09-05 13:13:42
 (epstopdf)                    size: 19918 bytes
 (epstopdf)             Output file: <dados/figuras/rq-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-01 15:55:54
+(epstopdf)                    date: 2017-09-05 13:13:42
 (epstopdf)                    size: 8499 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rq-eps-conve
 rted-to.pdf dados/figuras/rq.eps>
@@ -1360,10 +1359,10 @@ Package pdftex.def Info: dados/figuras/rq-eps-converted-to.pdf used on input li
 ne 23.
 (pdftex.def)             Requested size: 136.50139pt x 119.66972pt.
 Package epstopdf Info: Source file: <dados/figuras/knnq.eps>
-(epstopdf)                    date: 2017-09-01 17:48:53
+(epstopdf)                    date: 2017-09-05 13:13:42
 (epstopdf)                    size: 17383 bytes
 (epstopdf)             Output file: <dados/figuras/knnq-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-01 17:49:33
+(epstopdf)                    date: 2017-09-05 13:13:42
 (epstopdf)                    size: 7510 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/knnq-eps-con
 verted-to.pdf dados/figuras/knnq.eps>
@@ -1477,12 +1476,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 16333 strings out of 493029
- 245141 string characters out of 6136234
- 425308 words of memory out of 5000000
- 19289 multiletter control sequences out of 15000+600000
+ 16320 strings out of 494929
+ 244743 string characters out of 6180142
+ 420169 words of memory out of 5000000
+ 19041 multiletter control sequences out of 15000+600000
  48409 words of font info for 247 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
+ 18 hyphenation exceptions out of 8191
  52i,13n,44p,649b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share

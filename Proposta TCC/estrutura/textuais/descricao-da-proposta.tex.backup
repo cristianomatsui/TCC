@@ -17,8 +17,27 @@ os mais comuns são as consultas por abrangência (\textit{range query: Rq}) e c
 recebem como parâmetro um elemento $s_q$ do domínio de dados (elemento central da consulta) e um limite máximo de dissimilaridade $\xi$. O resultado é o conjunto de elementos da base que diferem do elemento
 central da consulta por no máximo a dissimilaridade indicada.\par
 
+\begin{figure}[ht]
+\centering
+\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
+\includegraphics[width=.3\textwidth]{dados/figuras/rq.eps}
+\caption{Exemplo de consulta por abrangência}
+\label{fig:exemplorq}
+\end{figure}
+
+
 Uma consulta aos k-vizinhos mais próximos \textit{kNNq($s_q$, $k$)} também recebe como um de seus parâmetros um elemento central da consulta $s_q$, e um número inteiro $k$ de vizinhos desejados, e retorna
-como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em relação ao elemento central da consulta $s_q$ \cite{POLA2010}. 
+como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em relação ao elemento central da consulta $s_q$ \cite{POLA2010}.
+
+\begin{figure}[ht]
+\centering
+\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
+\includegraphics[width=.3\textwidth]{dados/figuras/knnq.eps}
+\caption{Exemplo de consulta por k-vizinhos mais próximos}
+\label{fig:exemploknnq}
+\end{figure}
+
+O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir 
 
 Sugere-se fortemente que a  introdução contenha os seguintes itens expressos em parágrafos:
 
@@ -226,6 +245,8 @@ Fazer o fechamento do trabalho destacando sua importância.
  
 {\let\clearpage\relax \chapter{CRONOGRAMA}}
 \label{chap:cronograma}
+
+%Estudo, modelagem, verificação das estruturas OMNI, bases, extratores, métricas, criar o banco e inserir as métricas, implementação da OMNI, implementação seq sem OMNI, comparação
 % Planejamento do Trabalho----------------------------------------------------------------
 % Esta seção não precisa ser editada, apenas edite o quadro 1 armazenada no diretório ".\dados\quadros"
 O planejamento do trabalho de estágio que será desenvolvido pelo aluno, ao longo do período letivo, está descrito no cronograma da Quadro 1. Neste cronograma constam todas as atividades com seus respectivos prazos para o cumprimento.
