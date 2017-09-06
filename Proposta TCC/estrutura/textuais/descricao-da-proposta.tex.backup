@@ -28,7 +28,7 @@ central da consulta por no máximo a dissimilaridade indicada.\par
 
 Uma consulta aos k-vizinhos mais próximos \textit{kNNq($s_q$, $k$)} também recebe como um de seus parâmetros um elemento central da consulta $s_q$, e um número inteiro $k$ de vizinhos desejados, e retorna
 como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em relação ao elemento central da consulta $s_q$ \cite{POLA2010}.
-
+\newpage
 \begin{figure}[ht]
 \centering
 \captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
@@ -37,13 +37,34 @@ como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em rela�
 \label{fig:exemploknnq}
 \end{figure}
 
-O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir 
+O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).
+Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
+métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. %TODO--> Melhorar isso.
 
-Sugere-se fortemente que a  introdução contenha os seguintes itens expressos em parágrafos:
+A solução abordada por esta proposta é a do uso de técnicas OMNI, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
+podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. Para quaisquer elementos $s_1$, $s_2$, $s_3$ $\mathbb{e} \mathbb{S}$, sendo $\mathbb{S}$ um domínio de elementos
+e uma métrica $d : \mathbb{S} \times \mathbb{S} \rightarrow \mathbb{R^+}$, temos a desigualdade triangular:
 
-%SGBDR não suporta essas consultas
-%Modelo de custo
-%SGBDR não possui modelo de custo, impossível de usar técnicas
+\begin{equation} \label{eq:destri}
+		d(s_1,s_2) \leq d(s_1,s_3) + d(s_3,s_2)
+\end{equation}
+
+A base da técnica OMNI é calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
+(como uma consulta por abrangência) é realizada, são conhecidas as distâncias entre o elemento central da consulta $s_q$ e o raio de abrangência $\xi$. Considerando um foco ${f_1}$ e utilizando
+a desigualdade triangular, elementos que possuem uma distância entre o foco escolhido menor do que a distância de $s_q$ até o foco menos o valor $\xi$ serão descartados do conjunto de elementos necessários para
+os cálculos de distância com o elemento central. Simetricamente, elementos cuja distância até o foco seja maior do que a distância de $s_q$ até o foco mais o valor do raio de abrangência $\xi$ também
+serão descartados. Com isso, ocorre uma grande redução do número de cálculos necessários para fornecer o conjunto resposta. Essa poda também pode ser realizada por mais de um foco.
+
+\begin{figure}[ht]
+\centering
+\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
+\includegraphics[width=.4\textwidth]{dados/figuras/rg_omni_1.eps}
+\caption{Consulta por abrangência pela técnica OMNI utilizando um foco}
+\label{fig:rqomni1}
+\end{figure}
+
+
+
 %OMNI
 %B-tree
 %várias bases
