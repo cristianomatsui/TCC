@@ -3,6 +3,7 @@
 
 \chapter{INTRODUÇÃO}
 \label{chap:introducao}
+
 % Introdução-------------------------------------------------------------------------------
 % (máximo de 1 página)
 Nos anos recentes, foi notado um grande aumento no tráfego e armazenamento de diferentes aplicações e dados multimídias, como imagens, áudio, vídeo, impressões digitais, séries temporais,
@@ -39,17 +40,18 @@ como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em rela�
 
 O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).
 Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
-métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. %TODO--> Melhorar isso.
+métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. O cálculo do custo das operações realizadas será feito utilizando operações com B-trees, as quais o banco fornece suporte
+ao modelo de custo.
 
-A solução abordada por esta proposta é a do uso de técnicas OMNI, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
+A solução abordada por esta proposta é a do uso de técnicas Omni, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
 podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. Para quaisquer elementos $s_1$, $s_2$, $s_3$ $\mathbb{e} \mathbb{S}$, sendo $\mathbb{S}$ um domínio de elementos
 e uma métrica $d : \mathbb{S} \times \mathbb{S} \rightarrow \mathbb{R^+}$, temos a desigualdade triangular:
 
 \begin{equation} \label{eq:destri}
 		d(s_1,s_2) \leq d(s_1,s_3) + d(s_3,s_2)
 \end{equation}
-
-A base da técnica OMNI é calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
+\newline
+A base da técnica Omni é calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
 (como uma consulta por abrangência) é realizada, são conhecidas as distâncias entre o elemento central da consulta $s_q$ e o raio de abrangência $\xi$. Considerando um foco ${f_1}$ e utilizando
 a desigualdade triangular, elementos que possuem uma distância entre o foco escolhido menor do que a distância de $s_q$ até o foco menos o valor $\xi$ serão descartados do conjunto de elementos necessários para
 os cálculos de distância com o elemento central. Simetricamente, elementos cuja distância até o foco seja maior do que a distância de $s_q$ até o foco mais o valor do raio de abrangência $\xi$ também
@@ -59,191 +61,57 @@ serão descartados. Com isso, ocorre uma grande redução do número de cálculo
 \centering
 \captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
 \includegraphics[width=.4\textwidth]{dados/figuras/rg_omni_1.eps}
-\caption{Consulta por abrangência pela técnica OMNI utilizando um foco}
+\caption{Consulta por abrangência pela técnica Omni utilizando um foco}
 \label{fig:rqomni1}
 \end{figure}
 
 
 A figura \ref{fig:rqomni1} ilustra a poda no número de cálculos. Apenas os elementos na área sombreada terão as suas distâncias em relação ao centro da consulta calculadas, pois estão no
-conjunto de elementos que não foram descartados utilizando a desigualdade triangular com as distâncias previamente calculadas em relação ao foco.
+conjunto de elementos que não foram descartados utilizando a desigualdade triangular com as distâncias previamente calculadas em relação ao foco. Para o armazenamento das distâncias de cada foco ${f_i}$ para cada outro elemento $s_k$ será feito utilizando uma estrutura de indexação que implementa os conceitos da técnica Omni com a 
+estrutura da B$^+$-tree, originando uma nova estrutura chamada de Omni-Btree. As distâncias serão armazenadas em \textit{l} Omni-Btrees, sendo \textit{l} o número de focos criados para
+a base de dados \cite{Traina2001}.
 
-%OMNI
-%B-tree
-%várias bases
-%extração de métricas e características
-%modelagem do problema
-
-P1. Contextualização do Projeto
-
-P2. Definição do Problema
-
-P3. Relevância do Problema
-
-P4. Justificativa
-
-P5. Desafios do Projeto
-
-P6. Contribuição
-
-(substitua este texto pela introdução do trabalho) \\ \\
+O principal foco deste trabalho é o emprego destas técnicas para bases de dados constituídas por imagens. Para isto, torna-se necessário o uso de uma miríade de extratores de características
+das imagens, para um maior refinamento do uso de consultas por similaridade. Estas características podem se referir a: atributos visuais (cor, forma, textura), atributos lógicos (identificação
+de elementos) e atributos semânticos (identificação de emoções humanas). As características visuais podem ser utilizadas como histogramas de cores para a análise de cor, matrizes de co-ocorrência para a análise de textura e
+métodos baseados em contorno para a análise de forma. Geralmente, consultas são feitas utilizando uma combinação destas características, e não apenas uma delas.
+\\ \\
 
 %-----------------------------------------------------------------------------------------
 {\let\clearpage\relax \chapter{OBJETIVOS}}
 \label{chap:objetivos}
 % (máximo de 1/2 página)
 
-\section{Objetivo Geral}
-\label{sec:objgeral}
-% Objetivo Geral--------------------------------------------------------------------------
-O objetivo geral é tratado em seu sentido mais amplo e constitui a ação que conduzirá ao tratamento da questão abordada no problema de pesquisa, fazendo menção ao objeto de uma forma mais direta. O objetivo geral deve:
+O objetivo geral deste trabalho é elaborar um sistema de que seja capaz de realizar consultas por similaridade em uma base de dados complexos, mais precisamente em um conjunto de imagens.
+Estas imagens podem variar de fotografias de ambientes, rostos de pessoas, impressões digitais e imagens de diagnósticos médicos como radioagrafias e tomografias, por exemplo.
+A ideia central é implementar todo o mecanismo de armazenamento, cálculo de distâncias e busca de dados similares no próprio banco de dados, deixando apenas a interface com o usuário fora do banco.
 
-Conter descrição do que vai fazer, de forma precisa e objetiva;
+Após as etapas de povoamento do banco e implementação das consultas estiverem concluídas, será criada uma interface gráfica para facilitar o acesso do usuário com o sistema de consulta. Também serão
+estudadas maneiras de se otimizar estas consultas, utilizando diferentes métodos e formas de indexação dos elementos dentro do banco. \\ \\
 
-Ser diretamente ligado ao título;
-
-Ser mais detalhado que o título;
-
-Resolver o problema proposto;
-
-Ser Claro, Conciso e Completo (CCC) e deve ser verificável ao final do trabalho.
-
-(substitua este texto pelo objetivo geral do trabalho)
-%-----------------------------------------------------------------------------------------
-
-\section{Objetivos Específicos}
-\label{sec:objespc}
-% Objetivos Específicos-------------------------------------------------------------------
-Os objetivos específicos apresentam, de forma pormenorizada, detalhada, as ações que se prentede alcançar e estabelecem estreita relação com as particularidades relativas à temática trabalhada. Os objetivos específicos devem:
-
-Ser Claros, Concisos e Completos (CCC) e devem ser verificáveis ao final do trabalho;
-
-Fazem parte do detalhamento do objetivo geral ;
-
-Devem ser iniciados com o verbo no infinitivo;
-
-Podem ser considerados com subprodutos do objetivo geral.
-
-(substitua este texto pelos objetivos específicos do trabalho)
-
-  
-%otimização e indexação
 
 %-----------------------------------------------------------------------------------------
 
-% \section{ESTADO DA ARTE}
-% \label{sec:estadoarte}
-% % Estado da Arte--------------------------------------------------------------------------
-% % (máximo de 2 páginas)
-% Uma vez formulado o problema a ser atacado, é preciso se inteirar do que já foi feito, dito e discutido sobre ele. Isso se chama "estado da arte". Pode ser que a dúvida, que está motivando a pesquisa, já tenha sido respondida de alguma maneira por alguém. Por isso, é preciso aprofundar o conhecimento sobre a questão, antes de dar prosseguimento ao projeto.
-% 
-% Essa etapa também recebe o nome de revisão bibliográfica, quando são estudados os trabalhos que se situam na circunvizinhança do problema, trabalhos que versam sobre problemas similares.
-% 
-% Vê-se aí por que a revisão bibliográfica é importante. De um lado, ela deve comprovar que o pesquisador não está querendo realizar algo que já foi feito, de outro lado, ela ajuda a encaminhar o passo seguinte da pesquisa, a justificativa, quer dizer, a argumentação sobre a relevância do trabalho.
-% 
-% Para a proposta de TCC deve ser descrito, de maneira breve, alguns (sugestão de 2 (dois) a 3 (três)) trabalhos correlatos, converse com seu orientador para citar os mais relevantes do tema abordado. Pode ser seguido a seguinte sugestão de parágrafos/tópicos:
-% 
-% P1. Descrição do trabalho 1
-% 
-% P2. Descrição do trabalho 2
-% 
-% P3. Descrição do trabalho 3
-% 
-% P4. Discussão dos trabalhos mencionados destacando porque eles são importantes para o trabalho proposto.
-% 
-% Para utilização de citações atente ao tipo de citação que se deseja usar. As citações são classificadas em indeireta e direta, podem ser longas ou curtas.
-% 
-% Uma citação indireta é a transcrição, com suas próprias palavras, das idéias de um autor, mantendo-se o sentido original. A citação indireta é a maneira que o pesquisador tem de ler, compreender e gerar conhecimento a partir do conhecimento de outros autores. Quanto à chamada da referência, ela pode ser feita de duas maneiras distintas, conforme o nome do(s) autor(es) façam parte do seu texto ou não. Exemplo de chamada fazendo parte do texto:\\
-% \\Enquanto \citeonline{Maturana2003} defendem uma epistemologia baseada na biologia. Para os autores, é necessário rever \ldots.\\
-% 
-% A chamada de referência foi feita com o comando \verb|\citeonline{chave}|, que produzirá a formatação correta.
-% 
-% A segunda forma de fazer uma chamada de referência deve ser utilizada quando se quer evitar uma interrupção na sequência do texto, o que poderia, eventualmente, prejudicar a leitura. Assim, a citação é feita e imediatamente após a obra referenciada deve ser colocada entre parênteses. Porém, neste caso específico, o nome do autor deve vir em caixa alta, seguido do ano da publicação. Exemplo de chamada não fazendo parte do texto:\\
-% \\Há defensores da epistemologia baseada na biologia que argumentam em favor da necessidade de \ldots \cite{Maturana2003}.\\
-% 
-% Nesse caso a chamada de referência deve ser feita com o comando \verb|\cite{chave}|, que produzirá a formatação correta.
-% 
-% Uma citação direta é a transcrição ou cópia de um parágrafo, de uma frase, de parte dela ou de uma expressão, usando exatamente as mesmas palavras adotadas pelo autor do trabalho consultado.
-% 
-% Quanto à chamada da referência, ela pode ser feita de qualquer das duas maneiras, assim como nas nas citações indiretas, conforme o nome do(s) autor(es) façam parte do texto ou não. Há duas maneiras distintas de se fazer uma citação direta, conforme o trecho citado seja longo ou curto.
-% 
-% Quando o trecho citado é longo (4 ou mais linhas) deve-se usar um parágrafo específico para a citação, na forma de um texto recuado (4 cm da margem esquerda), com tamanho de letra menor e espaçamento entrelinhas simples. Exemplo de citação longa:
-% \\\begin{citacao}
-% Desse modo, opera-se uma ruptura decisiva entre a reflexividade filosófica, isto é a possibilidade do sujeito de pensar e de refletir, e a objetividade científica. Encontramo-nos num ponto em que o conhecimento científico está sem consciência. Sem consciência moral, sem consciência reflexiva e também subjetiva. Cada vez mais o desenvolvimento extraordinário do conhecimento científico vai tornar menos praticável a própria possibilidade de reflexão do sujeito sobre a sua pesquisa \cite[p.~28]{Silva2000}.
-% \end{citacao}
-% 
-% Para fazer a citação longa deve-se utilizar os seguintes comandos:
-% \begin{verbatim}
-% \begin{citacao}
-% <texto da citacao>
-% \end{citacao}
-% \end{verbatim}
-% 
-% No exemplo acima, para a chamada da referência o comando \verb|\cite[p.~28]{Silva2000}| foi utilizado, visto que os nomes dos autores não são parte do trecho citado. É necessário também indicar o número da página da obra citada que contém o trecho citado.
-% 
-% Quando o trecho citado é curto (3 ou menos linhas) ele deve inserido diretamente no texto entre aspas. Exemplos de citação curta:\\
-% \\A epistemologia baseada na biologia parte do princípio de que "assumo que não posso fazer referência a entidades independentes de mim para construir meu explicar" \cite[p.~35]{Maturana2003}.\\
-% \\A epistemologia baseada na biologia de \citeonline[p.~35]{Maturana2003} parte do princípio de que "assumo que não posso fazer referência a entidades independentes de mim para construir meu explicar".\\
-% 
-% Outros exemplos de comandos para as chamadas de referências e o resultado produzido por estes são:\\
-% \\\citeonline{Maturana2003} \ \ \  \verb|\citeonline{Maturana2003}|\\
-% \citeonline{Barbosa2004} \ \ \   \verb|\citeonline{Barbosa2004}|\\
-% \cite[p.~28]{Silva2000} \ \ \  \verb|\cite[p.~28]{Silva2000}|\\
-% \citeonline[p.~33]{Silva2000} \ \ \   \verb|\citeonline[p.~33]{v}|\\
-% \cite[p.~35]{Maturana2003} \ \ \   \verb|\cite[p.~35]{Maturana2003}|\\
-% \citeonline[p.~35]{Maturana2003} \ \ \   \verb|\citeonline[p.~35]{Maturana2003}|\\
-% \cite{Barbosa2004,Maturana2003} \ \ \   \verb|\cite{Barbosa2004,Maturana2003}|\\
-% 
-% Em relação as referências, a bibliografia é feita no padrão \textsc{Bib}\TeX{}. As referências são colocadas em um arquivo separado. Neste template as referências são armazenadas no arquivo "base-referencias.bib".
-% 
-% Existem diversas categorias documentos e materiais componentes da bibliografia. A classe abn\TeX{} define as seguintes categorias (entradas):
-% 
-% \begin{verbatim}
-% @book
-% @inbook
-% @article
-% @phdthesis
-% @mastersthesis
-% @monography
-% @techreport
-% @manual
-% @proceedings
-% @inproceedings
-% @journalpart
-% @booklet
-% @patent
-% @unpublished
-% @misc
-% \end{verbatim}
-% 
-% Cada categoria (entrada) é formatada pelo pacote \citeonline{abnTeX22014d} de uma forma específica. Para maiores detalhes, refira-se a \citeonline{abnTeX22014d}, \citeonline{abnTeX22014b}, \citeonline{abnTeX22014c}.
-%-----------------------------------------------------------------------------------------
-
-{\let\clearpage\relax \chapter{METODOLOGIA}}
+{\let\clearpage\relax \chapter{MATERIAIS E MÉTODOS}}
 % \chapter{METODOLOGIA} % Escolher o nome mais adequado ao trabalho
-\label{chap:metodologia}
+\label{chap:matmetodos}
 
 % Procedimentos Metodológicos/Metodologia-------------------------------------------------
 % (máximo de 2 páginas)
-Na seção de procedimentos metodológicos ou metodologia (ver qual o nome mais adequado ao trabalho) deve ser descrito sucintamente o procedimentos metodológicos para a execução do projeto ressaltando como os objetivos serão alcançados. 
+O SGBDR utilizado será o PostgreSQL, um sistema de gerenciamento de banco de dados objeto-relacional gratuito e de código-aberto. Os extratores de características das imagens utilizados são do framework Arboretum, desenvolvido
+pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos. Para a interface com o usuário, será estudado um framework que atenda as necessidades deste trabalho. \\ \\
 
-Em geral, a seção descreve os procedimentos usados para resolver o problema atacado. Pode ser estruturada em tópicos, onde cada tópico representa um subproduto do objetivo geral.
-
-No caso de desenvolvimento de sistemas deve-se descrever a metodologia a ser utilizada, por exemplo Scrum, eXtreme Programming, RUP, etc. 
-
-Também pode ser descritos técnicas de desenvolvimento de software como por exemplo TDD, BDD, SPA,  etc.
-
-(substitua este texto pelo de procedimentos metodológicos/metodologia do trabalho)
-%-----------------------------------------------------------------------------------------
-
-\section{MATERIAIS}
-\label{sec:materiais}
-% Recursos Necessários--------------------------------------------------------------------
-Coloque todos os materiais que serão utilizados. Exemplos: computadores, equipamentos de redes, licenças de software, etc. Também deverá ser colocado se os recursos estarão disponíveis. A universidade não comprará os recursos, portanto a responsabilidade de comprar algo será do aluno. (substitua este texto pelo de recursos necessários do trabalho)
-%--------
-
-\section{METODOS}
-\label{sec:metodos}
-Aqui entram os métodos envolvidos no trabalho. \\ \\
+% 
+% Na seção de procedimentos metodológicos ou metodologia (ver qual o nome mais adequado ao trabalho) deve ser descrito sucintamente o procedimentos metodológicos para a execução do projeto ressaltando como os objetivos serão alcançados. 
+% 
+% Em geral, a seção descreve os procedimentos usados para resolver o problema atacado. Pode ser estruturada em tópicos, onde cada tópico representa um subproduto do objetivo geral.
+% 
+% No caso de desenvolvimento de sistemas deve-se descrever a metodologia a ser utilizada, por exemplo Scrum, eXtreme Programming, RUP, etc. 
+% 
+% Também pode ser descritos técnicas de desenvolvimento de software como por exemplo TDD, BDD, SPA,  etc.
+% 
+% (substitua este texto pelo de procedimentos metodológicos/metodologia do trabalho)
+% %-----------------------------------------------------------------------------------------
 
 
 
@@ -252,26 +120,23 @@ Aqui entram os métodos envolvidos no trabalho. \\ \\
 \label{chap:conclusao}
 % Conclusão/Considerações Finais----------------------------------------------------------
 % (máximo de ½ página)
-Na seção de Conclusão ou Considerações Finais (ver qual o nome mais adequado ao trabalho) o acadêmico deve descrever:
 
-Como espera alcançar os objetivos propostos;
+Ao término deste trabalho, espera-se que o aluno tenha obtido domínio sobre o SGBD PostgreSQL e suas ferramentas, assim como um maior entendimento e experiência no campo de estudos de dados complexos.
+Após o sistema ser concluído, será possível a implementação de um sistema de recuperação de imagens baseado em conteúdo (\textit{Content-Based Image Retrieval - CBIR}). Com isto, espera-se utilizar
+este CBIR para o gerenciamento de imagens médicas, um campo onde há uma produção crescente de imagens utilizadas em diagnósticos e terapias. Técnicas utilizadas em diagnósticos como raciocínio baseado
+em casos necessitam fortemente a recuperação de imagens que podem ser valiosas para suportar certos diagnósticos \cite{Long2009}. \\ \\
 
-Destacar as dificuldades encontradas e previstas;
 
-Fazer o fechamento do trabalho destacando sua importância.
-
-(substitua este texto pelo de estado da arte do trabalho)
-%Viabilidade
 %-----------------------------------------------------------------------------------------
- \\ \\
+
  
  
 {\let\clearpage\relax \chapter{CRONOGRAMA}}
 \label{chap:cronograma}
 
-%Estudo, modelagem, verificação das estruturas OMNI, bases, extratores, métricas, criar o banco e inserir as métricas, implementação da OMNI, implementação seq sem OMNI, comparação
+%Estudo, modelagem, verificação das estruturas Omni, bases, extratores, métricas, criar o banco e inserir as métricas, implementação da Omni, implementação seq sem Omni, comparação
 % Planejamento do Trabalho----------------------------------------------------------------
 % Esta seção não precisa ser editada, apenas edite o quadro 1 armazenada no diretório ".\dados\quadros"
-O planejamento do trabalho de estágio que será desenvolvido pelo aluno, ao longo do período letivo, está descrito no cronograma da Quadro 1. Neste cronograma constam todas as atividades com seus respectivos prazos para o cumprimento.
+
 \input{./dados/quadros/quadro1}
 %-----------------------------------------------------------------------------------------

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  8 SEP 2017 22:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  8 SEP 2017 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**utfpr-proposta-tcc.tex
-(./utfpr-proposta-tcc.tex
+**PropostaTCC_Matsui.tex
+(./PropostaTCC_Matsui.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./configuracoes/utfpr-abntex2.cls
@@ -1184,11 +1184,11 @@ Package caption Info: hyperref package is loaded.
 Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 Package hyperref Info: Option `breaklinks' set `true' on input line 14.
 Package color Info: Redefining color blue on input line 18.
-\utfpr-proposta-tcc@idxfile=\write4
-\openout4 = `utfpr-proposta-tcc.idx'.
+\PropostaTCC_Matsui@idxfile=\write4
+\openout4 = `PropostaTCC_Matsui.idx'.
 
 
-Writing index file utfpr-proposta-tcc.idx 
+Writing index file PropostaTCC_Matsui.idx 
 )
 \@input{estrutura/pre-textuais/capa.aux}
 \openout2 = `estrutura/pre-textuais/capa.aux'.
@@ -1197,10 +1197,10 @@ Writing index file utfpr-proposta-tcc.idx
 \@input{estrutura/pre-textuais/folha-rosto.aux}
 \openout2 = `estrutura/pre-textuais/folha-rosto.aux'.
 
-(./estrutura/pre-textuais/folha-rosto.tex) (./utfpr-proposta-tcc.aux
+(./estrutura/pre-textuais/folha-rosto.tex) (./PropostaTCC_Matsui.aux
 (./estrutura/textuais/descricao-da-proposta.aux)
 (./estrutura/pos-textuais/referencias.aux))
-\openout1 = `utfpr-proposta-tcc.aux'.
+\openout1 = `PropostaTCC_Matsui.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -1482,10 +1482,10 @@ Overfull \hbox (9.00572pt too wide) in paragraph at lines 4--37
 )) [4] [5]
 \openout2 = `estrutura/pos-textuais/referencias.aux'.
 
- (./estrutura/pos-textuais/referencias.tex (./utfpr-proposta-tcc.bbl
-(./utfpr-proposta-tcc.brf)
+ (./estrutura/pos-textuais/referencias.tex (./PropostaTCC_Matsui.bbl
+(./PropostaTCC_Matsui.brf)
 \tf@brf=\write5
-\openout5 = `utfpr-proposta-tcc.brf'.
+\openout5 = `PropostaTCC_Matsui.brf'.
 
 
 bibitemlist
@@ -1497,11 +1497,11 @@ bibitemlist
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
-(./utfpr-proposta-tcc.aux (./estrutura/textuais/descricao-da-proposta.aux)
+(./PropostaTCC_Matsui.aux (./estrutura/textuais/descricao-da-proposta.aux)
 (./estrutura/pos-textuais/referencias.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
-Package rerunfilecheck Info: File `utfpr-proposta-tcc.brf' has not changed.
+Package rerunfilecheck Info: File `PropostaTCC_Matsui.brf' has not changed.
 (rerunfilecheck)             Checksum: 7E04BBEB6D9CFCEF5B3B3D76AACD46AB;356.
 
 
@@ -1528,7 +1528,7 @@ ype1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 ic/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on utfpr-proposta-tcc.pdf (7 pages, 261867 bytes).
+Output written on PropostaTCC_Matsui.pdf (7 pages, 261867 bytes).
 PDF statistics:
  194 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams
