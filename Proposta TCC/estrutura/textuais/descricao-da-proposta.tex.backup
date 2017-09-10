@@ -125,7 +125,7 @@ pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - ca
 Ao término deste trabalho, espera-se que o aluno tenha obtido domínio sobre o SGBD PostgreSQL e suas ferramentas, assim como um maior entendimento e experiência no campo de estudos de dados complexos.
 Após o sistema ser concluído, será possível a implementação de um sistema de recuperação de imagens baseado em conteúdo (\textit{Content-Based Image Retrieval - CBIR}). Com isto, espera-se utilizar
 este CBIR para o gerenciamento de imagens médicas, um campo onde há uma produção crescente de imagens utilizadas em diagnósticos e terapias. Técnicas utilizadas em diagnósticos como raciocínio baseado
-em casos necessitam fortemente a recuperação de imagens que podem ser valiosas para suportar certos diagnósticos \cite{Long2009}. \\ \\
+em casos necessitam fortemente de recuperação de imagens por semelhança, o que pode ser valioso para suportar certos diagnósticos médicos \cite{Long2009}. \\ \\
 
 
 %-----------------------------------------------------------------------------------------
@@ -134,6 +134,8 @@ em casos necessitam fortemente a recuperação de imagens que podem ser valiosas
  
 {\let\clearpage\relax \chapter{CRONOGRAMA}}
 \label{chap:cronograma}
+
+O cronograma apresentado pelo quadro \ref{qua:cronograma}
 
 %Estudo, modelagem, verificação das estruturas Omni, bases, extratores, métricas, criar o banco e inserir as métricas, implementação da Omni, implementação seq sem Omni, comparação
 % Planejamento do Trabalho----------------------------------------------------------------

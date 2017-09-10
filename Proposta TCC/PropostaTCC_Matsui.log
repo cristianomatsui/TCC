@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  9 SEP 2017 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  10 SEP 2017 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,74 +1408,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--80
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
-
- []
-
 [3 <./dados/figuras/rg_omni_1-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
 (./dados/quadros/quadro1.tex
-Overfull \hbox (1.19096pt too wide) in paragraph at lines 6--6
+Overfull \hbox (1.24004pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 Set| 
+ []
+
+
+Overfull \hbox (4.03598pt too wide) in paragraph at lines 6--6
 []|\T1/aess/bx/n/12 Out| 
  []
 
 
-Overfull \hbox (2.39095pt too wide) in paragraph at lines 6--6
+Overfull \hbox (5.23596pt too wide) in paragraph at lines 6--6
 []|\T1/aess/bx/n/12 Nov| 
  []
 
 
-Overfull \hbox (1.45493pt too wide) in paragraph at lines 6--6
+Overfull \hbox (4.29994pt too wide) in paragraph at lines 6--6
 []|\T1/aess/bx/n/12 Dez| 
  []
 
 
-Overfull \hbox (2.39093pt too wide) in paragraph at lines 6--6
+Overfull \hbox (2.18806pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 Jan| 
+ []
+
+
+Overfull \hbox (2.21208pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 Fev| 
+ []
+
+
+Overfull \hbox (5.23595pt too wide) in paragraph at lines 6--6
 []|\T1/aess/bx/n/12 Mar| 
  []
 
 
-Overfull \hbox (1.16695pt too wide) in paragraph at lines 6--6
+Overfull \hbox (2.74pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 Abr| 
+ []
+
+
+Overfull \hbox (4.01196pt too wide) in paragraph at lines 6--6
 []|\T1/aess/bx/n/12 Mai| 
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 8--8
-[]|\T1/aess/m/n/10.95 (+20) 1. Es-tudo e acom-pa-nha-
+Overfull \hbox (2.62006pt too wide) in paragraph at lines 6--7
+[]|\T1/aess/bx/n/12 Jun| 
  []
 
 
-Overfull \hbox (9.00572pt too wide) in paragraph at lines 4--37
-[][] 
+Underfull \hbox (badness 2781) in paragraph at lines 26--26
+[]|\T1/aess/m/n/10 (+20) 10. Im-ple-men-ta-ção da téc-nica
  []
 
 )) [4] [5]
@@ -1509,11 +1509,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 16478 strings out of 493029
- 246735 string characters out of 6136234
- 437610 words of memory out of 5000000
+ 16492 strings out of 493029
+ 246870 string characters out of 6136234
+ 436610 words of memory out of 5000000
  19312 multiletter control sequences out of 15000+600000
- 59853 words of font info for 342 fonts, out of 8000000 for 9000
+ 61184 words of font info for 355 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  52i,12n,44p,436b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
@@ -1527,10 +1527,10 @@ ype1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 ic/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on PropostaTCC_Matsui.pdf (7 pages, 262170 bytes).
+Output written on PropostaTCC_Matsui.pdf (7 pages, 262475 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 194 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  29 named destinations out of 1000 (max. 500000)
  52296 words of extra memory for PDF output out of 61914 (max. 10000000)
 

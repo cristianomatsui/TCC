@@ -76,19 +76,18 @@ O principal foco deste trabalho é o emprego destas técnicas para bases de dado
 das imagens, para um maior refinamento do uso de consultas por similaridade. Estas características podem se referir a: atributos visuais (cor, forma, textura), atributos lógicos (identificação
 de elementos) e atributos semânticos (identificação de emoções humanas). As características visuais podem ser utilizadas como histogramas de cores para a análise de cor, matrizes de co-ocorrência para a análise de textura e
 métodos baseados em contorno para a análise de forma. Geralmente, consultas são feitas utilizando uma combinação destas características, e não apenas uma delas.
-\\ \\
+\\
 
 %-----------------------------------------------------------------------------------------
 {\let\clearpage\relax \chapter{OBJETIVOS}}
 \label{chap:objetivos}
 % (máximo de 1/2 página)
-
 O objetivo geral deste trabalho é elaborar um sistema de que seja capaz de realizar consultas por similaridade em uma base de dados complexos, mais precisamente em um conjunto de imagens.
 Estas imagens podem variar de fotografias de ambientes, rostos de pessoas, impressões digitais e imagens de diagnósticos médicos como radioagrafias e tomografias, por exemplo.
 A ideia central é implementar todo o mecanismo de armazenamento, cálculo de distâncias e busca de dados similares no próprio banco de dados, deixando apenas a interface com o usuário fora do banco.
 
 Após as etapas de povoamento do banco e implementação das consultas estiverem concluídas, será criada uma interface gráfica para facilitar o acesso do usuário com o sistema de consulta. Também serão
-estudadas maneiras de se otimizar estas consultas, utilizando diferentes métodos e formas de indexação dos elementos dentro do banco. \\ \\
+estudadas maneiras de se otimizar estas consultas, utilizando diferentes métodos e formas de indexação dos elementos dentro do banco. \\
 
 
 %-----------------------------------------------------------------------------------------
@@ -100,7 +99,7 @@ estudadas maneiras de se otimizar estas consultas, utilizando diferentes método
 % Procedimentos Metodológicos/Metodologia-------------------------------------------------
 % (máximo de 2 páginas)
 O SGBDR utilizado será o PostgreSQL, um sistema de gerenciamento de banco de dados objeto-relacional gratuito e de código-aberto. Os extratores de características das imagens utilizados são do framework Arboretum, desenvolvido
-pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos. Para a interface com o usuário, será estudado um framework que atenda as necessidades deste trabalho. \\ \\
+pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos. Para a interface com o usuário, será estudado um framework que atenda as necessidades deste trabalho. \\
 
 % 
 % Na seção de procedimentos metodológicos ou metodologia (ver qual o nome mais adequado ao trabalho) deve ser descrito sucintamente o procedimentos metodológicos para a execução do projeto ressaltando como os objetivos serão alcançados. 
@@ -121,19 +120,21 @@ pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - ca
 \label{chap:conclusao}
 % Conclusão/Considerações Finais----------------------------------------------------------
 % (máximo de ½ página)
-
 Ao término deste trabalho, espera-se que o aluno tenha obtido domínio sobre o SGBD PostgreSQL e suas ferramentas, assim como um maior entendimento e experiência no campo de estudos de dados complexos.
 Após o sistema ser concluído, será possível a implementação de um sistema de recuperação de imagens baseado em conteúdo (\textit{Content-Based Image Retrieval - CBIR}). Com isto, espera-se utilizar
 este CBIR para o gerenciamento de imagens médicas, um campo onde há uma produção crescente de imagens utilizadas em diagnósticos e terapias. Técnicas utilizadas em diagnósticos como raciocínio baseado
-em casos necessitam fortemente de recuperação de imagens por semelhança, o que pode ser valioso para suportar certos diagnósticos médicos \cite{Long2009}. \\ \\
+em casos necessitam fortemente de recuperação de imagens por semelhança, o que pode ser valioso para suportar certos diagnósticos médicos \cite{Long2009}. \\
 
 
 %-----------------------------------------------------------------------------------------
 
  
- 
+
 {\let\clearpage\relax \chapter{CRONOGRAMA}}
 \label{chap:cronograma}
+
+O cronograma apresentado pelo quadro \ref{qua:cronograma} ilustra como será feita a divisão de atividades necessárias para o desenvolvimento deste trabalho. Este cronograma aborda as atividades
+presentes nas disciplinas de Trabalho de Conclusão de Curso 1 e Trabalho de Conclusão de Curso 2.
 
 %Estudo, modelagem, verificação das estruturas Omni, bases, extratores, métricas, criar o banco e inserir as métricas, implementação da Omni, implementação seq sem Omni, comparação
 % Planejamento do Trabalho----------------------------------------------------------------
