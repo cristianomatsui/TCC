@@ -22,7 +22,7 @@ os mais comuns são as consultas por abrangência (\textit{range query: Rq}) e c
 recebem como parâmetro um elemento $s_q$ do domínio de dados (elemento central da consulta) e um limite máximo de dissimilaridade $\xi$. O resultado é o conjunto de elementos da base que diferem do elemento
 central da consulta por no máximo a dissimilaridade indicada.\par
 
-%TODO Capítulo de conceitos! (consultas)(técnica OMNI)
+%TODO Capítulo de conceitos! (consultas)
 
 \begin{figure}[ht]
 \centering
