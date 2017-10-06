@@ -40,9 +40,8 @@
 %\usepackage{subfig}                                        % Posicionamento de figuras
 %\usepackage{upgreek}                                       % Fonte letras gregas
 
-\newtheorem{mydef}{Definição}
 \numberwithin{equation}{chapter}
 \numberwithin{figure}{chapter}
-\numberwithin{mydef}{chapter}
+\numberwithin{definition}{chapter}
 % Redefine a fonte para uma fonte similar a Arial (fonte Helvetica)
 \renewcommand*\familydefault{\sfdefault}

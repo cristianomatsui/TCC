@@ -22,7 +22,7 @@
 % INCLUI ARQUIVOS DE CONFIGURAÇÕES-------------------------------------------------------------------------------
 \include{configuracoes/pacotes}
 \include{configuracoes/configuracoes-pdf}
-
+\newtheorem{mydef}{Definição}
 
 
 % INCLUI ARQUIVOS DO TRABALHO DE CONCLUSÃO DE CURSO (PRÉ-TEXTUAIS, TEXTUAIS, PÓS-TEXTUAIS)-----------------------
