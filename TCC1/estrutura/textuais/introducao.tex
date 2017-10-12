@@ -1,12 +1,15 @@
 % INTRODUÇÃO-------------------------------------------------------------------
 
 %Coisas para perguntar: Seção sobre métricas;pessoa e tempo verbal de escrita;estado da arte;Cap de conceitos poderia ser o cap de Revisao de Literatura;
-%TODO Capítulo de conceitos! (consultas)(técnica OMNI)
+%TODO Capítulo de conceitos! (estado da arte)(extratores de características)(espaços métricos)(funções de distância)(estruturas de indexação)
+%TODO Capítulo técnica omni
+%TODO Retirar estado da arte da intro --> colocar em conceitos
+%TODO Melhorar introdução Omni
 
 \chapter{INTRODUÇÃO}
 \label{chap:introducao}
 
-Neste capítulo será apresentado uma contextualização do problema, assim como o estado da arte abordado por este trabalho. %TODO melhorar isso.
+Neste capítulo será apresentado uma contextualização do problema, assim como o estado da arte abordado por este trabalho.
 Também será introduzido um tipo de consulta não-nativo ao SGBDR, a consulta por similaridade, assim como os tipos de consultas por similaridade
 que serão utilizados neste trabalho como a consulta por abrangência e a consulta por k-vizinhos mais próximos. Finalmente, será apresentado a
 organização deste documento.
@@ -41,7 +44,7 @@ elementos da base que diferem do elemento central da consulta por no máximo a d
   \end{equation}
 \end{mydef}
 
-\begin{figure}[H]
+\begin{figure}[H]	%TODO WTF!
 \centering
 \includegraphics[width=.3\textwidth]{dados/figuras/rq.eps}
 \caption{Exemplo de consulta por abrangência}
@@ -79,9 +82,9 @@ encontrados igual a 4. Os elementos ligados ao elemento central foram os mais pr
 \fonte{Autoria Própria}
 \end{figure}
 
-O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).
+O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).%escopo do trabalho
 
-%TODO Seção sobre métricas?
+%TODO Seção sobre métricas --> conceitos
 
 % Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
 % métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. O cálculo do custo das operações realizadas será feito utilizando operações com B-trees, as quais o banco fornece suporte
@@ -89,7 +92,7 @@ O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível c
 
 A solução abordada por esta proposta é a do uso de técnicas Omni, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
 podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. Para quaisquer elementos $s_1$, $s_2$, $s_3$ $\in$ $\mathbb{S}$, sendo $\mathbb{S}$ um domínio de elementos
-e uma métrica $d : \mathbb{S} \times \mathbb{S} \rightarrow \mathbb{R^+}$, temos a desigualdade triangular:
+e uma métrica $d : \mathbb{S} \times \mathbb{S} \rightarrow \mathbb{R^+}$, temos a desigualdade triangular: %TODO Colocar a desigualdade triangular em conceitos
 
 \begin{equation} \label{eq:destri}
 		d(s_1,s_2) \leq d(s_1,s_3) + d(s_3,s_2)
@@ -127,13 +130,13 @@ O principal foco deste trabalho é a construção de um sistema de consultas por
 \begin{itemize}
  \item Modelar o banco de dados para atender a problemática apresentada;
  \item Aplicar os extratores de características das imagens utilizadas;
- \item Povoar o banco de dados com as imagens e os valores de suas características;
+ \item Povoar o banco de dados com as imagens e os valores de suas características; %inserir a base de imagens
  \item Criar a estrutura Omni necessária para a filtragem dos cálculos;
  \item Analisar e comparar os resultados obtidos.
 \end{itemize}
 
 
-\section{ORGANIZAÇÃO DO TRABALHO}
+\section{ORGANIZAÇÃO DO TRABALHO} %TODO Melhorar isso
 \label{sec:organizacaoTrabalho}
 
 A estrutura deste trabalho apresenta mais detalhes sobre os tipos de consulta por similaridade utilizados, assim como os seus algoritmos computacionais. Posteriormente, explana os conceitos e técnicas da família Omni utilizada para
