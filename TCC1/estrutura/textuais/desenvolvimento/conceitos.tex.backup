@@ -1,7 +1,7 @@
 %CONCEITOS---------------------------------------------------------------
 \chapter{CONCEITOS}
 \label{chap:conceitos}
-O presente capítulo abordará os conceitos necessários para uma melhor compreensão dos artifícios utilizados para tratar o problema apresentado no \textbf{Capítulo \ref{chap:introducao}}, assim como uma
+O presente capítulo abordará os conceitos necessários para uma melhor compreensão dos artifícios utilizados para tratar o problema apresentado no Capítulo \ref{chap:introducao}, assim como uma
 explanação sobre os extratores de características de imagens que serão utilizados e o estado da arte atual.
 
 \section{ESPAÇOS MÉTRICOS} %TODO Ampliar
@@ -12,15 +12,27 @@ Um espaço métrico $\mathbb{M}$ é um par <$\mathbb{S}$, $d$> onde $\mathbb{S}$
 (ou função de distância). Esta distância $d$($s_1$,$s_2$) pode ser compreendido como uma medida de dissimilaridade entre dois elementos.
 Quanto menor esta distância entre dois elementos, mais semelhantes eles são.
 \begin{mydef}
- \label{def:def_espmet}
+ \label{def:espmet}
   Seja $\mathbb{S}$ um conjunto não-vazio de elementos e $d$($s_1$,$s_2$) uma métrica definida sobre $\mathbb{S}$ $\times$ $\mathbb{S}$.
-   O par <$\mathbb{S}$, $d$> é chamado de espaço métrico desde que $d$ satisfaça as seguintes proriedades:\par
+   O par <$\mathbb{S}$, $d$> é chamado de espaço métrico desde que $d$ satisfaça as seguintes propriedades:\par
 1. $d$($s_1$,$s_1$) = 0 (identidade);\par
 2. Se $s_1$ $\neq$ $s_2$ ent\~ao $d$($s_1$,$s_2$) > 0 (n\~ao-negatividade);\par
 3. $d$($s_1$,$s_2$) = $d$($s_2$,$s_1$) (simetria);\par
 4. $d$($s_1$,$s_3$) $\leq$ $d$($s_1$,$s_2$) + $d$($s_2$,$s_3$) (desigualdade triangular)\\
 onde $s_1$, $s_2$, $s_3$ $\in$ $\mathbb{S}$.
 \end{mydef}
+A importância prática do espaço métrico para este trabalho reside fortemente na quarta propriedade apresentada pela Definição \ref{def:espmet}. A desigualdade triangular é fundamentada na geometria euclidiana, 
+onde a soma do comprimento de dois lados de um triângulo não pode ser superior ao comprimento do terceiro lado, como ilustra a figura \ref{fig:destri}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps}
+\caption{Exemplo geométrico da desigualdade triangular}
+\label{fig:destri}
+\fonte{Autoria Própria}
+\end{figure}
+
+O emprego da desigualdade triangular neste trabalho será detalhado no capítulo \ref{chap:omni}.
 
 \section{FUNÇÕES DE DISTÂNCIA}
 \label{sec:funcdist}
