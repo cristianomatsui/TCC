@@ -14,16 +14,12 @@ A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-simbolos.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux
 A level-1 auxiliary file: estrutura/pre-textuais/sumario.aux
 A level-1 auxiliary file: estrutura/textuais/introducao.aux
-A level-1 auxiliary file: estrutura/textuais/desenvolvimento/revisao-de-literatura.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/conceitos.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/OMNI.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/resultados.aux
-A level-1 auxiliary file: estrutura/textuais/desenvolvimento/orientacoes.aux
 A level-1 auxiliary file: estrutura/textuais/conclusao.aux
 A level-1 auxiliary file: estrutura/pos-textuais/referencias.aux
 The style file: abntex2-alf.bst
-A level-1 auxiliary file: estrutura/pos-textuais/apendices.aux
-A level-1 auxiliary file: estrutura/pos-textuais/anexos.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -44,44 +40,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 23 entries,
+You've used 15 entries,
             6714 wiz_defined-function locations,
-            1354 strings with 13682 characters,
-and the built_in function-call counts, 20997 in all, are:
-= -- 2172
-> -- 517
-< -- 307
-+ -- 541
-- -- 157
-* -- 1375
-:= -- 2694
-add.period$ -- 80
-call.type$ -- 24
-change.case$ -- 201
-chr.to.int$ -- 50
-cite$ -- 17
-duplicate$ -- 1516
-empty$ -- 1288
-format.name$ -- 754
-if$ -- 4684
-int.to.chr$ -- 6
+            1296 strings with 12143 characters,
+and the built_in function-call counts, 12776 in all, are:
+= -- 1326
+> -- 299
+< -- 179
++ -- 328
+- -- 91
+* -- 811
+:= -- 1639
+add.period$ -- 42
+call.type$ -- 16
+change.case$ -- 117
+chr.to.int$ -- 34
+cite$ -- 9
+duplicate$ -- 877
+empty$ -- 825
+format.name$ -- 430
+if$ -- 2877
+int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 366
-newline$ -- 90
-num.names$ -- 80
-pop$ -- 415
+missing$ -- 229
+newline$ -- 54
+num.names$ -- 45
+pop$ -- 255
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 56
 quote$ -- 0
-skip$ -- 1828
+skip$ -- 1173
 stack$ -- 1
-substring$ -- 754
-swap$ -- 580
-text.length$ -- 13
+substring$ -- 485
+swap$ -- 337
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3
 warning$ -- 0
-while$ -- 113
+while$ -- 66
 width$ -- 0
-write$ -- 279
+write$ -- 154

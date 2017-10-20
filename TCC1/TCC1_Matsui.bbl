@@ -5,40 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[abnTeX2 e Araujo 2014]{abnTeX22014b}
-\abntrefinfo{abnTeX2 e Araujo}{ABNTEX2; ARAUJO}{2014a}
-{ABNTEX2; ARAUJO, L.~C. \textbf{A classe abntex2}: Documentos t\'{e}cnicos e
-  cient\'{i}ficos brasileiros compat\'{i}veis com as normas abnt.
-[S.l.], 2014. 46~p. Dispon{\'\i}vel em: \url{http://abntex2.googlecode.com/}.
-  Acesso em: 12 de setembro de 2014.}
-
-\bibitem[abnTeX2 e Araujo 2014]{abnTeX22014d}
-\abntrefinfo{abnTeX2 e Araujo}{ABNTEX2; ARAUJO}{2014b}
-{ABNTEX2; ARAUJO, L.~C. \textbf{O pacote abntex2cite}: Estilos
-  bibliogr\'{a}ficos compat\'{i}veis com a abnt nbr 6023.
-[S.l.], 2014. 91~p. Dispon{\'\i}vel em: \url{http://abntex2.googlecode.com/}.
-  Acesso em: 12 de setembro de 2014.}
-
-\bibitem[Araujo e abnTeX2 2014]{abnTeX22014c}
-\abntrefinfo{Araujo e abnTeX2}{ARAUJO; ABNTEX2}{2014}
-{ARAUJO, L.~C.; ABNTEX2. \textbf{O pacote abntex2cite}: T\'{o}picos
-  espec\'{i}ficos da abnt nbr 10520:2002 e o estilo bibliogr\'{a}fico
-  alfab\'{e}tico (sistema autor-data).
-[S.l.], 2014. 23~p. Dispon{\'\i}vel em: \url{http://abntex2.googlecode.com/}.
-  Acesso em: 12 de setembro de 2014.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2002]{NBR6023:2002}
-\abntrefinfo{ABNT}{ABNT}{2002}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \textbf{{NBR} 6023}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- refer\^encias --- elabora{\c
-  c}\~ao.
-Rio de Janeiro, 2002. 24~p.}
-
-\bibitem[Barbosa et al. 2004]{Barbosa2004}
-\abntrefinfo{Barbosa et al.}{BARBOSA et al.}{2004}
-{BARBOSA, C. et al. \textbf{Testando a utiliza{\c c}\~ao de ``et al.''}. 2. ed.
-  Cidade: Editora, 2004.}
-
 \bibitem[Barioni et al. 2009]{Barioni2009}
 \abntrefinfo{Barioni et al.}{BARIONI et al.}{2009}
 {BARIONI, M. C.~N. et al. Seamlessly integrating similarity queries in sql.
@@ -68,33 +34,17 @@ v.~450, 05 2009.}
 ISBN 0-7695-1001-9. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=645484.656543}.}
 
-\bibitem[Goossens et al. 2007]{Goossens2007}
-\abntrefinfo{Goossens et al.}{GOOSSENS et al.}{2007}
-{GOOSSENS, M. et al. \textbf{The LaTeX graphics companion}. 2. ed. Boston:
-  Addison-Wesley, 2007.}
-
-\bibitem[IRL 2014]{IRL2014}
-\abntrefinfo{IRL}{IRL}{2014}
-{IRL. \textbf{Internet Research Laboratory}. 2014.
-Dispon{\'\i}vel em: \url{http://irl.cs.ucla.edu/topology}. Acesso em: 8 de
-  mar{\c c}o de 2014.}
+\bibitem[Jain e Dubes 1988]{Jain1988}
+\abntrefinfo{Jain e Dubes}{JAIN; DUBES}{1988}
+{JAIN, A.~K.; DUBES, R.~C. \textbf{Algorithms for Clustering Data}. Upper
+  Saddle River, NJ, USA: Prentice-Hall, Inc., 1988.
+ISBN 0-13-022278-X.}
 
 \bibitem[Lima 1977]{Lima1977}
 \abntrefinfo{Lima}{LIMA}{1977}
 {LIMA, E. \textbf{Espa{\c{c}}os m{\'e}tricos}. Instituto de Matem{\'a}tica Pura
   e Aplicada, CNPq, 1977.  (Projeto Euclides). Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=O0\\_vAAAAMAAJ}.}
-
-\bibitem[Maturana e Varela 2003]{Maturana2003}
-\abntrefinfo{Maturana e Varela}{MATURANA; VARELA}{2003}
-{MATURANA, H.~R.; VARELA, F.~J. \textbf{A \'{A}rvore do Conhecimento}: as bases
-  biol\'{o}gicas da compreens\~{a}o humana. 3. ed. S\~ao Paulo: Editora Palas
-  Athena, 2003.}
-
-\bibitem[Mittelbach et al. 2004]{Mittelbach2004}
-\abntrefinfo{Mittelbach et al.}{MITTELBACH et al.}{2004}
-{MITTELBACH, F. et al. \textbf{The LaTeX companion}. 2. ed. Boston:
-  Addison-Wesley, 2004.}
 
 \bibitem[Pola 2010]{POLA2010}
 \abntrefinfo{Pola}{POLA}{2010}
@@ -105,10 +55,11 @@ Agosto 2010. Tese (Doutorado em Ci{\^e}ncia da Computa{\c c}\~ao) --- Instituto
   de Ci\^encias Matem\'aticas e de Computa{\c c}\~ao, Universidade de S\~ao
   Paulo, São Carlos, 2010.}
 
-\bibitem[Silva e Souza 2000]{Silva2000}
-\abntrefinfo{Silva e Souza}{SILVA; SOUZA}{2000}
-{SILVA, J.; SOUZA, J.~a.~L. \textbf{A Intelig{\^e}ncia da Complexidade}. S\~ao
-  Paulo: Editora Petr\'{o}polis, 2000.}
+\bibitem[Silberschatz, Korth e Sudarshan 2011]{Silberschatz2011}
+\abntrefinfo{Silberschatz, Korth e Sudarshan}{SILBERSCHATZ; KORTH;
+  SUDARSHAN}{2011}
+{SILBERSCHATZ, A.; KORTH, H.~F.; SUDARSHAN, S. \textbf{Database system
+  concepts}. 6. ed. [S.l.]: McGraw-Hill, 2011.}
 
 \bibitem[Zighed et al. 2008]{Zighed2008}
 \abntrefinfo{Zighed et al.}{ZIGHED et al.}{2008}

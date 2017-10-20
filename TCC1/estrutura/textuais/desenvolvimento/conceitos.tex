@@ -40,19 +40,37 @@ Para verificar a similaridade entre dois elementos de um domínio, é utilizada 
 de elementos do conjunto e retorna o valor da dissimilaridade entre eles. Quanto mais próximo de zero, mais similares os elementos são.\par
 
 A importância do uso de uma função de distância para este trabalho é fornecer uma métrica de comparação entre os elementos. Além de
-necessária para a consulta por similaridade, a função de distância também é utilizada para evitar cálculos 
+necessária para a consulta por similaridade, a função de distância também é utilizada para evitar cálculos desnecessários, fornecendo uma métrica
+empregada pela técnica Omni.\par
 
+Dentre as funções de distância, será abordada a metrica Minkowski. Esta métrica é a mais utilizada para cálculos de índice de similaridade, e tem como resultado o valor da 
+dissimilaridade entre dois elementos \cite{Jain1988}.
+\begin{mydef}
+\label{def:mink}
+  Sejam $s_1 = \{s_{11},s_{12},...,s_{1n}\}$ e $s_2 = \{s_{21},s_{22},...,s_{2n}\}$ dois vetores de dimensionalidade $n$ pertencentes ao conjunto de
+  elementos $\mathbb{S}$, a distância Minkowski entre esses dois elementos é dada por:
+\begin{equation}
+		d(s_1,s_2) = \sqrt[p]{\sum_{i=1}^{n}|s_{1i} - s_{2i}|^p}
+\end{equation}
+\end{mydef}
+Para o caso em que $p = 2$ $(L_2)$, a distância Minkowski torna-se a tradicional distância euclidiana, amplamente utilizada para distância entre vetores.
+%TODO Por que é utilizada a distância euclidiana? Por que a Minkowski é a mais utilizada para similaridade? É pertinente colocar L2?
+
+\section{ESTRUTURAS DE INDEXAÇÃO}
+\label{sec:index}
+%TODO É necessário conceituar como é feito o acesso ao disco? Carregamento de dados? Bucket?
+Dados complexos costumam apresentar tamanho físico muito elevado quando comparados com dados numéricos ou pequenas cadeias de caracteres, que são os tipos de dados
+mais comuns em bancos de dados tradicionais. Para responder consultas que envolvam dados complexos, são necessários mais acessos a disco em relação a uma consulta
+que envolva tipos de dados mais simples, como os previamente mencionados. Estes acessos são custosos e precisam ser reduzidos para um melhor desempenho do banco.\par %TODO Trocar custosos por outra palavra? 
+
+Uma maneira de tornar o acesso a disco mais eficiente é evitar movimentar grandes porções do banco de dados do disco para a memória, fazendo o uso de índices dentro do banco de dados. 
+Um índice em um SGBDR funciona de maneira semelhante a um índice de um livro. Para procurar um tópico específico, é possível consultar o índice no fim do livro e descobrir qual o número da página
+correspondente ao tópico, contornando a necessidade da leitura sequencial do livro até o tópico procurado. Os índices são armazenados em ordem e apresentam um tamanho
+muito menor do que um capítulo do livro, reduzindo o esforço necessário para a sua consulta \cite{Silberschatz2011}.\par
+%TODO expandir
 
 %TODO Capítulo de conceitos! (estado da arte)(extratores de características)(espaços métricos)(funções de distância)(estruturas de indexação)(métricas)
 
 %TODO % Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
 % métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. O cálculo do custo das operações realizadas será feito utilizando operações com B-trees, as quais o banco fornece suporte
 % ao modelo de custo.
-
-%TODO A solução abordada por esta proposta é a do uso de técnicas Omni, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
-% podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. Para quaisquer elementos $s_1$, $s_2$, $s_3$ $\in$ $\mathbb{S}$, sendo $\mathbb{S}$ um domínio de elementos
-% e uma métrica $d : \mathbb{S} \times \mathbb{S} \rightarrow \mathbb{R^+}$, temos a desigualdade triangular:
-
-% \begin{equation} \label{eq:destri}
-% 		d(s_1,s_2) \leq d(s_1,s_3) + d(s_3,s_2)
-% \end{equation}
