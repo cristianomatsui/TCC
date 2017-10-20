@@ -34,6 +34,15 @@ v.~450, 05 2009.}
 ISBN 0-7695-1001-9. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=645484.656543}.}
 
+\bibitem[Haralick, Shanmugam e Dinstein 1973]{Haralick1973}
+\abntrefinfo{Haralick, Shanmugam e Dinstein}{HARALICK; SHANMUGAM;
+  DINSTEIN}{1973}
+{HARALICK, R.~M.; SHANMUGAM, K.; DINSTEIN, I. Textural features for image
+  classification.
+\textbf{IEEE Transactions on Systems, Man, and Cybernetics}, SMC-3, n.~6, p.
+  610--621, Nov 1973.
+ISSN 0018-9472.}
+
 \bibitem[Jain e Dubes 1988]{Jain1988}
 \abntrefinfo{Jain e Dubes}{JAIN; DUBES}{1988}
 {JAIN, A.~K.; DUBES, R.~C. \textbf{Algorithms for Clustering Data}. Upper
@@ -42,9 +51,8 @@ ISBN 0-13-022278-X.}
 
 \bibitem[Lima 1977]{Lima1977}
 \abntrefinfo{Lima}{LIMA}{1977}
-{LIMA, E. \textbf{Espa{\c{c}}os m{\'e}tricos}. Instituto de Matem{\'a}tica Pura
-  e Aplicada, CNPq, 1977.  (Projeto Euclides). Dispon{\'\i}vel em:
-  \url{https://books.google.com.br/books?id=O0\\_vAAAAMAAJ}.}
+{LIMA, E. \textbf{Espa{\c{c}}os m{\'e}tricos}. [S.l.]: Instituto de
+  Matem{\'a}tica Pura e Aplicada, CNPq, 1977.  (Projeto Euclides).}
 
 \bibitem[Pola 2010]{POLA2010}
 \abntrefinfo{Pola}{POLA}{2010}
@@ -60,6 +68,14 @@ Agosto 2010. Tese (Doutorado em Ci{\^e}ncia da Computa{\c c}\~ao) --- Instituto
   SUDARSHAN}{2011}
 {SILBERSCHATZ, A.; KORTH, H.~F.; SUDARSHAN, S. \textbf{Database system
   concepts}. 6. ed. [S.l.]: McGraw-Hill, 2011.}
+
+\bibitem[Swain e Ballard 1991]{Swain1991}
+\abntrefinfo{Swain e Ballard}{SWAIN; BALLARD}{1991}
+{SWAIN, M.~J.; BALLARD, D.~H. Color indexing.
+\textbf{International Journal of Computer Vision}, v.~7, n.~1, p. 11--32, Nov
+  1991.
+ISSN 1573-1405.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF00130487}.}
 
 \bibitem[Zighed et al. 2008]{Zighed2008}
 \abntrefinfo{Zighed et al.}{ZIGHED et al.}{2008}

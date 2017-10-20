@@ -4,6 +4,9 @@
 \backcite {POLA2010}{{2}{1.2}{figure.1.1}}
 \backcite {Ferreira2009}{{2}{2}{mydef.2}}
 \backcite {Traina2001}{{3}{1.2}{figure.1.2}}
-\backcite {Lima1977}{{5}{2.1}{section.2.1}}
-\backcite {Jain1988}{{6}{2.2}{section.2.2}}
-\backcite {Silberschatz2011}{{6}{2.3}{section.2.3}}
+\backcite {Traina2001}{{4}{1.2}{figure.1.3}}
+\backcite {Lima1977}{{6}{2.1}{section.2.1}}
+\backcite {Jain1988}{{7}{2.2}{section.2.2}}
+\backcite {Silberschatz2011}{{7}{2.3}{section.2.3}}
+\backcite {Swain1991}{{8}{2.4}{section.2.4}}
+\backcite {Haralick1973}{{8}{2.4}{section.2.4}}

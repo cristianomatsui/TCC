@@ -69,7 +69,30 @@ correspondente ao tópico, contornando a necessidade da leitura sequencial do li
 muito menor do que um capítulo do livro, reduzindo o esforço necessário para a sua consulta \cite{Silberschatz2011}.\par
 %TODO expandir
 
-%TODO Capítulo de conceitos! (estado da arte)(extratores de características)(espaços métricos)(funções de distância)(estruturas de indexação)(métricas)
+\section{EXTRATORES DE CARACTERÍSTICAS}
+\label{sec:extcarac}
+O principal foco deste trabalho é o emprego destas técnicas para bases de dados constituídas por imagens. Para isto, torna-se necessário o uso de uma miríade de extratores de características
+das imagens, para um maior refinamento do uso de consultas por similaridade. Estas características podem se referir a: atributos visuais (cor, forma, textura), atributos lógicos (identificação
+de elementos) e atributos semânticos (identificação de emoções humanas).\par
+
+As características visuais podem ser utilizadas como histogramas de cores para a análise de cor, matrizes de co-ocorrência para a análise de textura e
+métodos baseados em contorno para a análise de forma. Geralmente, consultas são feitas utilizando uma combinação destas características, e não apenas uma delas.\par
+
+Dado uma palheta discreta de cores definida por alguns eixos de cor, o histograma de cores é obtido através da discretização das cores da imagem e contagem
+do número de vezes que cada cor discreta ocorre na matriz da imagem \cite{Swain1991}. As vantagens do uso do histograma de cores é a sua simplicidade computacional e pouca
+sensibilidade a alterações na imagem (rotação e translação), particularmente útil para a representação de objetos tridimensionais. Entretanto, duas imagens completamente 
+diferentes podem apresentar o mesmo histograma de cores.\par
+
+Para a análise de textura, o objetivo e conseguir distinguir regiões que apresentam cores similares (como folhagem e grama), analisando o padrão
+de variação dessas cores. A técnica mais utilizada analisa conjunto de pares de pixels da imagem em tons de cinza e monta estruturas com informações características.
+A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência".\par %TODO Definir matriz de co-ocorrência. Principal importância da análise de textura?
+
+Diversas medidas que podem ser extraídas destas matrizes de co-ocorrência estão presentes no trabalho de \cite{Haralick1973}. Os extratores de características das imagens utilizados 
+neste trabalho são do framework Arboretum, desenvolvido pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos.
+
+
+
+
 
 %TODO % Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
 % métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. O cálculo do custo das operações realizadas será feito utilizando operações com B-trees, as quais o banco fornece suporte

@@ -44,9 +44,9 @@ elementos da base que diferem do elemento central da consulta por no máximo a d
   \end{equation}
 \end{mydef}
 
-\begin{figure}[H]	%TODO WTF!
+\begin{figure}[H]
 \centering
-\includegraphics[width=.3\textwidth]{dados/figuras/rq.eps}
+\includegraphics[width=.3\textwidth]{dados/figuras/rqu.eps}
 \caption{Exemplo de consulta por abrangência}
 \fonte{Autoria Própria}
 \label{fig:exemplorq}
@@ -82,41 +82,30 @@ encontrados igual a 4. Os elementos ligados ao elemento central foram os mais pr
 \fonte{Autoria Própria}
 \end{figure}
 
-O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).%escopo do trabalho
-
-%TODO Seção sobre métricas --> conceitos
-
-% Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
-% métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. O cálculo do custo das operações realizadas será feito utilizando operações com B-trees, as quais o banco fornece suporte
-% ao modelo de custo.
+O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).\par %escopo do trabalho
 
 A solução abordada por esta proposta é a do uso de técnicas Omni, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
-podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. Para quaisquer elementos $s_1$, $s_2$, $s_3$ $\in$ $\mathbb{S}$, sendo $\mathbb{S}$ um domínio de elementos
-e uma métrica $d : \mathbb{S} \times \mathbb{S} \rightarrow \mathbb{R^+}$, temos a desigualdade triangular: %TODO Colocar a desigualdade triangular em conceitos
+podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. 
 
-\begin{equation} \label{eq:destri}
-		d(s_1,s_2) \leq d(s_1,s_3) + d(s_3,s_2)
-\end{equation}
+A base da técnica Omni é calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
+(como uma consulta por abrangência) é realizada, são conhecidas as distâncias entre o elemento central da consulta $s_q$ e o raio de abrangência $\xi$. Considerando um foco ${f_1}$ e utilizando
+a desigualdade triangular, elementos que possuem uma distância entre o foco escolhido menor do que a distância de $s_q$ até o foco menos o valor $\xi$ serão descartados do conjunto de elementos necessários para
+os cálculos de distância com o elemento central. Simetricamente, elementos cuja distância até o foco seja maior do que a distância de $s_q$ até o foco mais o valor do raio de abrangência $\xi$ também
+serão descartados. Com isso, ocorre uma grande redução do número de cálculos necessários para fornecer o conjunto resposta. Essa poda também pode ser realizada por mais de um foco.
 
-% A base da técnica Omni é calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
-% (como uma consulta por abrangência) é realizada, são conhecidas as distâncias entre o elemento central da consulta $s_q$ e o raio de abrangência $\xi$. Considerando um foco ${f_1}$ e utilizando
-% a desigualdade triangular, elementos que possuem uma distância entre o foco escolhido menor do que a distância de $s_q$ até o foco menos o valor $\xi$ serão descartados do conjunto de elementos necessários para
-% os cálculos de distância com o elemento central. Simetricamente, elementos cuja distância até o foco seja maior do que a distância de $s_q$ até o foco mais o valor do raio de abrangência $\xi$ também
-% serão descartados. Com isso, ocorre uma grande redução do número de cálculos necessários para fornecer o conjunto resposta. Essa poda também pode ser realizada por mais de um foco.
-% 
-% \begin{figure}[H]
-% \centering
-% \caption{Consulta por abrangência pela técnica Omni utilizando um foco}
-% \includegraphics[width=.4\textwidth]{dados/figuras/rg_omni_1.eps}
-% \fonte{Autoria Própria}
-% \label{fig:rqomni1}
-% \end{figure}
-% 
-% 
-% A figura \ref{fig:rqomni1} ilustra a poda no número de cálculos. Apenas os elementos na área sombreada terão as suas distâncias em relação ao centro da consulta calculadas, pois estão no
-% conjunto de elementos que não foram descartados utilizando a desigualdade triangular com as distâncias previamente calculadas em relação ao foco. O armazenamento das distâncias de cada foco ${f_i}$ para cada outro elemento $s_k$ será feito 
-% utilizando uma estrutura de indexação que implementa os conceitos da técnica Omni com a estrutura da B$^+$-tree, originando uma nova estrutura chamada de Omni-Btree. As distâncias serão armazenadas em $l$ Omni-Btrees, sendo $l$ o número de focos
-% criados para a base de dados \cite{Traina2001}.
+\begin{figure}[H]
+\centering
+\caption{Consulta por abrangência pela técnica Omni utilizando um foco}
+\includegraphics[width=.4\textwidth]{dados/figuras/rg_omni_1.eps}
+\fonte{Autoria Própria}
+\label{fig:rqomni1}
+\end{figure}
+
+
+A figura \ref{fig:rqomni1} ilustra a poda no número de cálculos. Apenas os elementos na área sombreada terão as suas distâncias em relação ao centro da consulta calculadas, pois estão no
+conjunto de elementos que não foram descartados utilizando a desigualdade triangular com as distâncias previamente calculadas em relação ao foco. O armazenamento das distâncias de cada foco ${f_i}$ para cada outro elemento $s_k$ será feito 
+utilizando uma estrutura de indexação que implementa os conceitos da técnica Omni com a estrutura da B$^+$-tree, originando uma nova estrutura chamada de Omni-Btree. As distâncias serão armazenadas em $l$ Omni-Btrees, sendo $l$ o número de focos
+criados para a base de dados \cite{Traina2001}.
 
 \section{OBJETIVOS}
 \label{sec:objetivos}
