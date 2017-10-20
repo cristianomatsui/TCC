@@ -4,7 +4,7 @@
 O presente capítulo abordará os conceitos necessários para uma melhor compreensão dos artifícios utilizados para tratar o problema apresentado no Capítulo \ref{chap:introducao}, assim como uma
 explanação sobre os extratores de características de imagens que serão utilizados e o estado da arte atual.
 
-\section{ESPAÇOS MÉTRICOS} %TODO Ampliar
+\section{ESPAÇOS MÉTRICOS} %TODO Ampliar -- Conceito de bola fechada
 \label{sec:espmet}
 Uma métrica em um conjunto $\mathbb{S}$ é uma função $d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$ que associa a cada par 
 ordenado de elementos ($s_1$, $s_2$) um número real $d$($s_1$,$s_2$) chamado de distância de $s_1$ a $s_2$ \cite{Lima1977}.\par
@@ -26,7 +26,7 @@ onde a soma do comprimento de dois lados de um triângulo não pode ser superior
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps}
+\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps} %TODO alterar segunda imagem
 \caption{Exemplo geométrico da desigualdade triangular}
 \label{fig:destri}
 \fonte{Autoria Própria}
@@ -54,14 +54,14 @@ dissimilaridade entre dois elementos \cite{Jain1988}.
 \end{equation}
 \end{mydef}
 Para o caso em que $p = 2$ $(L_2)$, a distância Minkowski torna-se a tradicional distância euclidiana, amplamente utilizada para distância entre vetores.
-%TODO Por que é utilizada a distância euclidiana? Por que a Minkowski é a mais utilizada para similaridade? É pertinente colocar L2?
+%TODO Não sera usada a distância euclidiana! Valor de p depende do database.Minkowski funciona para qualquer dataset vetorial (dimens. fixa). Adicionar dist Camberra
 
-\section{ESTRUTURAS DE INDEXAÇÃO}
+\section{ESTRUTURAS DE INDEXAÇÃO} %TODO indexação em memória
 \label{sec:index}
-%TODO É necessário conceituar como é feito o acesso ao disco? Carregamento de dados? Bucket?
+%TODO exemplos de estruturas
 Dados complexos costumam apresentar tamanho físico muito elevado quando comparados com dados numéricos ou pequenas cadeias de caracteres, que são os tipos de dados
 mais comuns em bancos de dados tradicionais. Para responder consultas que envolvam dados complexos, são necessários mais acessos a disco em relação a uma consulta
-que envolva tipos de dados mais simples, como os previamente mencionados. Estes acessos são custosos e precisam ser reduzidos para um melhor desempenho do banco.\par %TODO Trocar custosos por outra palavra? 
+que envolva tipos de dados mais simples, como os previamente mencionados. Estes acessos são custosos e precisam ser reduzidos para um melhor desempenho do banco.\par 
 
 Uma maneira de tornar o acesso a disco mais eficiente é evitar movimentar grandes porções do banco de dados do disco para a memória, fazendo o uso de índices dentro do banco de dados. 
 Um índice em um SGBDR funciona de maneira semelhante a um índice de um livro. Para procurar um tópico específico, é possível consultar o índice no fim do livro e descobrir qual o número da página
@@ -86,12 +86,12 @@ diferentes podem apresentar o mesmo histograma de cores.\par
 Para a análise de textura, o objetivo e conseguir distinguir regiões que apresentam cores similares (como folhagem e grama), analisando o padrão
 de variação dessas cores. A técnica mais utilizada analisa conjunto de pares de pixels da imagem em tons de cinza e monta estruturas com informações características.
 A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência".\par %TODO Definir matriz de co-ocorrência. Principal importância da análise de textura?
-
+%TODO Textura identifica padrões - muito usada em ambiente de imagens médicas (mesma categoria)
 Diversas medidas que podem ser extraídas destas matrizes de co-ocorrência estão presentes no trabalho de \cite{Haralick1973}. Os extratores de características das imagens utilizados 
 neste trabalho são do framework Arboretum, desenvolvido pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos.
 
 
-
+%TODO survey (estado da arte)
 
 
 %TODO % Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes

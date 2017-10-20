@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  20 OCT 2017 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  20 OCT 2017 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **TCC1_Matsui.tex
 (./TCC1_Matsui.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
 (./configuracoes/utfpr-abntex2.cls
 Document Class: configuracoes/utfpr-abntex2 2016/07/07 v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -25,10 +25,8 @@ ment class
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ifetex/ifetex.sty
-Package: ifetex 2011/12/15 v1.2 ifetex
+Class memoir Info: An `ifetex' package is being emulated on input line 265.
 
-(/usr/share/texlive/texmf-dist/tex/plain/ifetex/ifetex.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -318,6 +316,7 @@ Package delarray [2008/07/23] emulated by memoir.
 Package enumerate [2008/07/23] emulated by memoir.
 Package epigraph [2008/07/23] emulated by memoir.
 Package ifmtarg [2008/07/23] emulated by memoir.
+Package ifetex [2008/07/23] emulated by memoir.
 Package index [2008/07/23] emulated by memoir.
 Package makeidx [2008/07/23] emulated by memoir.
 Package moreverb [2008/07/23] emulated by memoir.
@@ -1519,10 +1518,10 @@ l.7 \cleardoublepage
 
 ]
 Package epstopdf Info: Source file: <dados/figuras/rqu.eps>
-(epstopdf)                    date: 2017-10-19 21:38:34
+(epstopdf)                    date: 2017-10-17 13:27:43
 (epstopdf)                    size: 224571 bytes
 (epstopdf)             Output file: <dados/figuras/rqu-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-10-19 21:38:34
+(epstopdf)                    date: 2017-10-17 13:27:43
 (epstopdf)                    size: 56926 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rqu-eps-conv
 erted-to.pdf dados/figuras/rqu.eps>
@@ -1537,10 +1536,10 @@ Package pdftex.def Info: dados/figuras/rqu-eps-converted-to.pdf used on input l
 ine 49.
 (pdftex.def)             Requested size: 136.50139pt x 127.81468pt.
 Package epstopdf Info: Source file: <dados/figuras/knnq.eps>
-(epstopdf)                    date: 2017-10-12 16:32:46
+(epstopdf)                    date: 2017-10-06 15:21:29
 (epstopdf)                    size: 17383 bytes
 (epstopdf)             Output file: <dados/figuras/knnq-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-10-12 16:32:46
+(epstopdf)                    date: 2017-10-06 15:21:29
 (epstopdf)                    size: 7510 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/knnq-eps-con
 verted-to.pdf dados/figuras/knnq.eps>
@@ -1564,11 +1563,11 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
 l.84 
       <./dados/figuras/rqu-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <dados/figuras/rg_omni_1.eps>
-(epstopdf)                    date: 2017-10-12 16:32:46
+(epstopdf)                    date: 2017-10-06 15:21:29
 (epstopdf)                    size: 131913 bytes
 (epstopdf)             Output file: <dados/figuras/rg_omni_1-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-10-12 16:32:46
+(epstopdf)                    date: 2017-10-06 15:21:29
 (epstopdf)                    size: 123142 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_omni_1-ep
 s-converted-to.pdf dados/figuras/rg_omni_1.eps>
@@ -1610,11 +1609,11 @@ l.125 \end{itemize}
 
 (./estrutura/textuais/desenvolvimento/conceitos.tex
 Package epstopdf Info: Source file: <dados/figuras/desig_tri.eps>
-(epstopdf)                    date: 2017-10-19 21:38:34
+(epstopdf)                    date: 2017-10-17 13:27:43
 (epstopdf)                    size: 81827 bytes
 (epstopdf)             Output file: <dados/figuras/desig_tri-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-10-19 21:38:34
+(epstopdf)                    date: 2017-10-17 13:27:43
 (epstopdf)                    size: 27108 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/desig_tri-ep
 s-converted-to.pdf dados/figuras/desig_tri.eps>
@@ -1731,12 +1730,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 15739 strings out of 493029
- 235789 string characters out of 6136234
- 420785 words of memory out of 5000000
- 18368 multiletter control sequences out of 15000+600000
+ 15726 strings out of 494929
+ 235391 string characters out of 6180142
+ 415679 words of memory out of 5000000
+ 18120 multiletter control sequences out of 15000+600000
  61875 words of font info for 376 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
+ 18 hyphenation exceptions out of 8191
  45i,13n,37p,652b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar

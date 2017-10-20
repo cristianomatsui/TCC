@@ -4,7 +4,7 @@
 O presente capítulo abordará os conceitos necessários para uma melhor compreensão dos artifícios utilizados para tratar o problema apresentado no Capítulo \ref{chap:introducao}, assim como uma
 explanação sobre os extratores de características de imagens que serão utilizados e o estado da arte atual.
 
-\section{ESPAÇOS MÉTRICOS} %TODO Ampliar
+\section{ESPAÇOS MÉTRICOS} %TODO Ampliar -- Conceito de bola fechada
 \label{sec:espmet}
 Uma métrica em um conjunto $\mathbb{S}$ é uma função $d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$ que associa a cada par 
 ordenado de elementos ($s_1$, $s_2$) um número real $d$($s_1$,$s_2$) chamado de distância de $s_1$ a $s_2$ \cite{Lima1977}.\par
@@ -26,7 +26,7 @@ onde a soma do comprimento de dois lados de um triângulo não pode ser superior
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps}
+\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps} %TODO alterar segunda imagem
 \caption{Exemplo geométrico da desigualdade triangular}
 \label{fig:destri}
 \fonte{Autoria Própria}
@@ -83,9 +83,12 @@ do número de vezes que cada cor discreta ocorre na matriz da imagem \cite{Swain
 sensibilidade a alterações na imagem (rotação e translação), particularmente útil para a representação de objetos tridimensionais. Entretanto, duas imagens completamente 
 diferentes podem apresentar o mesmo histograma de cores.\par
 
-Para a análise de textura, a técnica mais utilizada 
+Para a análise de textura, o objetivo e conseguir distinguir regiões que apresentam cores similares (como folhagem e grama), analisando o padrão
+de variação dessas cores. A técnica mais utilizada analisa conjunto de pares de pixels da imagem em tons de cinza e monta estruturas com informações características.
+A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência".\par %TODO Definir matriz de co-ocorrência. Principal importância da análise de textura?
 
-
+Diversas medidas que podem ser extraídas destas matrizes de co-ocorrência estão presentes no trabalho de \cite{Haralick1973}. Os extratores de características das imagens utilizados 
+neste trabalho são do framework Arboretum, desenvolvido pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos.
 
 
 
