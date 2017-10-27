@@ -1,22 +1,96 @@
 % This file was created with JabRef 2.10b2.
 % Encoding: UTF-8
 
-@book{Zighed2008,
- author = {Zighed, Djamel A. and Tsumoto, Shusaku and Ras, Zbigniew W. and Hacid, Hakim},
- title = {Mining Complex Data},
- year = {2008},
- isbn = {3540880666, 9783540880660},
- edition = {1st},
- publisher = {Springer Publishing Company, Incorporated},
+@inproceedings{Lehman1986,
+ author = {Lehman, Tobin J. and Carey, Michael J.},
+ title = {A Study of Index Structures for Main Memory Database Management Systems},
+ booktitle = {Proceedings of the 12th International Conference on Very Large Data Bases},
+ series = {VLDB '86},
+ year = {1986},
+ isbn = {0-934613-18-4},
+ pages = {294--303},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=645913.671312},
+ acmid = {671312},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
 } 
 
+@article{Kokare2007,
+title = {Texture image retrieval using rotated wavelet filters},
+journal = {Pattern Recognition Letters},
+volume = {28},
+number = {10},
+pages = {1240 - 1249},
+year = {2007},
+issn = {0167-8655},
+doi = {https://doi.org/10.1016/j.patrec.2007.02.006},
+url = {http://www.sciencedirect.com/science/article/pii/S0167865507000608},
+author = {Manesh Kokare and P.K. Biswas and B.N. Chatterji}
+}
+
+@book{Shirali2005,
+  title={Metric Spaces},
+  author={Shirali, S. and Vasudeva, H.L.},
+  isbn={9781846282447},
+  lccn={2005923525},
+  url={https://books.google.com.br/books?id=MXUbkAhMjLQC},
+  year={2005},
+  publisher={Springer London}
+}
+
+
+@article{Haralick1973,
+author={R. M. Haralick and K. Shanmugam and I. Dinstein},
+journal={IEEE Transactions on Systems, Man, and Cybernetics},
+title={Textural Features for Image Classification},
+year={1973},
+volume={SMC-3},
+number={6},
+pages={610-621},
+doi={10.1109/TSMC.1973.4309314},
+ISSN={0018-9472},
+month={Nov}
+}
+
+@article{Swain1991,
+author={Swain, Michael J. and Ballard, Dana H.},
+title={Color indexing},
+journal={International Journal of Computer Vision},
+year={1991},
+month={Nov},
+day={01},
+volume={7},
+number={1},
+pages={11--32},
+issn={1573-1405},
+doi={10.1007/BF00130487},
+url={https://doi.org/10.1007/BF00130487}
+}
+
+@book{Silberschatz2011, 
+place={New York}, 
+edition={6}, 
+title={Database system concepts}, 
+publisher={McGraw-Hill}, 
+author={Silberschatz, Abraham and Korth, Henry F. and Sudarshan, S.}, 
+year={2011}}
+
+
+@book{Jain1988,
+ author = {Jain, Anil K. and Dubes, Richard C.},
+ title = {Algorithms for Clustering Data},
+ year = {1988},
+ isbn = {0-13-022278-X},
+ publisher = {Prentice-Hall, Inc.},
+ address = {Upper Saddle River, NJ, USA},
+}
 
 @book{Lima1977,
   title={Espa{\c{c}}os m{\'e}tricos},
   author={Lima, E.L.},
   lccn={78382414},
   series={Projeto Euclides},
-  url={https://books.google.com.br/books?id=O0\_vAAAAMAAJ},
   year={1977},
   publisher={Instituto de Matem{\'a}tica Pura e Aplicada, CNPq}
 }
@@ -122,19 +196,6 @@ year = {2009},
   Urlaccessdate            = {12 de setembro de 2014}
 }
 
-@Manual{abnTeX22014d,
-  Title                    = {O pacote abntex2cite},
-  Author                   = {abnTeX2 and Lauro C\{\textquoteright}{e}sar Araujo},
-  Organization             = {Equipe abnTeX2},
-  Year                     = {2014},
-
-  Bdsk-url-1               = {http://code.google.com/p/abntex2/wiki/Download},
-  Pages                    = {91},
-  Subtitle                 = {Estilos bibliogr\'{a}ficos compat\'{i}veis com a ABNT NBR 6023},
-  Timestamp                = {2014.09.27},
-  Url                      = {http://abntex2.googlecode.com/},
-  Urlaccessdate            = {12 de setembro de 2014}
-}
 
 @Manual{abnTeX22014c,
   Title                    = {O pacote abntex2cite},
@@ -185,19 +246,7 @@ year = {2009},
   Timestamp                = {2014.09.27}
 }
 
-@Article{Carvalho2001,
-  Title                    = {Intelig{\^e}ncia competitiva numa vis\~ao de futuro},
-  Author                   = {Cl\{\textquoteright}{a}udia Carvalho and Jos\'{e} Fajardo and Joaquim Cruz},
-  Journal                  = {DataGramaZero - Revista da Ci{\^e}ncia da Informa{\c c}\~ao},
-  Year                     = {2001},
-  Number                   = {3},
-  Pages                    = {12--16},
-  Volume                   = {2},
 
-  Mounth                   = {junho},
-  Subtitle                 = {proposta metodol\'{o}gica},
-  Timestamp                = {2014.09.27}
-}
 
 @Book{Goossens2007,
   Title                    = {The LaTeX graphics companion},
@@ -356,7 +405,6 @@ year = {2009},
   Title                    = {{ABNT NBR} 14724},
 
   Address                  = {Rio de Janeiro},
-  Month                    = mar,
   Organization             = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
   Year                     = {2011},
 

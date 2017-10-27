@@ -99,9 +99,4 @@ $s_i$ não escolhido como foco ainda, o erro da distância em relação à borda
       }
 \end{algorithm}
 
-O algoritmo HF requer $l*N$ cálculos de distância. O algoritmo \ref{alg:hf} mostra que as etapas 3 e 5 são cálculos
-necessários para a determinação das coordenadas Omni de cada objeto. Isso mostra que o algoritmo HF também prepara as
-coordenadas Omni da base de dados. Outro fato importante é o da base de focos Omni ser invariável a operações de inserção
-ou remoção na base.
-
-%TODO Omni-Seq? OmniB-Tree? OmniR-Tree? Dimensão intrínseca?
+O algoritmo HF requer $l*N$ cálculos de distância. O algoritmo \ref{alg:hf} mostra

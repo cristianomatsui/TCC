@@ -13,6 +13,19 @@
 ISSN 1097-024X.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1002/spe.898}.}
 
+\bibitem[Bugatti et al. 2014]{Bugatti2014}
+\abntrefinfo{Bugatti et al.}{BUGATTI et al.}{2014}
+{BUGATTI, P.~H. et al. Prosper: Perceptual similarity queries in medical cbir
+  systems through user profiles.
+\textbf{Computers in biology and medicine}, Elsevier, v.~45, p. 8--19, 2014.}
+
+\bibitem[Choras 2007]{Choras2007}
+\abntrefinfo{Choras}{CHORAS}{2007}
+{CHORAS, R.~S. Image feature extraction techniques and their applications for
+  cbir and biometrics systems.
+\textbf{International journal of biology and biomedical engineering}, v.~1,
+  n.~1, p. 6--16, 2007.}
+
 \bibitem[DB-Engines 2017]{DBE2017}
 \abntrefinfo{DB-Engines}{DB-ENGINES}{2017}
 {DB-ENGINES. \textbf{DB-Engines Ranking}. 2017.
@@ -34,6 +47,20 @@ v.~450, 05 2009.}
 ISBN 0-7695-1001-9. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=645484.656543}.}
 
+\bibitem[Glatard, Montagnat e Magnin 2004]{Glatard2004}
+\abntrefinfo{Glatard, Montagnat e Magnin}{GLATARD; MONTAGNAT; MAGNIN}{2004}
+{GLATARD, T.; MONTAGNAT, J.; MAGNIN, I.~E. Texture based medical image indexing
+  and retrieval: Application to cardiac imaging. In:  \textbf{Proceedings of
+  the 6th ACM SIGMM International Workshop on Multimedia Information
+  Retrieval}. New York, NY, USA: ACM, 2004.  (MIR '04), p. 135--142.
+ISBN 1-58113-940-3. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/1026711.1026734}.}
+
+\bibitem[Gutta e Wechsler 1997]{Gutta1997}
+\abntrefinfo{Gutta e Wechsler}{GUTTA; WECHSLER}{1997}
+{GUTTA, S.; WECHSLER, H. Face recognition using hybrid classifiers.
+\textbf{Pattern Recognition}, Elsevier, v.~30, n.~4, p. 539--553, 1997.}
+
 \bibitem[Haralick, Shanmugam e Dinstein 1973]{Haralick1973}
 \abntrefinfo{Haralick, Shanmugam e Dinstein}{HARALICK; SHANMUGAM;
   DINSTEIN}{1973}
@@ -49,10 +76,41 @@ ISSN 0018-9472.}
   Saddle River, NJ, USA: Prentice-Hall, Inc., 1988.
 ISBN 0-13-022278-X.}
 
+\bibitem[Kokare, Biswas e Chatterji 2007]{Kokare2007}
+\abntrefinfo{Kokare, Biswas e Chatterji}{KOKARE; BISWAS; CHATTERJI}{2007}
+{KOKARE, M.; BISWAS, P.; CHATTERJI, B. Texture image retrieval using rotated
+  wavelet filters.
+\textbf{Pattern Recognition Letters}, v.~28, n.~10, p. 1240 -- 1249, 2007.
+ISSN 0167-8655.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0167865507000608}.}
+
+\bibitem[Lehman e Carey 1986]{Lehman1986}
+\abntrefinfo{Lehman e Carey}{LEHMAN; CAREY}{1986}
+{LEHMAN, T.~J.; CAREY, M.~J. A study of index structures for main memory
+  database management systems. In:  \textbf{Proceedings of the 12th
+  International Conference on Very Large Data Bases}. San Francisco, CA, USA:
+  Morgan Kaufmann Publishers Inc., 1986.  (VLDB '86), p. 294--303.
+ISBN 0-934613-18-4. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=645913.671312}.}
+
+\bibitem[Lehmann et al. 1999]{Lehmann1999}
+\abntrefinfo{Lehmann et al.}{LEHMANN et al.}{1999}
+{LEHMANN, T.~M. et al. Content-based image retrieval in medical applications: a
+  novel multistep approach. In:  INTERNATIONAL SOCIETY FOR OPTICS AND
+  PHOTONICS. \textbf{Storage and Retrieval for Media Databases 2000}. [S.l.],
+  1999. v.~3972, p. 312--321.}
+
 \bibitem[Lima 1977]{Lima1977}
 \abntrefinfo{Lima}{LIMA}{1977}
 {LIMA, E. \textbf{Espa{\c{c}}os m{\'e}tricos}. [S.l.]: Instituto de
   Matem{\'a}tica Pura e Aplicada, CNPq, 1977.  (Projeto Euclides).}
+
+\bibitem[Marchiori et al. 2001]{Marchiori2001}
+\abntrefinfo{Marchiori et al.}{MARCHIORI et al.}{2001}
+{MARCHIORI, A. et al. Cbir for medical images - an evaluation trial. In:
+  \textbf{Proceedings IEEE Workshop on Content-Based Access of Image and Video
+  Libraries (CBAIVL 2001)}. [S.l.: s.n.], 2001. p. 89--93.}
 
 \bibitem[Pola 2010]{POLA2010}
 \abntrefinfo{Pola}{POLA}{2010}
@@ -62,6 +120,12 @@ ISBN 0-13-022278-X.}
 Agosto 2010. Tese (Doutorado em Ci{\^e}ncia da Computa{\c c}\~ao) --- Instituto
   de Ci\^encias Matem\'aticas e de Computa{\c c}\~ao, Universidade de S\~ao
   Paulo, São Carlos, 2010.}
+
+\bibitem[Shirali e Vasudeva 2005]{Shirali2005}
+\abntrefinfo{Shirali e Vasudeva}{SHIRALI; VASUDEVA}{2005}
+{SHIRALI, S.; VASUDEVA, H. \textbf{Metric Spaces}. Springer London, 2005.
+ISBN 9781846282447. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=MXUbkAhMjLQC}.}
 
 \bibitem[Silberschatz, Korth e Sudarshan 2011]{Silberschatz2011}
 \abntrefinfo{Silberschatz, Korth e Sudarshan}{SILBERSCHATZ; KORTH;

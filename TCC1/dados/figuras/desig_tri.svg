@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="204.56779"
-     inkscape:cy="512.70775"
+     inkscape:zoom="3.959798"
+     inkscape:cx="640.48844"
+     inkscape:cy="517.98193"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -293,47 +293,46 @@
              style="fill:#000000;stroke-width:0" /></g>      </g>
     </g>
     <g
-       id="g4950"
-       transform="translate(264.65997,-164.65486)">
+       id="g4423">
       <path
          style="fill:#008000;fill-rule:evenodd;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 135.35714,650.57647 271.07143,-0.35715 z"
+         d="m 400.01711,485.92161 271.07143,-0.35715 z"
          id="path4593"
          inkscape:connector-curvature="0" />
       <path
          style="fill:#ff0000;fill-rule:evenodd;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 136.07143,650.21932 127.85714,-8.21428 z"
+         d="M 403.88464,485.25056 532.0013,484.23008 Z"
          id="path4597"
          inkscape:connector-curvature="0" />
       <path
          style="fill:#000080;fill-rule:evenodd;stroke:#000080;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 263.92857,641.6479 141.42857,8.21428 z"
+         d="m 528.47002,483.8276 141.66561,0.60608 z"
          id="path4599"
          inkscape:connector-curvature="0" />
       <ellipse
          ry="3.9285715"
          rx="3.75"
-         cy="650.32147"
-         cx="135.36044"
+         cy="485.66663"
+         cx="400.02042"
          id="path4144-6-8"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <ellipse
          ry="3.9285715"
          rx="3.75"
-         cy="641.64795"
-         cx="264.28571"
+         cy="484.31671"
+         cx="528.18805"
          id="path4144-6-5"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <ellipse
          ry="3.9285715"
          rx="3.75"
-         cy="650.2193"
-         cx="406.78574"
+         cy="485.56445"
+         cx="671.44568"
          id="path4144-6-1"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <g
          id="g4190-2"
-         transform="matrix(0.57205958,0,0,0.57205958,-52.240384,465.51937)">
+         transform="matrix(0.57205958,0,0,0.57205958,212.41959,300.86451)">
         <g
            word-spacing="normal"
            letter-spacing="normal"
@@ -357,7 +356,7 @@
              style="fill:#000000;stroke-width:0" /></g>      </g>
       <g
          id="g4273-5"
-         transform="matrix(0.55911271,0,0,0.55911271,230.77718,472.33905)">
+         transform="matrix(0.55911271,0,0,0.55911271,495.43715,307.68419)">
         <g
            word-spacing="normal"
            letter-spacing="normal"
@@ -380,7 +379,7 @@
              inkscape:connector-curvature="0"
              style="fill:#000000;stroke-width:0" /></g>      </g>
       <g
-         transform="matrix(0.56699216,0,0,0.56699216,81.549076,423.36294)"
+         transform="matrix(0.56699216,0,0,0.56699216,346.20905,258.70808)"
          id="g4227-5">
         <g
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -404,7 +403,7 @@
              d="m 496.61,405.35 -1.19,0 c -0.1,-0.77 -0.45,-2.83 -0.9,-3.18 -0.28,-0.21 -2.97,-0.21 -3.45,-0.21 l -6.42,0 c 3.66,3.25 4.88,4.22 6.97,5.86 2.58,2.06 4.99,4.22 4.99,7.54 0,4.21 -3.7,6.79 -8.16,6.79 -4.33,0 -7.25,-3.03 -7.25,-6.24 0,-1.78 1.5,-1.95 1.84,-1.95 0.84,0 1.85,0.59 1.85,1.85 0,0.62 -0.24,1.85 -2.05,1.85 1.08,2.47 3.45,3.24 5.09,3.24 3.48,0 5.3,-2.72 5.3,-5.54 0,-3.04 -2.16,-5.45 -3.28,-6.7 l -8.4,-8.3 c -0.35,-0.31 -0.35,-0.38 -0.35,-1.36 l 14.36,0 z"
              id="path4233-7" /></g>      </g>
       <g
-         transform="matrix(0.42765018,0,0,0.42765018,0.44611596,550.70343)"
+         transform="matrix(0.42765018,0,0,0.42765018,265.10609,386.04857)"
          id="g4746">
         <g
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"

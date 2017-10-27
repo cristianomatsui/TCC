@@ -4,7 +4,7 @@
 O presente capítulo abordará os conceitos necessários para uma melhor compreensão dos artifícios utilizados para tratar o problema apresentado no Capítulo \ref{chap:introducao}, assim como uma
 explanação sobre os extratores de características de imagens que serão utilizados e o estado da arte atual.
 
-\section{ESPAÇOS MÉTRICOS} %TODO Ampliar -- Conceito de bola fechada
+\section{ESPAÇOS MÉTRICOS}
 \label{sec:espmet}
 Uma métrica em um conjunto $\mathbb{S}$ é uma função $d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$ que associa a cada par 
 ordenado de elementos ($s_1$, $s_2$) um número real $d$($s_1$,$s_2$) chamado de distância de $s_1$ a $s_2$ \cite{Lima1977}.\par
@@ -21,12 +21,24 @@ Quanto menor esta distância entre dois elementos, mais semelhantes eles são.
 4. $d$($s_1$,$s_3$) $\leq$ $d$($s_1$,$s_2$) + $d$($s_2$,$s_3$) (desigualdade triangular)\\
 onde $s_1$, $s_2$, $s_3$ $\in$ $\mathbb{S}$.
 \end{mydef}
+O conjunto de dados complexos a ser utilizado geralmente apresenta dimensões elevadas, maiores que 10. Devido a este elevado número
+de dimensões, é necessário o conceito de bola, empregado em espaços métricos n-dimensionais. A seguinte definição é baseada no livro de \cite{Shirali2005}.
+
+\begin{mydef}
+ \label{def:bola}
+ Seja <$\mathbb{S}$, $d$> um espaço métrico. O conjunto
+ \begin{equation}
+  S(s_0,r) = {x \in \mathbb{S} : d(s_0, x) \leq r},	onde r > 0 e s_0 \in \mathbb{S},
+ \end{equation}
+  é chamado de bola fechada de raio $r$ e centro em $s_0$. 
+\end{mydef}
+
 A importância prática do espaço métrico para este trabalho reside fortemente na quarta propriedade apresentada pela Definição \ref{def:espmet}. A desigualdade triangular é fundamentada na geometria euclidiana, 
 onde a soma do comprimento de dois lados de um triângulo não pode ser superior ao comprimento do terceiro lado, como ilustra a figura \ref{fig:destri}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps} %TODO alterar segunda imagem
+\includegraphics[width=.8\textwidth]{dados/figuras/desig_tri.eps}
 \caption{Exemplo geométrico da desigualdade triangular}
 \label{fig:destri}
 \fonte{Autoria Própria}
@@ -42,9 +54,9 @@ de elementos do conjunto e retorna o valor da dissimilaridade entre eles. Quanto
 A importância do uso de uma função de distância para este trabalho é fornecer uma métrica de comparação entre os elementos. Além de
 necessária para a consulta por similaridade, a função de distância também é utilizada para evitar cálculos desnecessários, fornecendo uma métrica
 empregada pela técnica Omni.\par
-
-Dentre as funções de distância, será abordada a metrica Minkowski. Esta métrica é a mais utilizada para cálculos de índice de similaridade, e tem como resultado o valor da 
-dissimilaridade entre dois elementos \cite{Jain1988}.
+\subsection{DISTÂNCIA MINKOWSKI}
+Dentre as funções de distância, será abordada a metrica Minkowski. Esta métrica é a mais utilizada para cálculos de índice de similaridade
+pois é independete da origem do espaço do conjunto de dados, e tem como resultado o valor da dissimilaridade entre dois elementos \cite{Jain1988}.
 \begin{mydef}
 \label{def:mink}
   Sejam $s_1 = \{s_{11},s_{12},...,s_{1n}\}$ e $s_2 = \{s_{21},s_{22},...,s_{2n}\}$ dois vetores de dimensionalidade $n$ pertencentes ao conjunto de
@@ -53,21 +65,42 @@ dissimilaridade entre dois elementos \cite{Jain1988}.
 		d(s_1,s_2) = \sqrt[p]{\sum_{i=1}^{n}|s_{1i} - s_{2i}|^p}
 \end{equation}
 \end{mydef}
-Para o caso em que $p = 2$ $(L_2)$, a distância Minkowski torna-se a tradicional distância euclidiana, amplamente utilizada para distância entre vetores.
-%TODO Por que é utilizada a distância euclidiana? Por que a Minkowski é a mais utilizada para similaridade? É pertinente colocar L2?
+O valor do expoente $p$ depende da base de dados utilizada.
+
+\subsection{DISTÂNCIA CANBERRA}
+A distância Minkowski nem sempre é a melhor opção de métrica. A diferença da distância em cada dimensão é elevada
+a uma potência $p$ geralmente $\geq 1$  coloca uma enorme ênfase para os casos onde a distância dimensional é grande \cite{Kokare2007}.
+Uma alternativa é a distância Canberra
+\begin{mydef}
+ \label{def:canb}
+ Sejam $s_1 = \{s_{11},s_{12},...,s_{1n}\}$ e $s_2 = \{s_{21},s_{22},...,s_{2n}\}$ dois vetores de dimensionalidade $n$ pertencentes ao conjunto de
+  elementos $\mathbb{S}$, a distância Canberra entre esses dois elementos é dada por:
+  \begin{equation}
+   d(s_1,s_2) = \sum_{i=1}^{n}\frac{|s_{1i} - s_{2i}|}{|s_{1i}| + |s_{2i}|}
+  \end{equation}
+\end{mydef}
+
 
 \section{ESTRUTURAS DE INDEXAÇÃO}
 \label{sec:index}
-%TODO É necessário conceituar como é feito o acesso ao disco? Carregamento de dados? Bucket?
+
 Dados complexos costumam apresentar tamanho físico muito elevado quando comparados com dados numéricos ou pequenas cadeias de caracteres, que são os tipos de dados
 mais comuns em bancos de dados tradicionais. Para responder consultas que envolvam dados complexos, são necessários mais acessos a disco em relação a uma consulta
-que envolva tipos de dados mais simples, como os previamente mencionados. Estes acessos são custosos e precisam ser reduzidos para um melhor desempenho do banco.\par %TODO Trocar custosos por outra palavra? 
+que envolva tipos de dados mais simples, como os previamente mencionados. Estes acessos são custosos e precisam ser reduzidos para um melhor desempenho do banco.\par 
 
 Uma maneira de tornar o acesso a disco mais eficiente é evitar movimentar grandes porções do banco de dados do disco para a memória, fazendo o uso de índices dentro do banco de dados. 
 Um índice em um SGBDR funciona de maneira semelhante a um índice de um livro. Para procurar um tópico específico, é possível consultar o índice no fim do livro e descobrir qual o número da página
 correspondente ao tópico, contornando a necessidade da leitura sequencial do livro até o tópico procurado. Os índices são armazenados em ordem e apresentam um tamanho
 muito menor do que um capítulo do livro, reduzindo o esforço necessário para a sua consulta \cite{Silberschatz2011}.\par
-%TODO expandir
+
+Mas índices também podem ser empregados para uso em memória RAM. Enquanto as estruturas de indexação orientadas a disco são armazenadas em disco e apresentam
+um custo elevado para serem acessadas, índices orientados a memória estão contidos na memória RAM, assim não existem acessos
+a disco para serem minimizados. Assim, uma estrutura de indexação em memória busca reduzir o tempo de computação geral enquanto usa
+o mínimo de memória possível. Estas estruturas armazenam ponteiros para as tuplas, que são menos custosos de serem manipulados do que as tuplas \cite{Lehman1986}.\par
+
+Dentre as estruturas de indexação em disco, destacam-se a $B^{+}\-Tree$ e índices bitmap. Para indexação em memória,
+podem ser utilizadas estruturas como AVL Trees, B-Trees e arrays para preservar a ordenação natural dos dados, enquanto estruturas de hashing
+(Chained Bucket Hashing, Linear Hashing e Extendible Hashing) aleatorizam os dados dentro do índice.
 
 \section{EXTRATORES DE CARACTERÍSTICAS}
 \label{sec:extcarac}
@@ -85,15 +118,11 @@ diferentes podem apresentar o mesmo histograma de cores.\par
 
 Para a análise de textura, o objetivo e conseguir distinguir regiões que apresentam cores similares (como folhagem e grama), analisando o padrão
 de variação dessas cores. A técnica mais utilizada analisa conjunto de pares de pixels da imagem em tons de cinza e monta estruturas com informações características.
-A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência".\par %TODO Definir matriz de co-ocorrência. Principal importância da análise de textura?
-
+A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência".\par
+%TODO Textura identifica padrões - muito usada em ambiente de imagens médicas (mesma categoria)
 Diversas medidas que podem ser extraídas destas matrizes de co-ocorrência estão presentes no trabalho de \cite{Haralick1973}. Os extratores de características das imagens utilizados 
 neste trabalho são do framework Arboretum, desenvolvido pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos.
 
 
+%TODO survey (estado da arte)
 
-
-
-%TODO % Para entender e ajustar os métodos de consultas por similaridade para diferentes tamanhos e tipos de conjuntos de dados, além de comparar diversos métodos, é importante uma análise teórica dos diferentes
-% métodos de acesso e técnicas de estimativa do custo computacional \cite{POLA2010}. O cálculo do custo das operações realizadas será feito utilizando operações com B-trees, as quais o banco fornece suporte
-% ao modelo de custo.

@@ -1,11 +1,6 @@
 % INTRODUÇÃO-------------------------------------------------------------------
 
-%Coisas para perguntar: Seção sobre métricas;pessoa e tempo verbal de escrita;estado da arte;Cap de conceitos poderia ser o cap de Revisao de Literatura;
-%TODO Capítulo de conceitos! (estado da arte)(extratores de características)(espaços métricos)(funções de distância)(estruturas de indexação)
-%TODO Capítulo técnica omni
-%TODO Retirar estado da arte da intro --> colocar em conceitos
-%TODO Melhorar introdução Omni
-
+%TODO Adicionar estado da arte em relação a OMNI
 \chapter{INTRODUÇÃO}
 \label{chap:introducao}
 
@@ -23,8 +18,8 @@ Quando tratados por um Sistema Gerenciador de Banco de Dados Relacional (SGBDR),
 Esse fato limita muito as comparações entre dados complexos inseridos em um SGBDR, ocasionando um grande problema no contexto de base de dados, uma vez que os principais sistemas de gerenciamento
 de base de dados são relacionais \cite{DBE2017}. Com isso, tornou-se necessária a concepção de novos tipos de comparadores, como buscas por similaridade.\par 
 
-Estas consultas por similaridade se aplicam de maneira geral a muitos dos tipos de dados complexos \cite{Barioni2009}. Embora equiparar duas imagens médicas (como tomografias de pacientes distintos) 
-raramente produza um resultado diferente de falso, procurar por imagens semelhantes à original faz mais sentido e retorna resultados mais relevantes.
+Estas consultas por similaridade se aplicam de maneira geral a muitos dos tipos de dados complexos \cite{Barioni2009}. Exemplos na área médica são encontrados nos trabalhos de 
+\cite{Marchiori2001}, \cite{Bugatti2014} e \cite{Lehmann1999}. Também é possível encontrar trabalhos no campo de reconhecimento facial \cite{Gutta1997} e sistemas de identificação por biometria \cite{Choras2007}.
 
 \section{TIPOS DE CONSULTAS}
 \label{sec:tiposconsultas}
@@ -125,7 +120,7 @@ O principal foco deste trabalho é a construção de um sistema de consultas por
 \end{itemize}
 
 
-\section{ORGANIZAÇÃO DO TRABALHO} %TODO Melhorar isso
+\section{ORGANIZAÇÃO DO TRABALHO}
 \label{sec:organizacaoTrabalho}
 
 A estrutura deste trabalho apresenta mais detalhes sobre os tipos de consulta por similaridade utilizados, assim como os seus algoritmos computacionais. Posteriormente, explana os conceitos e técnicas da família Omni utilizada para
