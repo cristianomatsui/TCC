@@ -29,7 +29,7 @@ servirem de marco para o cálculo das coordenadas Omni de cada elemento presente
 \end {mydef}
 
 Para distinguir a distância $d(f_k, s_i)$ como uma coordenada, é utilizada a notação $df_k(s_i) = d(f_k, s_i)$.\par
-									%TODO Armazenadas aonde?
+									%TODO Armazenada em uma tabela do banco, indexado por uma B-Tree
 Quando um novo objeto é inserido na base de dados, as suas coordenadas Omni são calculadas e armazenadas. Em uma pesquisa por
 similaridade, estas coordenadas são utilizadas para podar o número de cálculos de distância, como ilustrado pela figura \ref{fig:rqomni1}.\par
 
@@ -63,10 +63,10 @@ Uma mbOr pode ser reduzida ainda mais com o uso de múltiplos focos, como ilustr
 \fonte{Autoria Própria}
 \label{fig:rqomni2}
 \end{figure}
-
+								%TODO Arrumar; D + 1
 Considerando a família Minkowski de distâncias (métricas $L_p$), um número de focos correspondente ao dobro da
 dimensão intrínseca da base de dados seria o suficiente para maximizar a performance da técnica Omni. O uso de mais focos do que o dobro
-da dimensâo intrínseca do banco traria pouca ou nenhuma redução à mbOr.
+da dimensão intrínseca do banco traria pouca ou nenhuma redução à mbOr.
 
 \section{ESCOLHA DOS FOCOS}
 
@@ -104,4 +104,5 @@ necessários para a determinação das coordenadas Omni de cada objeto. Isso mos
 coordenadas Omni da base de dados. Outro fato importante é o da base de focos Omni ser invariável a operações de inserção
 ou remoção na base.
 
-%TODO Omni-Seq? OmniB-Tree? OmniR-Tree? Dimensão intrínseca?
+%TODO Omni-Seq? OmniB-Tree? OmniR-Tree?
+%TODO Citar as outras estruturas, expandir a OmniB-Forest
