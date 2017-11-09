@@ -3,7 +3,7 @@
 \label{chap:omni}
 
 Neste capítulo será explanada a técnica Omni, mencionada previamente nos capítulos \ref{chap:introducao} e \ref{chap:conceitos}.
-A técnica Omni, sua concepção, construção e uso é retirada do trabalho de \cite{Traina2001}.
+A técnica Omni, sua concepção, construção e uso é retirada do trabalho de \cite{Traina2001} e \cite{Traina2007}.
 %TODO Melhorar e expandir
 
 \section{CONCEITOS E DEFINIÇÕES OMNI}
@@ -63,13 +63,13 @@ Uma mbOr pode ser reduzida ainda mais com o uso de múltiplos focos, como ilustr
 \fonte{Autoria Própria}
 \label{fig:rqomni2}
 \end{figure}
-								%TODO Arrumar; D + 1
-Considerando a família Minkowski de distâncias (métricas $L_p$), um número de focos correspondente ao dobro da
-dimensão intrínseca da base de dados seria o suficiente para maximizar a performance da técnica Omni. O uso de mais focos do que o dobro
-da dimensão intrínseca do banco traria pouca ou nenhuma redução à mbOr.
+								
+Considerando a família Minkowski de distâncias (métricas $L_p$), um número de focos correspondente ao valor da
+dimensão intrínseca da base de dados acrescido de um ($D+1$) seria o suficiente para maximizar a performance da técnica Omni. O uso de mais focos do que o 
+necessário traria pouca ou nenhuma redução à mbOr.
 
 \section{ESCOLHA DOS FOCOS}
-
+\label{sec:escoco}
 Para a escolha dos focos Omni, o elemento candidato a foco deve pertencer a base de dados. Isso se deve ao fato de que algumas vezes
 é impossível sintetizar um objeto de uma base de dados, como uma impressão digital. O algoritmo utilizado para o encontro dos focos
 é o algoritmo HF. Esse algoritmo procura aleatoriamente um elemento $s_1$, encontra o elemento $f_1$ mais distante daquele e o seleciona como
@@ -104,5 +104,14 @@ necessários para a determinação das coordenadas Omni de cada objeto. Isso mos
 coordenadas Omni da base de dados. Outro fato importante é o da base de focos Omni ser invariável a operações de inserção
 ou remoção na base.
 
-%TODO Omni-Seq? OmniB-Tree? OmniR-Tree?
+\section{INDEXAÇÃO DAS COORDENADAS OMNI}
+\label{sec:indexomni}
+
+Objetos em um espaço métrico não são ordenáveis, portanto métodos de acesso baseados na propriedade de ordenação total
+como B-Trees não podem ser utilizados diretamente para a sua indexação. No entanto, as distâncias $df_k(s_i)$ de cada foco
+$f$ para a base de objetos pode ser ordenada e indexada por estruturas B-Tree. Assim, é possível armazenar as coordenadas Omni
+em um conjunto de $h$ B-Trees, sendo $h$ o número de focos da base. Cada nó da $k-\'esima$ B-Tree é composto pela distância $df_k(s_i)$
+e o identificador interno do objeto /textit{IOid}($s_i$). Este conjunto de B-Trees é chamado de OmniB-Forest, e fornece 
+um suporte efetivo para bases de dados imersas em um espaço métrico, utilizando recursos nativos a SGBDRs.
+
 %TODO Citar as outras estruturas, expandir a OmniB-Forest

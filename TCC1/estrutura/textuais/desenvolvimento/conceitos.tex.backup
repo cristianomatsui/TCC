@@ -28,7 +28,7 @@ de dimensões, é necessário o conceito de bola, empregado em espaços métrico
  \label{def:bola}
  Seja <$\mathbb{S}$, $d$> um espaço métrico. O conjunto
  \begin{equation}
-  S(s_0,r) = {x \in \mathbb{S} : d(s_0, x) \leq r},	onde r > 0 e s_0 \in \mathbb{S},
+  S(s_0,r) = {x \in \mathbb{S} : d(s_0, x) \leq r},	onde\ r > 0\ e\ s_0 \in \mathbb{S},
  \end{equation}
   é chamado de bola fechada de raio $r$ e centro em $s_0$. 
 \end{mydef}
@@ -65,7 +65,8 @@ pois é independete da origem do espaço do conjunto de dados, e tem como result
 		d(s_1,s_2) = \sqrt[p]{\sum_{i=1}^{n}|s_{1i} - s_{2i}|^p}
 \end{equation}
 \end{mydef}
-O valor do expoente $p$ depende da base de dados utilizada.
+%O valor do expoente $p$ depende da base de dados utilizada.
+%TODO L1 L2 e Linf; figura
 
 \subsection{DISTÂNCIA CANBERRA}
 A distância Minkowski nem sempre é a melhor opção de métrica. A diferença da distância em cada dimensão é elevada
@@ -97,8 +98,8 @@ Mas índices também podem ser empregados para uso em memória RAM. Enquanto as 
 um custo elevado para serem acessadas, índices orientados a memória estão contidos na memória RAM, assim não existem acessos
 a disco para serem minimizados. Assim, uma estrutura de indexação em memória busca reduzir o tempo de computação geral enquanto usa
 o mínimo de memória possível. Estas estruturas armazenam ponteiros para as tuplas, que são menos custosos de serem manipulados do que as tuplas \cite{Lehman1986}.\par
-
-Dentre as estruturas de indexação em disco, destacam-se a $B^{+}\-Tree$ e índices bitmap. Para indexação em memória,
+					    %TODO Melhorar
+Dentre as estruturas de indexação em disco para dados tradicionais, destacam-se a $B^{+}\ -Tree$ e índices bitmap. Para indexação em memória,
 podem ser utilizadas estruturas como AVL Trees, B-Trees e arrays para preservar a ordenação natural dos dados, enquanto estruturas de hashing
 (Chained Bucket Hashing, Linear Hashing e Extendible Hashing) aleatorizam os dados dentro do índice.
 
@@ -118,11 +119,10 @@ diferentes podem apresentar o mesmo histograma de cores.\par
 
 Para a análise de textura, o objetivo e conseguir distinguir regiões que apresentam cores similares (como folhagem e grama), analisando o padrão
 de variação dessas cores. A técnica mais utilizada analisa conjunto de pares de pixels da imagem em tons de cinza e monta estruturas com informações características.
-A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência".\par
-%TODO Textura identifica padrões - muito usada em ambiente de imagens médicas (mesma categoria)
+A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência", e a sua utilização é a identificação de padrões
+em uma imagem, sendo considerada crucial para pesquisas por similaridade em imagens médicas \cite{Glatard2004}.\par
+												    %TODO Expandir extrator Haralick
 Diversas medidas que podem ser extraídas destas matrizes de co-ocorrência estão presentes no trabalho de \cite{Haralick1973}. Os extratores de características das imagens utilizados 
 neste trabalho são do framework Arboretum, desenvolvido pelo Grupo de Bases de Dados e Imagens (GBDI) da Universidade de São Paulo - campus São Carlos.
 
-
-%TODO survey (estado da arte)
 
