@@ -111,7 +111,9 @@ Objetos em um espaço métrico não são ordenáveis, portanto métodos de acess
 como B-Trees não podem ser utilizados diretamente para a sua indexação. No entanto, as distâncias $df_k(s_i)$ de cada foco
 $f$ para a base de objetos pode ser ordenada e indexada por estruturas B-Tree. Assim, é possível armazenar as coordenadas Omni
 em um conjunto de $h$ B-Trees, sendo $h$ o número de focos da base. Cada nó da $k-\'esima$ B-Tree é composto pela distância $df_k(s_i)$
-e o identificador interno do objeto /textit{IOid}($s_i$). Este conjunto de B-Trees é chamado de OmniB-Forest, e fornece 
+e o identificador interno do objeto \textit{IOid}($s_i$). Este conjunto de B-Trees é chamado de OmniB-Forest, e fornece 
 um suporte efetivo para bases de dados imersas em um espaço métrico, utilizando recursos nativos a SGBDRs.
+
+%TODO exemplo com uma mini base de dados, coordenadas, distâncias, focos
 
 %TODO Citar as outras estruturas, expandir a OmniB-Forest

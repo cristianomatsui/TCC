@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  9 NOV 2017 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  9 NOV 2017 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,9 +1180,7 @@ LaTeX Warning: Label `eq:knnq' multiply defined.
 
 ) (./estrutura/textuais/desenvolvimento/conceitos.aux)
 (./estrutura/textuais/desenvolvimento/OMNI.aux)
-(./estrutura/textuais/desenvolvimento/resultados.aux)
-(./estrutura/textuais/conclusao.aux) (./estrutura/pos-textuais/referencias.aux)
-)
+(./estrutura/pos-textuais/referencias.aux))
 \openout1 = `TCC1_Matsui.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -1200,7 +1198,8 @@ LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Try loading font information for T1+aess on input line 34.
- (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 \AtBeginShipoutBox=\box42
@@ -1537,7 +1536,7 @@ erted-to.pdf dados/figuras/rqu.eps>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rqu-eps-converted-to.pdf, id=177, 157.58875pt x 147.55125pt>
+<dados/figuras/rqu-eps-converted-to.pdf, id=169, 157.58875pt x 147.55125pt>
 File: dados/figuras/rqu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rqu-eps-converted-to.pdf>
@@ -1555,7 +1554,7 @@ verted-to.pdf dados/figuras/knnq.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/knnq-eps-converted-to.pdf, id=184, 154.5775pt x 135.50626pt>
+<dados/figuras/knnq-eps-converted-to.pdf, id=176, 154.5775pt x 135.50626pt>
 File: dados/figuras/knnq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/knnq-eps-converted-to.pdf>
@@ -1583,7 +1582,7 @@ s-converted-to.pdf dados/figuras/rg_omni_1.eps>
 (epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_omni_1-eps-converted-to.pdf, id=212, 292.09125pt x 289.08pt>
+<dados/figuras/rg_omni_1-eps-converted-to.pdf, id=204, 292.09125pt x 289.08pt>
 File: dados/figuras/rg_omni_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_omni_1-eps-converted-to.pdf>
@@ -1629,7 +1628,7 @@ s-converted-to.pdf dados/figuras/desig_tri.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/desig_tri-eps-converted-to.pdf, id=260, 521.95pt x 155.58125pt>
+<dados/figuras/desig_tri-eps-converted-to.pdf, id=252, 521.95pt x 155.58125pt>
 File: dados/figuras/desig_tri-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/desig_tri-eps-converted-to.pdf>
@@ -1667,7 +1666,7 @@ s-converted-to.pdf dados/figuras/rg_omni_2.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_omni_2-eps-converted-to.pdf, id=334, 378.41376pt x 315.1775pt
+<dados/figuras/rg_omni_2-eps-converted-to.pdf, id=326, 378.41376pt x 315.1775pt
 >
 File: dados/figuras/rg_omni_2-eps-converted-to.pdf Graphic file (type pdf)
  <use dados/figuras/rg_omni_2-eps-converted-to.pdf>
@@ -1757,47 +1756,32 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 15914 strings out of 494929
- 238031 string characters out of 6180142
- 422336 words of memory out of 5000000
- 18256 multiletter control sequences out of 15000+600000
+ 15898 strings out of 494929
+ 237657 string characters out of 6180142
+ 419574 words of memory out of 5000000
+ 18251 multiletter control sequences out of 15000+600000
  63771 words of font info for 391 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  45i,17n,37p,652b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{page.16} has been referenced but does not exist, re
-placed by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on TCC1_Matsui.pdf (28 pages, 487851 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on TCC1_Matsui.pdf (28 pages, 487228 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 502 compressed objects within 6 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
  52002 words of extra memory for PDF output out of 61914 (max. 10000000)
 
