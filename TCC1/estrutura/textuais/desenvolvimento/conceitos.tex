@@ -65,13 +65,22 @@ pois é independete da origem do espaço do conjunto de dados, e tem como result
 		d(s_1,s_2) = \sqrt[p]{\sum_{i=1}^{n}|s_{1i} - s_{2i}|^p}
 \end{equation}
 \end{mydef}
-%O valor do expoente $p$ depende da base de dados utilizada.
-%TODO L1 L2 e Linf; figura
+
+A figura \ref{fig:minko} ilustra as diferentes formas geométricas geradas de acordo com a métrica $L_p$ utilizada. Para estes determinados valores de $p$, a distância Minkowski recebe nomes
+próprios (\textit{distância City-Block} para $p = 1$, \textit{distância Euclidiana} para $p = 2$ e \textit{distância Chebyshev} para $p = \infty$).
+
+\begin{figure}[H]
+\centering
+\caption{Círculos unitários em espaços bi-dimensionais para diferentes valores de \textit{p}}
+\includegraphics[width=.7\textwidth]{dados/figuras/minko.eps}
+\fonte{Autoria Própria}
+\label{fig:minko}
+\end{figure}
 
 \subsection{DISTÂNCIA CANBERRA}
 A distância Minkowski nem sempre é a melhor opção de métrica. A diferença da distância em cada dimensão é elevada
 a uma potência $p$ geralmente $\geq 1$  coloca uma enorme ênfase para os casos onde a distância dimensional é grande \cite{Kokare2007}.
-Uma alternativa é a distância Canberra
+Uma alternativa é a distância Canberra.
 \begin{mydef}
  \label{def:canb}
  Sejam $s_1 = \{s_{11},s_{12},...,s_{1n}\}$ e $s_2 = \{s_{21},s_{22},...,s_{2n}\}$ dois vetores de dimensionalidade $n$ pertencentes ao conjunto de
@@ -98,7 +107,7 @@ Mas índices também podem ser empregados para uso em memória RAM. Enquanto as 
 um custo elevado para serem acessadas, índices orientados a memória estão contidos na memória RAM, assim não existem acessos
 a disco para serem minimizados. Assim, uma estrutura de indexação em memória busca reduzir o tempo de computação geral enquanto usa
 o mínimo de memória possível. Estas estruturas armazenam ponteiros para as tuplas, que são menos custosos de serem manipulados do que as tuplas \cite{Lehman1986}.\par
-					    %TODO Melhorar
+				
 Dentre as estruturas de indexação em disco para dados tradicionais, destacam-se a $B^{+}\ -Tree$ e índices bitmap. Para indexação em memória,
 podem ser utilizadas estruturas como AVL Trees, B-Trees e arrays para preservar a ordenação natural dos dados, enquanto estruturas de hashing
 (Chained Bucket Hashing, Linear Hashing e Extendible Hashing) aleatorizam os dados dentro do índice.
@@ -121,7 +130,7 @@ Para a análise de textura, o objetivo e conseguir distinguir regiões que apres
 de variação dessas cores. A técnica mais utilizada analisa conjunto de pares de pixels da imagem em tons de cinza e monta estruturas com informações características.
 A principal estrutura utilizada nesta técnica é a "Matriz de co-ocorrência", e a sua utilização é a identificação de padrões
 em uma imagem, sendo considerada crucial para pesquisas por similaridade em imagens médicas \cite{Glatard2004}.\par
-												    %TODO Expandir extrator Haralick
+												
 Diversas medidas que podem ser extraídas pela análise de textura estão presentes no trabalho de \cite{Haralick1973}. Algumas das métricas extraídas
 da análise das matrizes de co-ocorrência são  relacionadas com características específicas da textura da imagem como homogeneidade, contraste
 e a presença de estruturas organizadas dentro da imagem. Outras métricas caracterizam a complexidade e a natureza das transições dos tons de cinza presentes
