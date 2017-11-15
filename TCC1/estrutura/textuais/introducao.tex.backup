@@ -1,11 +1,6 @@
 % INTRODUÇÃO-------------------------------------------------------------------
 
-%Coisas para perguntar: Seção sobre métricas;pessoa e tempo verbal de escrita;estado da arte;Cap de conceitos poderia ser o cap de Revisao de Literatura;
-%TODO Capítulo de conceitos! (estado da arte)(extratores de características)(espaços métricos)(funções de distância)(estruturas de indexação)
-%TODO Capítulo técnica omni
-%TODO Retirar estado da arte da intro --> colocar em conceitos
-%TODO Melhorar introdução Omni
-
+%TODO Adicionar estado da arte em relação a OMNI
 \chapter{INTRODUÇÃO}
 \label{chap:introducao}
 
@@ -23,8 +18,8 @@ Quando tratados por um Sistema Gerenciador de Banco de Dados Relacional (SGBDR),
 Esse fato limita muito as comparações entre dados complexos inseridos em um SGBDR, ocasionando um grande problema no contexto de base de dados, uma vez que os principais sistemas de gerenciamento
 de base de dados são relacionais \cite{DBE2017}. Com isso, tornou-se necessária a concepção de novos tipos de comparadores, como buscas por similaridade.\par 
 
-Estas consultas por similaridade se aplicam de maneira geral a muitos dos tipos de dados complexos \cite{Barioni2009}. Embora equiparar duas imagens médicas (como tomografias de pacientes distintos) 
-raramente produza um resultado diferente de falso, procurar por imagens semelhantes à original faz mais sentido e retorna resultados mais relevantes.
+Estas consultas por similaridade se aplicam de maneira geral a muitos dos tipos de dados complexos \cite{Barioni2009}. Exemplos na área médica são encontrados nos trabalhos de 
+\cite{Marchiori2001}, \cite{Bugatti2014} e \cite{Lehmann1999}. Também é possível encontrar trabalhos no campo de reconhecimento facial \cite{Gutta1997} e sistemas de identificação por biometria \cite{Choras2007}.
 
 \section{TIPOS DE CONSULTAS}
 \label{sec:tiposconsultas}
@@ -104,7 +99,7 @@ serão descartados. Com isso, ocorre uma grande redução do número de cálculo
 
 A figura \ref{fig:rqomni1} ilustra a poda no número de cálculos. Apenas os elementos na área sombreada terão as suas distâncias em relação ao centro da consulta calculadas, pois estão no
 conjunto de elementos que não foram descartados utilizando a desigualdade triangular com as distâncias previamente calculadas em relação ao foco. O armazenamento das distâncias de cada foco ${f_i}$ para cada outro elemento $s_k$ será feito 
-utilizando uma estrutura de indexação que implementa os conceitos da técnica Omni com a estrutura da B$^+$-tree, originando uma nova estrutura chamada de Omni-Btree. As distâncias serão armazenadas em $l$ Omni-Btrees, sendo $l$ o número de focos
+utilizando uma estrutura de indexação que implementa os conceitos da técnica Omni com a estrutura da B-tree, originando uma nova estrutura chamada de Omni-Btree. As distâncias serão armazenadas em $l$ Omni-Btrees, sendo $l$ o número de focos
 criados para a base de dados \cite{Traina2001}.
 
 \section{OBJETIVOS}
@@ -119,13 +114,13 @@ O principal foco deste trabalho é a construção de um sistema de consultas por
 \begin{itemize}
  \item Modelar o banco de dados para atender a problemática apresentada;
  \item Aplicar os extratores de características das imagens utilizadas;
- \item Povoar o banco de dados com as imagens e os valores de suas características; %inserir a base de imagens
+ \item Inserir no banco de dados as imagens e os valores de suas características;
  \item Criar a estrutura Omni necessária para a filtragem dos cálculos;
  \item Analisar e comparar os resultados obtidos.
 \end{itemize}
 
 
-\section{ORGANIZAÇÃO DO TRABALHO} %TODO Melhorar isso
+\section{ORGANIZAÇÃO DO TRABALHO}
 \label{sec:organizacaoTrabalho}
 
 A estrutura deste trabalho apresenta mais detalhes sobre os tipos de consulta por similaridade utilizados, assim como os seus algoritmos computacionais. Posteriormente, explana os conceitos e técnicas da família Omni utilizada para

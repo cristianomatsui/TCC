@@ -51,7 +51,7 @@ a menor quantidade possível de focos.
 
 A ideia gráfica de uma mbOr foi previamente apresentada na figura \ref{fig:rqomni1} para o caso de uma consulta utilizando um único foco.
 É possível ver que a mbOr sempre inclui todos os elementos do conjunto-resposta, mas pode incluir elementos que não são pertinentes
-ao conjunto-resposta (alarmes falsos). Embora seja necessária mais uma etapa de cálculo de distâncias, o número de cálculos é
+ao conjunto-resposta (alarmes falsos). Embora seja necessária mais uma etapa de cálculo de distâncias (etapa de refinamento), o número de cálculos é
 reduzido drasticamente com o uso da mbOr.\par
 
 Uma mbOr pode ser reduzida ainda mais com o uso de múltiplos focos, como ilustra a figura \ref{fig:rqomni2}.
@@ -111,6 +111,48 @@ Objetos em um espaço métrico não são ordenáveis, portanto métodos de acess
 como B-Trees não podem ser utilizados diretamente para a sua indexação. No entanto, as distâncias $df_k(s_i)$ de cada foco
 $f$ para a base de objetos pode ser ordenada e indexada por estruturas B-Tree. Assim, é possível armazenar as coordenadas Omni
 em um conjunto de $h$ B-Trees, sendo $h$ o número de focos da base. Cada nó da $k-\'esima$ B-Tree é composto pela distância $df_k(s_i)$
-e o identificador interno do objeto /textit{IOid}($s_i$). Este conjunto de B-Trees é chamado de OmniB-Forest, e fornece 
-um suporte efetivo para bases de dados imersas em um espaço métrico, utilizando recursos nativos a SGBDRs.
+e o identificador interno do objeto \textit{IOid}($s_i$). Este conjunto de B-Trees é chamado de OmniB-Forest, e fornece 
+um suporte efetivo para bases de dados imersas em um espaço métrico, utilizando recursos nativos a SGBDRs.\par
+
+Um exemplo do uso das coordenadas Omni para a filtragem inicial do cálculo de distância dos objetos da base em relação ao elemento central da consulta no caso de uma consulta por
+abrangência pode ser visto abaixo.
+
+\begin{figure}[H]
+\centering
+\caption{Base de elementos de exemplo para uma consulta por abrangência utilizando um foco}
+\includegraphics[width=.5\textwidth]{dados/figuras/rg_ex1.eps}
+\fonte{Autoria Própria}
+\label{fig:rgex1}
+\end{figure}
+
+A figura \ref{fig:btree} representa a OmniB-Tree utilizada para armazenar as coordenadas Omni dos objetos da base em relação ao foco $f_1$. Nela foram armazenadas
+a distância do objeto $s_i$ até o foco, e um identificador do objeto.
+
+\begin{figure}[H]
+\centering
+\caption{OmniB-Tree utilizada para o exemplo}
+\includegraphics[width=.9\textwidth]{dados/figuras/btree.eps}
+\fonte{Autoria Própria}
+\label{fig:btree}
+\end{figure}
+
+Analisando geométricamente, é possível perceber que um elemento candidato a estar presente no conjunto de resposta deve ter a sua distância em relação ao foco maior ou igual a distância do elemento central de consulta menos o valor do
+raio da consulta, formando assim um limite inferior. Analogamente, o limite superior pode ser definido utilizando a distância do elemento central da consulta até o foco mais o valor do raio da consulta.
+
+\begin{equation} \label{eq:omnirq}
+|d(f_k, s_q) - \xi| \leq d(f_k, s_i) \leq |d(f_k, s_q) + \xi|
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\caption{Análise geométrica dos limites dos elementos candidatos}
+\includegraphics[width=.5\textwidth]{dados/figuras/rg_ex2.eps}
+\fonte{Autoria Própria}
+\label{fig:rgex2}
+\end{figure}
+
+Sabendo que a distância $df_1(s_q)$ é de 23 unidades e o raio da consulta por abrangênia é de 8 unidades, utilizando a equação \ref{eq:omnirq} é possível determinar que a distância $d(f_k, s_i)$ do elemento candidato precisa ser $\geq 15$ e $\leq 31$.
+Utilizando a OmniB-Tree criada para o foco $f_1$, é possível encontrar os elementos candidatos que 
+%TODO exemplo com uma mini base de dados, coordenadas, distâncias, focos
+
 %TODO Citar as outras estruturas, expandir a OmniB-Forest

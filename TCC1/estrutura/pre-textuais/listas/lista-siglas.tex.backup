@@ -1,0 +1,21 @@
+% LISTA DE ABREVIATURAS E SIGLAS----------------------------------------------------------
+
+\begin{siglas}
+    \item[SGBDR] Sistema Gerenciador de Banco de Dados Relacional
+    \item[SQL] \textit{Structured Query Language}
+    \item[\textit{Rq}] Consulta por abrangência
+    \item[\textit{kNNq}] Consulta aos k-vizinhos mais próximos
+    \item[$s_q$] Elemento central da consulta
+    \item[$\xi$] Raio da consulta por abrangência
+    \item [$\mathbb{S}$] Domínio de dados
+    \item [$S$] Conjunto de elementos pertencentes ao domínio $\mathbb{S}$
+    \item [\textit{k}] Número de vizinhos desejados em uma \textit{kNNq}
+    \item [$s_i$] Elemento pertencente ao conjunto $S$
+    \item [$\forall$] Para todo
+    \item [$d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$] Métrica ou função de distância
+    \item[$M$<$S$,$d$>] Espaço métrico
+    \item 
+\end{siglas}
+
+% OBSERVAÇÕES-----------------------------------------------------------------------------
+% Altere a lista acima para definir os acrônimos e siglas utilizados neste trabalho

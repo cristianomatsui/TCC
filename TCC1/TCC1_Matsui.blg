@@ -5,8 +5,6 @@ A level-1 auxiliary file: estrutura/pre-textuais/epigrafe.aux
 A level-1 auxiliary file: estrutura/pre-textuais/resumo.aux
 A level-1 auxiliary file: estrutura/pre-textuais/abstract.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux
-A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-quadros.aux
-A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-tabelas.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-siglas.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-simbolos.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux
@@ -38,7 +36,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 27 entries,
             6714 wiz_defined-function locations,
-            1399 strings with 14824 characters,
+            1397 strings with 14711 characters,
 and the built_in function-call counts, 28049 in all, are:
 = -- 2803
 > -- 767

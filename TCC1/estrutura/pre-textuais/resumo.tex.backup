@@ -10,16 +10,9 @@
 A necessidade de armazenamento de mídias cada vez mais pesadas e complexas é uma tendência que aumentou consideravelmente
 com os avanços da tecnologia e comunicação. Estes dados conhecidos como dados complexos exigem uma complexidade estrutural
 de armazenamento e análise maior do que dados simples como palavras ou números, além de requerirem operadores especiais
-de consultas, como a consulta por abrangência (Rq) e a consulta aos k-vizinhos mais próximos (kNNq). Dentre o conjunto de dados complexos
-destacam-se as imagens, que precisam ser comparadas de acordo com características extraídas como cor, forma ou textura. Esta
-comparação é realizada na forma de um cálculo de distância entre o valor da característica da imagem central da consulta em relação
-a todas as outras imagens da base de dados. O tempo de consulta pode aumentar significativamente com o aumento da base de dados. 
-Para contornar o problema da maldição da cardinalidade, este trabalho tem como proposta aplicar uma técnica (Omni) utilizada para promover 
-uma etapa de filtragem do número de imagens a terem as suas distâncias calculadas, evitando a comparação com toda a base de dados.
-Após a modelagem e construção de um banco de dados que suporte esta técnica, será implementado um sistema de recuperação de imagens
-(CBIR).
+de consultas, como a \textit{range query} e a \textit{k-nearest neighbors}.
 
-\textbf{Palavras-chave}: Dados Complexos. OMNI. CBIR. Rq. kNNq.
+\textbf{Palavras-chave}: Palavra. Segunda Palavra. Outra palavra.
 
 \end{SingleSpacing}
 \end{resumo}

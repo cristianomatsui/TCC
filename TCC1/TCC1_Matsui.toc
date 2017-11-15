@@ -19,5 +19,5 @@
 \contentsline {section}{\numberline {3.2}USO DA BASE DE FOCOS}{11}{section.3.2}
 \contentsline {section}{\numberline {3.3}ESCOLHA DOS FOCOS}{12}{section.3.3}
 \contentsline {section}{\numberline {3.4}INDEXA\IeC {\c C}\IeC {\~A}O DAS COORDENADAS OMNI}{13}{section.3.4}
-\contentsline {chapter}{Refer\^encias}{14}{section*.12}
+\contentsline {chapter}{Refer\^encias}{16}{section*.11}
 \vspace {\cftbeforepartskip }
