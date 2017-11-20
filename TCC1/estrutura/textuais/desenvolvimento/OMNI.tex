@@ -65,7 +65,7 @@ Uma mbOr pode ser reduzida ainda mais com o uso de múltiplos focos, como ilustr
 \end{figure}
 								
 Considerando a família Minkowski de distâncias (métricas $L_p$), um número de focos correspondente ao valor da
-dimensão intrínseca da base de dados acrescido de um ($D+1$) seria o suficiente para maximizar a performance da técnica Omni. O uso de mais focos do que o 
+dimensão intrínseca da base de dados acrescido de um ($\lceil D \rceil +1$) seria o suficiente para maximizar a performance da técnica Omni. O uso de mais focos do que o 
 necessário traria pouca ou nenhuma redução à mbOr.
 
 \section{ESCOLHA DOS FOCOS}
@@ -150,7 +150,21 @@ raio da consulta, formando assim um limite inferior. Analogamente, o limite supe
 \fonte{Autoria Própria}
 \label{fig:rgex2}
 \end{figure}
-
-Sabendo que a distância $df_1(s_q)$ é de 23 unidades e o raio da consulta por abrangênia é de 8 unidades, utilizando a equação \ref{eq:omnirq} é possível determinar que a distância $d(f_k, s_i)$ do elemento candidato precisa ser $\geq 15$ e $\leq 31$.
+A figura \ref{fig:rgex2} ilustra a utilização da propriedade da desigualdade triangular para a etapa de filtragem. Tomando o elemento $s_3$ como referência e a equação da desigualdade triangular apresentada
+na definição \ref{def:espmet}, é possível definir que:
+\begin{equation} \label{eq:omnirq2}
+d_{f_1}(s_3) \leq d_{f_1}(s_q) + d(s_3, s_q)
+\end{equation}
+\begin{equation} \label{eq:omnirq3}
+d(s_3, s_q) \geq |d_{f_1}(s_3) - d_{f_1}(s_q)|
+\end{equation}\par
+Utilizando o conceito de bola apresentado pela definição \ref{def:bola}, se o elemento $s_3$ só pode pertencer a bola de consulta se a distância
+$d(s_3, s_q)$ for menor do que o raio de consulta $\xi$. Com a equação \ref{eq:omnirq3}, é possível definir que o elemento está fora do conjunto
+de elementos candidatos se:
+\begin{equation} \label{eq:rqtri}
+ |d_{f_1}(s_3) - d_{f_1}(s_q)| \geq \xi
+\end{equation}\par
+Sabendo que a distância $df_1(s_q)$ é de 23 unidades e o raio da consulta por abrangência é de 8 unidades, utilizando a equação \ref{eq:omnirq} é possível determinar que a distância $d(f_k, s_i)$ do elemento candidato precisa ser $\geq 15$ e $\leq 31$.
 Utilizando a OmniB-Tree criada para o foco $f_1$, é possível encontrar os elementos candidatos que prosseguirão para a etapa de refinamento, sendo eles: $s_4, s_5, s_6, s_7, s_8, s_9$. É possível notar que estes candidatos estão em conformidade com o que
-foi previsto utilizando uma análise geométrica fornecida pela figura \ref{fig:rgex2}.
+foi previsto utilizando uma análise geométrica fornecida pela figura \ref{fig:rgex2}. Também é possível verificar a validade da equação
+\ref{eq:rqtri}, pois esta fornece o mesmo conjunto de elementos encontrados com a análise geométrica.

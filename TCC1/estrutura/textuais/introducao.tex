@@ -4,9 +4,9 @@
 \chapter{INTRODUÇÃO}
 \label{chap:introducao}
 
-Neste capítulo será apresentado uma contextualização do problema, assim como o estado da arte abordado por este trabalho.
+Neste capítulo será apresentada uma contextualização do problema, assim como o estado da arte abordado por este trabalho.
 Também será introduzido um tipo de consulta não-nativo ao SGBDR, a consulta por similaridade, assim como os tipos de consultas por similaridade
-que serão utilizados neste trabalho como a consulta por abrangência e a consulta por k-vizinhos mais próximos. Finalmente, será apresentado a
+que serão utilizados neste trabalho como a consulta por abrangência e a consulta por k-vizinhos mais próximos. Finalmente, será apresentada a
 organização deste documento.
 
 \section{CONSIDERAÇÕES INICIAIS}
@@ -30,7 +30,7 @@ As consultas por abrangência \textit{Rq($s_q$, $\xi$)} recebem como parâmetro 
 elementos da base que diferem do elemento central da consulta por no máximo a dissimilaridade indicada.\par
 \begin{mydef}
  \label{def:def_rq}
-  Seja $S$ um atributo complexo de um domínio $\mathbb{S}$ sobre o qual a condição de similaridade é expressada, seja $d$ uma
+  Seja $S$ um atributo complexo de um domínio $\mathbb{S}$ ($S \subset \mathbb{S}$) sobre o qual a condição de similaridade é expressada, seja $d$ uma
   função de distância, seja $\xi$ o limiar de dissimilaridade e seja $s_q \in \mathbb{S}$ o elemento central de consulta. 
   A consulta Rq($s_q$ , $\xi$) retorna todos os elementos $s_i \in \mathbb{S}$ que possuem o valor do atributo $S$ distantes
   até um máximo de $\xi$ deste atributo referente ao elemento central da consulta: 
@@ -48,7 +48,7 @@ elementos da base que diferem do elemento central da consulta por no máximo a d
 \end{figure}
 
 A figura \ref{fig:exemplorq} exemplifica este tipo de consulta. Tomando $s_q$ e $\xi$ como parâmetros da consulta, todos os
-elementos contidos pelo raio de abrangência fazem parte do conjunto resposta da consulta. $s_q$ não necessariamente precisa
+elementos contidos pelo raio de abrangência fazem parte do conjunto resposta da consulta. O elemento $s_q$ não necessariamente precisa
 pertencer ao conjunto de dados de pesquisa, devendo apenas pertencer ao mesmo domínio de dados.
 
 
@@ -68,7 +68,8 @@ como resultado o conjunto dos $k$ elementos com a menor dissimilaridade em rela�
 \end{mydef}
 
 A figura \ref{fig:exemploknnq} exemplifica este tipo de operação. Nesta consulta, os parâmetros foram o elemento central da consulta $s_q$ e o número de elementos $k$ a serem
-encontrados igual a 4. Os elementos ligados ao elemento central foram os mais próximos a este, portanto apenas eles fazem parte do conjunto resposta da consulta.
+encontrados igual a 4. Os elementos ligados ao elemento central foram os mais próximos a este, portanto apenas eles fazem parte do conjunto resposta da consulta. Note que o elemento
+central da consulta não precisa pertencer ao conjunto de dados, como é o caso exemplificado.
 \begin{figure}[H]
 \centering
 \includegraphics[width=.3\textwidth]{dados/figuras/knnq.eps}
@@ -77,12 +78,12 @@ encontrados igual a 4. Os elementos ligados ao elemento central foram os mais pr
 \fonte{Autoria Própria}
 \end{figure}
 
-O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a \textit{B-tree}).\par %escopo do trabalho
+O SGBDR não possui suporte nativo a estes tipos de consulta, mas é possível construir estas consultas utilizando ferramentas existentes em um banco de dados relacional (como a estrutura de dados \textit{B-tree}).\par %escopo do trabalho
 
 A solução abordada por esta proposta é a do uso de técnicas Omni, presentes no trabalho de \cite{Traina2001}. Um número calculado de elementos do conjunto de dados são selecionados como "focos", e utilizados para
-podar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. 
+evitar cálculos desnecessários de distâncias, fazendo uso da desigualdade triangular. 
 
-A base da técnica Omni é calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
+A técnica aqui aplicada tem base em calcular previamente as distâncias de todos os elementos para todos os focos selecionados, armazenando estas distâncias no banco. Quando uma consulta por similaridade
 (como uma consulta por abrangência) é realizada, são conhecidas as distâncias entre o elemento central da consulta $s_q$ e o raio de abrangência $\xi$. Considerando um foco ${f_1}$ e utilizando
 a desigualdade triangular, elementos que possuem uma distância entre o foco escolhido menor do que a distância de $s_q$ até o foco menos o valor $\xi$ serão descartados do conjunto de elementos necessários para
 os cálculos de distância com o elemento central. Simetricamente, elementos cuja distância até o foco seja maior do que a distância de $s_q$ até o foco mais o valor do raio de abrangência $\xi$ também
@@ -107,7 +108,7 @@ criados para a base de dados \cite{Traina2001}.
 Os objetivos encontram-se divididos em objetivos gerais, referentes ao resultado obtido com a conclusão deste trabalho e objetivos específicos, ilustrando etapas intermediárias necessárias para alcançar o objetivo geral.
 \subsection{OBJETIVOS GERAIS}
 \label{subsec:objger}
-O principal foco deste trabalho é a construção de um sistema de consultas por similaridade em uma base de imagens utilizando técnicas da família Omni para reduzir o custo computacional das operações de consulta.
+O principal foco deste trabalho é a construção de um sistema de consultas em SGBDR por similaridade em uma base de imagens utilizando técnicas da família Omni para reduzir o custo computacional das operações de consulta.
 
 \subsection{OBJETIVOS ESPECÍFICOS}
 \label{subsec:objesp}

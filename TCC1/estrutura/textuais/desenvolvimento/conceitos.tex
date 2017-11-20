@@ -7,22 +7,23 @@ explanação sobre os extratores de características de imagens que serão utili
 \section{ESPAÇOS MÉTRICOS}
 \label{sec:espmet}
 Uma métrica em um domínio $\mathbb{S}$ é uma função $d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$ que associa a cada par 
-ordenado de elementos ($s_1$, $s_2$) um número real $d$($s_1$,$s_2$) chamado de distância de $s_1$ a $s_2$ \cite{Lima1977}.\par
-Um espaço métrico $M$ é um par <$S$, $d$> onde S é um conjunto de elementos e $d$ é uma métrica
-(ou função de distância). Esta distância $d$($s_1$,$s_2$) pode ser compreendido como uma medida de dissimilaridade entre dois elementos.
+ordenado de elementos ($s_1$, $s_2$) um número real $d$($s_1$,$s_2$) chamado de distância de $s_1$ a $s_2$, e que atenda
+as propriedades definidas no espaço métrico\cite{Lima1977}.\par
+Um espaço métrico $M$ é um par <$S$, $d$> onde $S$ é um conjunto de elementos e $d$ é uma métrica
+(ou função de distância). Esta distância $d$($s_1$,$s_2$) pode ser compreendida como uma medida de dissimilaridade entre dois elementos.
 Quanto menor esta distância entre dois elementos, mais semelhantes eles são.
 \begin{mydef}
  \label{def:espmet}
-  Seja $\mathbb{S}$ um conjunto não-vazio de elementos e $d$($s_1$,$s_2$) uma métrica definida sobre $\mathbb{S}$ $\times$ $\mathbb{S}$.
-   O par <$\mathbb{S}$, $d$> é chamado de espaço métrico desde que $d$ satisfaça as seguintes propriedades:\par
+  Seja $S$ um conjunto não-vazio de elementos e $d$($s_1$,$s_2$) uma métrica definida sobre $\mathbb{S}$ $\times$ $\mathbb{S}$.
+   O par <$S$, $d$> é chamado de espaço métrico desde que $d$ satisfaça as seguintes propriedades:\par
 1. $d$($s_1$,$s_1$) = 0 (identidade);\par
 2. Se $s_1$ $\neq$ $s_2$ ent\~ao $d$($s_1$,$s_2$) > 0 (n\~ao-negatividade);\par
 3. $d$($s_1$,$s_2$) = $d$($s_2$,$s_1$) (simetria);\par
 4. $d$($s_1$,$s_3$) $\leq$ $d$($s_1$,$s_2$) + $d$($s_2$,$s_3$) (desigualdade triangular)\\
 onde $s_1$, $s_2$, $s_3$ $\in$ $\mathbb{S}$.
 \end{mydef}
-O conjunto de dados complexos a ser utilizado geralmente apresenta dimensões elevadas, maiores que 10. Devido a este elevado número
-de dimensões, é necessário o conceito de bola, empregado em espaços métricos n-dimensionais. A seguinte definição é baseada no livro de \cite{Shirali2005}.
+O conjunto de dados complexos a ser utilizado geralmente apresenta dimensões elevadas, mas também podem não ter dimensão fixa. Para a utilização computacional destes conceitos torna-se necessário o conceito de bola,
+empregado em espaços métricos. A seguinte definição é baseada no livro de \cite{Shirali2005}.
 
 \begin{mydef}
  \label{def:bola}
@@ -33,7 +34,7 @@ de dimensões, é necessário o conceito de bola, empregado em espaços métrico
   é chamado de bola fechada de raio $r$ e centro em $s_0$. 
 \end{mydef}
 
-A importância prática do espaço métrico para este trabalho reside fortemente na quarta propriedade apresentada pela Definição \ref{def:espmet}. A desigualdade triangular é fundamentada na geometria euclidiana, 
+A aplicação direta das propriedades do espaço métrico neste trabalho reside fortemente na quarta propriedade apresentada pela Definição \ref{def:espmet}. A desigualdade triangular é fundamentada na geometria euclidiana, 
 onde a soma do comprimento de dois lados de um triângulo não pode ser superior ao comprimento do terceiro lado, como ilustra a figura \ref{fig:destri}.
 
 \begin{figure}[H]
@@ -51,12 +52,12 @@ O emprego da desigualdade triangular neste trabalho será detalhado no capítulo
 Para verificar a similaridade entre dois elementos de um domínio, é utilizada uma função de distância. Esta função recebe como parâmetro um par
 de elementos do conjunto e retorna o valor da dissimilaridade entre eles. Quanto mais próximo de zero, mais similares os elementos são.\par
 
-A importância do uso de uma função de distância para este trabalho é fornecer uma métrica de comparação entre os elementos. Além de
-necessária para a consulta por similaridade, a função de distância também é utilizada para evitar cálculos desnecessários, fornecendo uma métrica
+A importância do uso de uma função de distância para este trabalho é fornecer uma métrica de comparação entre os elementos complexos. Além de
+necessária para a consulta por similaridade, sua propriedade de desigualdade triangular é utilizada para evitar cálculos desnecessários, fornecendo uma métrica
 empregada pela técnica Omni.\par
 \subsection{DISTÂNCIA MINKOWSKI}
-Dentre as funções de distância, será abordada a metrica Minkowski. Esta métrica é a mais utilizada para cálculos de índice de similaridade
-pois é independete da origem do espaço do conjunto de dados, e tem como resultado o valor da dissimilaridade entre dois elementos \cite{Jain1988}.
+Dentre as funções de distância, será abordada a métrica Minkowski. Esta métrica é a mais utilizada para cálculos de índice de similaridade
+pois é independente da origem do espaço do conjunto de dados, e tem como resultado o valor da dissimilaridade entre dois elementos \cite{Jain1988}.
 \begin{mydef}
 \label{def:mink}
   Sejam $s_1 = \{s_{11},s_{12},...,s_{1n}\}$ e $s_2 = \{s_{21},s_{22},...,s_{2n}\}$ dois vetores de dimensionalidade $n$ pertencentes ao conjunto de
@@ -80,7 +81,8 @@ próprios (\textit{distância City-Block} para $p = 1$, \textit{distância Eucli
 \subsection{DISTÂNCIA CANBERRA}
 A distância Minkowski nem sempre é a melhor opção de métrica. A diferença da distância em cada dimensão é elevada
 a uma potência $p$ geralmente $\geq 1$  coloca uma enorme ênfase para os casos onde a distância dimensional é grande \cite{Kokare2007}.
-Uma alternativa é a distância Canberra.
+Uma alternativa é a distância Canberra. Ela apresenta um cálculo menos custoso do que a distância Minkowski, e atribui um peso
+menor para a diferença de distâncias, mas é sensível à origem do espaço de dados.
 \begin{mydef}
  \label{def:canb}
  Sejam $s_1 = \{s_{11},s_{12},...,s_{1n}\}$ e $s_2 = \{s_{21},s_{22},...,s_{2n}\}$ dois vetores de dimensionalidade $n$ pertencentes ao conjunto de
@@ -108,9 +110,9 @@ um custo elevado para serem acessadas, índices orientados a memória estão con
 a disco para serem minimizados. Assim, uma estrutura de indexação em memória busca reduzir o tempo de computação geral enquanto usa
 o mínimo de memória possível. Estas estruturas armazenam ponteiros para as tuplas, que são menos custosos de serem manipulados do que as tuplas \cite{Lehman1986}.\par
 				
-Dentre as estruturas de indexação em disco para dados tradicionais, destacam-se a $B^{+}\ -Tree$ e índices bitmap. Para indexação em memória,
-podem ser utilizadas estruturas como AVL Trees, B-Trees e arrays para preservar a ordenação natural dos dados, enquanto estruturas de hashing
-(Chained Bucket Hashing, Linear Hashing e Extendible Hashing) aleatorizam os dados dentro do índice.
+Dentre as estruturas de indexação em disco para dados tradicionais, destacam-se a B$^{+}$-Tree e índices bitmap. Para indexação em memória,
+podem ser utilizadas estruturas como B-Trees e arrays para preservar a ordenação natural dos dados, enquanto estruturas de hashing
+(\textit{Chained Bucket Hashing, Linear Hashing e Extendible Hashing}) aleatorizam os dados dentro do índice.
 
 \section{EXTRATORES DE CARACTERÍSTICAS}
 \label{sec:extcarac}
