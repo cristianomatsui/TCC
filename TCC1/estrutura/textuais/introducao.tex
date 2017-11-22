@@ -1,6 +1,5 @@
 % INTRODUÇÃO-------------------------------------------------------------------
 
-%TODO Adicionar estado da arte em relação a OMNI
 \chapter{INTRODUÇÃO}
 \label{chap:introducao}
 
@@ -12,7 +11,7 @@ organização deste documento.
 \section{CONSIDERAÇÕES INICIAIS}
 \label{sec:considini}
 
-Nos anos recentes, foi notado um grande aumento no tráfego e armazenamento de diferentes aplicações e dados multimídias, como imagens, áudio, vídeo, impressões digitais, séries temporais,
+Nos anos recentes foi notado um grande aumento no tráfego e armazenamento de diferentes aplicações e dados multimídias, como imagens, áudio, vídeo, impressões digitais, séries temporais,
 sequências de proteínas, etc. Estes tipos de dados, que apresentam muito mais atributos do que simples numerais ou pequenas cadeias de caracteres, são conhecidos como dados complexos \cite{Zighed2008}.\par
 Quando tratados por um Sistema Gerenciador de Banco de Dados Relacional (SGBDR), não suportam comparações com os operadores conhecidos como "big six"\ da linguagem SQL: $=$, $\neq$ , $<$, $>$, $\leq$, $\geq$.
 Esse fato limita muito as comparações entre dados complexos inseridos em um SGBDR, ocasionando um grande problema no contexto de base de dados, uma vez que os principais sistemas de gerenciamento
@@ -41,13 +40,13 @@ elementos da base que diferem do elemento central da consulta por no máximo a d
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.3\textwidth]{dados/figuras/rqu.eps}
+\includegraphics[width=.4\textwidth]{dados/figuras/rqu.eps}
 \caption{Exemplo de consulta por abrangência}
 \fonte{Autoria Própria}
 \label{fig:exemplorq}
 \end{figure}
 
-A figura \ref{fig:exemplorq} exemplifica este tipo de consulta. Tomando $s_q$ e $\xi$ como parâmetros da consulta, todos os
+A Figura \ref{fig:exemplorq} exemplifica este tipo de consulta. Tomando $s_q$ e $\xi$ como parâmetros da consulta, todos os
 elementos contidos pelo raio de abrangência fazem parte do conjunto resposta da consulta. O elemento $s_q$ não necessariamente precisa
 pertencer ao conjunto de dados de pesquisa, devendo apenas pertencer ao mesmo domínio de dados.
 
@@ -72,7 +71,7 @@ encontrados igual a 4. Os elementos ligados ao elemento central foram os mais pr
 central da consulta não precisa pertencer ao conjunto de dados, como é o caso exemplificado.
 \begin{figure}[H]
 \centering
-\includegraphics[width=.3\textwidth]{dados/figuras/knnq.eps}
+\includegraphics[width=.4\textwidth]{dados/figuras/knnq.eps}
 \caption{Exemplo de consulta por k-vizinhos mais próximos}
 \label{fig:exemploknnq}
 \fonte{Autoria Própria}
@@ -92,13 +91,13 @@ serão descartados. Com isso, ocorre uma grande redução do número de cálculo
 \begin{figure}[H]
 \centering
 \caption{Consulta por abrangência pela técnica Omni utilizando um foco}
-\includegraphics[width=.4\textwidth]{dados/figuras/rg_omni_1.eps}
+\includegraphics[width=.5\textwidth]{dados/figuras/rg_omni_1.eps}
 \fonte{Autoria Própria}
 \label{fig:rqomni1}
 \end{figure}
 
 
-A figura \ref{fig:rqomni1} ilustra a poda no número de cálculos. Apenas os elementos na área sombreada terão as suas distâncias em relação ao centro da consulta calculadas, pois estão no
+A Figura \ref{fig:rqomni1} ilustra a poda no número de cálculos. Apenas os elementos na área sombreada terão as suas distâncias em relação ao centro da consulta calculadas, pois estão no
 conjunto de elementos que não foram descartados utilizando a desigualdade triangular com as distâncias previamente calculadas em relação ao foco. O armazenamento das distâncias de cada foco ${f_i}$ para cada outro elemento $s_k$ será feito 
 utilizando uma estrutura de indexação que implementa os conceitos da técnica Omni com a estrutura da B-tree, originando uma nova estrutura chamada de OmniB-Tree. As distâncias serão armazenadas em $l$ OmniB-Trees, sendo $l$ o número de focos
 criados para a base de dados \cite{Traina2001}.

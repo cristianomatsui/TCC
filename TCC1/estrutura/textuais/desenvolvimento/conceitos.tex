@@ -9,7 +9,7 @@ explanação sobre os extratores de características de imagens que serão utili
 Uma métrica em um domínio $\mathbb{S}$ é uma função $d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$ que associa a cada par 
 ordenado de elementos ($s_1$, $s_2$) um número real $d$($s_1$,$s_2$) chamado de distância de $s_1$ a $s_2$, e que atenda
 as propriedades definidas no espaço métrico\cite{Lima1977}.\par
-Um espaço métrico $M$ é um par <$S$, $d$> onde $S$ é um conjunto de elementos e $d$ é uma métrica
+Um espaço métrico $M$ é um par <$S$, $d$> no qual $S$ é um conjunto de elementos e $d$ é uma métrica
 (ou função de distância). Esta distância $d$($s_1$,$s_2$) pode ser compreendida como uma medida de dissimilaridade entre dois elementos.
 Quanto menor esta distância entre dois elementos, mais semelhantes eles são.
 \begin{mydef}
@@ -35,7 +35,7 @@ empregado em espaços métricos. A seguinte definição é baseada no livro de \
 \end{mydef}
 
 A aplicação direta das propriedades do espaço métrico neste trabalho reside fortemente na quarta propriedade apresentada pela Definição \ref{def:espmet}. A desigualdade triangular é fundamentada na geometria euclidiana, 
-onde a soma do comprimento de dois lados de um triângulo não pode ser superior ao comprimento do terceiro lado, como ilustra a figura \ref{fig:destri}.
+na qual a soma do comprimento de dois lados de um triângulo não pode ser superior ao comprimento do terceiro lado, como ilustra a Figura \ref{fig:destri}.
 
 \begin{figure}[H]
 \centering
@@ -45,7 +45,7 @@ onde a soma do comprimento de dois lados de um triângulo não pode ser superior
 \fonte{Autoria Própria}
 \end{figure}
 
-O emprego da desigualdade triangular neste trabalho será detalhado no capítulo \ref{chap:omni}.
+O emprego da desigualdade triangular neste trabalho será detalhado no Capítulo \ref{chap:omni}.
 
 \section{FUNÇÕES DE DISTÂNCIA}
 \label{sec:funcdist}
@@ -67,7 +67,7 @@ pois é independente da origem do espaço do conjunto de dados, e tem como resul
 \end{equation}
 \end{mydef}
 
-A figura \ref{fig:minko} ilustra as diferentes formas geométricas geradas de acordo com a métrica $L_p$ utilizada. Para estes determinados valores de $p$, a distância Minkowski recebe nomes
+A Figura \ref{fig:minko} ilustra as diferentes formas geométricas geradas de acordo com a métrica $L_p$ utilizada. Para estes determinados valores de $p$, a distância Minkowski recebe nomes
 próprios (\textit{distância City-Block} para $p = 1$, \textit{distância Euclidiana} para $p = 2$ e \textit{distância Chebyshev} para $p = \infty$).
 
 \begin{figure}[H]
@@ -80,7 +80,7 @@ próprios (\textit{distância City-Block} para $p = 1$, \textit{distância Eucli
 
 \subsection{DISTÂNCIA CANBERRA}
 A distância Minkowski nem sempre é a melhor opção de métrica. A diferença da distância em cada dimensão é elevada
-a uma potência $p$ geralmente $\geq 1$  coloca uma enorme ênfase para os casos onde a distância dimensional é grande \cite{Kokare2007}.
+a uma potência $p$ geralmente $\geq 1$  coloca uma enorme ênfase para os casos nos quais a distância dimensional é grande \cite{Kokare2007}.
 Uma alternativa é a distância Canberra. Ela apresenta um cálculo menos custoso do que a distância Minkowski, e atribui um peso
 menor para a diferença de distâncias, mas é sensível à origem do espaço de dados.
 \begin{mydef}

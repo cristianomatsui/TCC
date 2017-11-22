@@ -5,16 +5,9 @@
     \item[SQL] \textit{Structured Query Language}
     \item[\textit{Rq}] Consulta por abrangência
     \item[\textit{kNNq}] Consulta aos k-vizinhos mais próximos
-    \item[$s_q$] Elemento central da consulta
-    \item[$\xi$] Raio da consulta por abrangência
-    \item [$\mathbb{S}$] Domínio de dados
-    \item [$S$] Conjunto de elementos pertencentes ao domínio $\mathbb{S}$
-    \item [\textit{k}] Número de vizinhos desejados em uma \textit{kNNq}
-    \item [$s_i$] Elemento pertencente ao conjunto $S$
-    \item [$\forall$] Para todo
-    \item [$d:\mathbb{S}$ $\times$ $\mathbb{S}$ $\rightarrow$ $\mathbb{R^{+}}$] Métrica ou função de distância
-    \item[$M$<$S$,$d$>] Espaço métrico
-    \item 
+    \item [GBDI] Grupo de Bases de Dados e Imagens
+    \item [\textit{mbOr}] Região Omni de delimitação mínima
+    \item [\textit{IOid}($s_i$)] Identificador do objeto $s_i$
 \end{siglas}
 
 % OBSERVAÇÕES-----------------------------------------------------------------------------

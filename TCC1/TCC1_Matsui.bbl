@@ -38,15 +38,6 @@ Dispon{\'\i}vel em: \url{https://db-engines.com/en/ranking}. Acesso em: 30 de
   optimization of unary similarity queries.
 v.~450, 05 2009.}
 
-\bibitem[Filho et al. 2001]{Traina2001}
-\abntrefinfo{Filho et al.}{FILHO et al.}{2001}
-{FILHO, R. F.~S. et al. Similarity search without tears: The omni family of
-  all-purpose access methods. In:  \textbf{Proceedings of the 17th
-  International Conference on Data Engineering}. Washington, DC, USA: IEEE
-  Computer Society, 2001. p. 623--630.
-ISBN 0-7695-1001-9. Dispon{\'\i}vel em:
-  \url{http://dl.acm.org/citation.cfm?id=645484.656543}.}
-
 \bibitem[Glatard, Montagnat e Magnin 2004]{Glatard2004}
 \abntrefinfo{Glatard, Montagnat e Magnin}{GLATARD; MONTAGNAT; MAGNIN}{2004}
 {GLATARD, T.; MONTAGNAT, J.; MAGNIN, I.~E. Texture based medical image indexing
@@ -75,12 +66,6 @@ ISSN 0018-9472.}
 {JAIN, A.~K.; DUBES, R.~C. \textbf{Algorithms for Clustering Data}. Upper
   Saddle River, NJ, USA: Prentice-Hall, Inc., 1988.
 ISBN 0-13-022278-X.}
-
-\bibitem[Jr et al. 2007]{Traina2007}
-\abntrefinfo{Jr et al.}{JR et al.}{2007}
-{JR, C. et al. The omni-family of all-purpose access methods: a simple and
-  effective way to make similarity search more efficient.
-v.~16, p. 483--505, 08 2007.}
 
 \bibitem[Kokare, Biswas e Chatterji 2007]{Kokare2007}
 \abntrefinfo{Kokare, Biswas e Chatterji}{KOKARE; BISWAS; CHATTERJI}{2007}
@@ -127,6 +112,15 @@ Agosto 2010. Tese (Doutorado em Ci{\^e}ncia da Computa{\c c}\~ao) --- Instituto
   de Ci\^encias Matem\'aticas e de Computa{\c c}\~ao, Universidade de S\~ao
   Paulo, São Carlos, 2010.}
 
+\bibitem[{SANTOS FILHO} et al. 2001]{Traina2001}
+\abntrefinfo{{SANTOS FILHO} et al.}{{SANTOS FILHO} et al.}{2001}
+{{SANTOS FILHO}, R.~F. et al. Similarity search without tears: The omni family
+  of all-purpose access methods. In:  \textbf{Proceedings of the 17th
+  International Conference on Data Engineering}. Washington, DC, USA: IEEE
+  Computer Society, 2001. p. 623--630.
+ISBN 0-7695-1001-9. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=645484.656543}.}
+
 \bibitem[Shirali e Vasudeva 2005]{Shirali2005}
 \abntrefinfo{Shirali e Vasudeva}{SHIRALI; VASUDEVA}{2005}
 {SHIRALI, S.; VASUDEVA, H. \textbf{Metric Spaces}. Springer London, 2005.
@@ -146,6 +140,12 @@ ISBN 9781846282447. Dispon{\'\i}vel em:
   1991.
 ISSN 1573-1405.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF00130487}.}
+
+\bibitem[{TRAINA JUNIOR} et al. 2007]{Traina2007}
+\abntrefinfo{{TRAINA JUNIOR} et al.}{{TRAINA JUNIOR} et al.}{2007}
+{{TRAINA JUNIOR}, C. et al. The omni-family of all-purpose access methods: a
+  simple and effective way to make similarity search more efficient.
+v.~16, p. 483--505, 08 2007.}
 
 \bibitem[Zighed et al. 2008]{Zighed2008}
 \abntrefinfo{Zighed et al.}{ZIGHED et al.}{2008}

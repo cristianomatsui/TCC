@@ -2,13 +2,13 @@
 \chapter{TÉCNICA OMNI}
 \label{chap:omni}
 
-Neste capítulo será explanada a técnica Omni, mencionada previamente nos capítulos \ref{chap:introducao} e \ref{chap:conceitos}.
+Neste capítulo será explanada a técnica Omni, mencionada previamente nos Capítulos \ref{chap:introducao} e \ref{chap:conceitos}.
 A técnica Omni, sua concepção, construção e uso é retirada do trabalho de \cite{Traina2001} e \cite{Traina2007}.
-%TODO Melhorar e expandir
+
 
 \section{CONCEITOS E DEFINIÇÕES OMNI}
 \label{sec:defomni}
-Como apresentado anteriormente, as técnicas da família Omni baseiam-se em em uma base de elementos chamada de 
+Como apresentado anteriormente, as técnicas da família Omni baseiam-se em em uma série de elementos chamada de 
 Omni-focos. Estes focos são elementos presentes na base de dados previamente escolhidos, e possuem como função 
 servirem de marco para o cálculo das coordenadas Omni de cada elemento presente no banco.
 
@@ -31,16 +31,16 @@ servirem de marco para o cálculo das coordenadas Omni de cada elemento presente
 Para distinguir a distância $d(f_k, s_i)$ como uma coordenada, é utilizada a notação $df_k(s_i) = d(f_k, s_i)$.\par
 									%TODO Armazenada em uma tabela do banco, indexado por uma B-Tree
 Quando um novo objeto é inserido na base de dados, as suas coordenadas Omni são calculadas e armazenadas. Em uma pesquisa por
-similaridade, estas coordenadas são utilizadas para podar o número de cálculos de distância, como ilustrado pela figura \ref{fig:rqomni1}.\par
+similaridade, estas coordenadas são utilizadas para podar o número de cálculos de distância, como ilustrado pela Figura \ref{fig:rqomni1}.\par
 
 O custo associado a utilização da técnica Omni provém de duas fontes: o tempo para calcular as coordenadas Omni (cálculo da distância
 entre o elemento inserido e cada um dos focos) e o espaço físico necessário para armazenar a estrutura Omni, geralmente armazenada em disco.
 Como o número de focos necessários usualmente é baixo, estes custos atrelados a técnica Omni são menores do que o ganho
-de performance nas consultas.
+de desempenho nas consultas.
 
 \section{USO DA BASE DE FOCOS}
 Os problemas entre a escolha da base de focos $\mathscr{F}$ e a sua cardinalidade $l$ são intimamente relacionados. Quanto
-mais focos, mais espaço e tempo para processamento é necessário. Por isso, é necessário maximizar o ganho de performance com
+mais focos, mais espaço e tempo para processamento é necessário. Por isso, é necessário maximizar o ganho de desempenho com
 a menor quantidade possível de focos.
 
 \begin{mydef}
@@ -49,17 +49,17 @@ a menor quantidade possível de focos.
  dos intervalos métricos $R_A = |\  ^{l}_{1}I_i$, onde $I_i = [min(d(f_i,x_j)), max(d(f_i,x_j))],\ 1\leq i \leq l,\ 1 \leq j \leq n$. 
 \end{mydef}
 
-A ideia gráfica de uma mbOr foi previamente apresentada na figura \ref{fig:rqomni1} para o caso de uma consulta utilizando um único foco.
-É possível ver que a mbOr sempre inclui todos os elementos do conjunto-resposta, mas pode incluir elementos que não são pertinentes
+A ideia gráfica de uma \textit{mbOr} foi previamente apresentada na Figura \ref{fig:rqomni1} para o caso de uma consulta utilizando um único foco.
+É possível ver que a \textit{mbOr} sempre inclui todos os elementos do conjunto-resposta, mas pode incluir elementos que não são pertinentes
 ao conjunto-resposta (alarmes falsos). Embora seja necessária mais uma etapa de cálculo de distâncias (etapa de refinamento), o número de cálculos é
-reduzido drasticamente com o uso da mbOr.\par
+reduzido drasticamente com o uso da \textit{mbOr}.\par
 
-Uma mbOr pode ser reduzida ainda mais com o uso de múltiplos focos, como ilustra a figura \ref{fig:rqomni2}.
+Uma \textit{mbOr} pode ser reduzida ainda mais com o uso de múltiplos focos, como ilustra a Figura \ref{fig:rqomni2}.
 
 \begin{figure}[H]
 \centering
 \caption{Consulta por abrangência pela técnica Omni utilizando dois focos}
-\includegraphics[width=.4\textwidth]{dados/figuras/rg_omni_2.eps}
+\includegraphics[width=.6\textwidth]{dados/figuras/rg_omni_2.eps}
 \fonte{Autoria Própria}
 \label{fig:rqomni2}
 \end{figure}
@@ -99,7 +99,7 @@ $s_i$ não escolhido como foco ainda, o erro da distância em relação à borda
       }
 \end{algorithm}
 
-O algoritmo HF requer $l*N$ cálculos de distância. O algoritmo \ref{alg:hf} mostra que as etapas 3 e 5 são cálculos
+O algoritmo HF requer $l*N$ cálculos de distância. O Algoritmo \ref{alg:hf} mostra que as etapas 3 e 5 são cálculos
 necessários para a determinação das coordenadas Omni de cada objeto. Isso mostra que o algoritmo HF também prepara as
 coordenadas Omni da base de dados. Outro fato importante é o da base de focos Omni ser invariável a operações de inserção
 ou remoção na base.
@@ -125,7 +125,7 @@ abrangência pode ser visto abaixo.
 \label{fig:rgex1}
 \end{figure}
 
-A figura \ref{fig:btree} representa a OmniB-Tree utilizada para armazenar as coordenadas Omni dos objetos da base em relação ao foco $f_1$. Nela foram armazenadas
+A Figura \ref{fig:btree} representa a OmniB-Tree utilizada para armazenar as coordenadas Omni dos objetos da base em relação ao foco $f_1$. Nela foram armazenadas
 a distância do objeto $s_i$ até o foco, e um identificador do objeto.
 
 \begin{figure}[H]
@@ -136,8 +136,8 @@ a distância do objeto $s_i$ até o foco, e um identificador do objeto.
 \label{fig:btree}
 \end{figure}
 
-Analisando geométricamente, é possível perceber que um elemento candidato a estar presente no conjunto de resposta deve ter a sua distância em relação ao foco maior ou igual a distância do elemento central de consulta menos o valor do
-raio da consulta, formando assim um limite inferior. Analogamente, o limite superior pode ser definido utilizando a distância do elemento central da consulta até o foco mais o valor do raio da consulta.
+Analisando geometricamente, é possível perceber que um elemento candidato a estar presente no conjunto de resposta deve ter a sua distância em relação ao foco maior ou igual a distância do elemento central de consulta menos o valor do
+raio da consulta, formando, assim, um limite inferior. Analogamente, o limite superior pode ser definido utilizando a distância do elemento central da consulta até o foco mais o valor do raio da consulta.
 
 \begin{equation} \label{eq:omnirq}
 |d(f_k, s_q) - \xi| \leq d(f_k, s_i) \leq |d(f_k, s_q) + \xi|
@@ -150,21 +150,36 @@ raio da consulta, formando assim um limite inferior. Analogamente, o limite supe
 \fonte{Autoria Própria}
 \label{fig:rgex2}
 \end{figure}
-A figura \ref{fig:rgex2} ilustra a utilização da propriedade da desigualdade triangular para a etapa de filtragem. Tomando o elemento $s_3$ como referência e a equação da desigualdade triangular apresentada
-na definição \ref{def:espmet}, é possível definir que:
+A Figura \ref{fig:rgex2} ilustra a utilização da propriedade da desigualdade triangular para a etapa de filtragem. Tomando o elemento $s_3$ como referência e a equação da desigualdade triangular apresentada
+na Definição \ref{def:espmet}, é possível definir que:
 \begin{equation} \label{eq:omnirq2}
 d_{f_1}(s_3) \leq d_{f_1}(s_q) + d(s_3, s_q)
 \end{equation}
 \begin{equation} \label{eq:omnirq3}
 d(s_3, s_q) \geq |d_{f_1}(s_3) - d_{f_1}(s_q)|
 \end{equation}\par
-Utilizando o conceito de bola apresentado pela definição \ref{def:bola}, se o elemento $s_3$ só pode pertencer a bola de consulta se a distância
-$d(s_3, s_q)$ for menor do que o raio de consulta $\xi$. Com a equação \ref{eq:omnirq3}, é possível definir que o elemento está fora do conjunto
+Utilizando o conceito de bola apresentado pela Definição \ref{def:bola}, se o elemento $s_3$ só pode pertencer a bola de consulta se a distância
+$d(s_3, s_q)$ for menor do que o raio de consulta $\xi$. Com a Equação \ref{eq:omnirq3}, é possível definir que o elemento está fora do conjunto
 de elementos candidatos se:
 \begin{equation} \label{eq:rqtri}
  |d_{f_1}(s_3) - d_{f_1}(s_q)| \geq \xi
 \end{equation}\par
-Sabendo que a distância $df_1(s_q)$ é de 23 unidades e o raio da consulta por abrangência é de 8 unidades, utilizando a equação \ref{eq:omnirq} é possível determinar que a distância $d(f_k, s_i)$ do elemento candidato precisa ser $\geq 15$ e $\leq 31$.
+Sabendo que a distância $df_1(s_q)$ é de 23 unidades e o raio da consulta por abrangência é de 8 unidades, utilizando a Equação \ref{eq:omnirq} é possível determinar que a distância $d(f_k, s_i)$ do elemento candidato precisa ser $\geq 15$ e $\leq 31$.
 Utilizando a OmniB-Tree criada para o foco $f_1$, é possível encontrar os elementos candidatos que prosseguirão para a etapa de refinamento, sendo eles: $s_4, s_5, s_6, s_7, s_8, s_9$. É possível notar que estes candidatos estão em conformidade com o que
-foi previsto utilizando uma análise geométrica fornecida pela figura \ref{fig:rgex2}. Também é possível verificar a validade da equação
-\ref{eq:rqtri}, pois esta fornece o mesmo conjunto de elementos encontrados com a análise geométrica.
+foi previsto utilizando uma análise geométrica fornecida pela Figura \ref{fig:rgex2}. Também é possível verificar a validade da Equação
+\ref{eq:rqtri}, pois esta fornece o mesmo conjunto de elementos encontrados com a análise geométrica.\par
+
+É importante notar que nem todos os elementos selecionados durante a etapa de filtragem da técnica Omni pertencem ao conjunto resposta. Na \textit{mbOr}, pode ocorrer a presença
+de elementos que não estão dentro da bola da consulta por abrangência (alarmes falsos). Para minimizar o número de alarmes falsos, múltiplos focos podem ser utilizados, como demonstrado pela Figura \ref{fig:rgex3}.
+Para este exemplo, o elemento $s_{10}$ é escolhido como um novo foco $f_2$. O elemento $s_6$ é descartado antes da etapa de refinamento, o que não acontece para uma filtragem utilizando um único foco.
+
+\begin{figure}[H]
+\centering
+\caption{Etapa de filtragem com dois focos}
+\includegraphics[width=.55\textwidth]{dados/figuras/rg_ex3.eps}
+\fonte{Autoria Própria}
+\label{fig:rgex3}
+\end{figure}
+
+%TODO kaggle.com
+

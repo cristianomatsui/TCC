@@ -70,11 +70,11 @@
 \renewcommand*{\backrefalt}[4]
 {%
     \ifcase #1
-        Nenhuma cita\c{c}\~ao no texto.
+%         Nenhuma cita\c{c}\~ao no texto.
     \or
-        Citado na p\'agina #2.
+%         Citado na p\'agina #2.
     \else
-        Citado #1 vezes nas p\'aginas #2.
+%         Citado #1 vezes nas p\'aginas #2.
     \fi
 }
 
@@ -148,7 +148,7 @@
 {%
     \pagenumbering{gobble}
     \aliaspagestyle{chapter}{empty}
-    \pagestyle{empty}
+%     \pagestyle{empty}
     \aliaspagestyle{cleared}{empty}
     \aliaspagestyle{part}{empty}
 }

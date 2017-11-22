@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  19 NOV 2017 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  22 NOV 2017 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1345,6 +1345,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--21
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
@@ -1376,7 +1381,7 @@ ation with the same identifier (name{page.}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.11 \end{siglas}
+l.12 \end{siglas}
                   [6
 
 
@@ -1447,7 +1452,7 @@ Package epstopdf Info: Source file: <dados/figuras/rqu.eps>
 (epstopdf)                    size: 56926 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rqu-eps-conv
 erted-to.pdf dados/figuras/rqu.eps>
-(epstopdf)             \includegraphics on input line 44.
+(epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
 <dados/figuras/rqu-eps-converted-to.pdf, id=154, 157.58875pt x 147.55125pt>
@@ -1455,8 +1460,8 @@ File: dados/figuras/rqu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rqu-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rqu-eps-converted-to.pdf used on input l
-ine 44.
-(pdftex.def)             Requested size: 136.50139pt x 127.81468pt.
+ine 43.
+(pdftex.def)             Requested size: 181.99722pt x 170.41432pt.
 Package epstopdf Info: Source file: <dados/figuras/knnq.eps>
 (epstopdf)                    date: 2017-11-03 13:44:48
 (epstopdf)                    size: 17383 bytes
@@ -1465,7 +1470,7 @@ Package epstopdf Info: Source file: <dados/figuras/knnq.eps>
 (epstopdf)                    size: 7510 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/knnq-eps-con
 verted-to.pdf dados/figuras/knnq.eps>
-(epstopdf)             \includegraphics on input line 75.
+(epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
 <dados/figuras/knnq-eps-converted-to.pdf, id=161, 154.5775pt x 135.50626pt>
@@ -1473,16 +1478,16 @@ File: dados/figuras/knnq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/knnq-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/knnq-eps-converted-to.pdf used on input 
-line 75.
-(pdftex.def)             Requested size: 136.50139pt x 119.66972pt.
+line 74.
+(pdftex.def)             Requested size: 181.99722pt x 159.55687pt.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 79.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 78.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.79 \end{figure}
+l.78 \end{figure}
                   <./dados/figuras/rqu-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <dados/figuras/rg_omni_1.eps>
 (epstopdf)                    date: 2017-11-03 13:44:48
@@ -1493,7 +1498,7 @@ df>
 (epstopdf)                    size: 123142 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_omni_1-ep
 s-converted-to.pdf dados/figuras/rg_omni_1.eps>
-(epstopdf)             \includegraphics on input line 95.
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
 <dados/figuras/rg_omni_1-eps-converted-to.pdf, id=188, 292.09125pt x 289.08pt>
@@ -1501,31 +1506,32 @@ File: dados/figuras/rg_omni_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_omni_1-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_omni_1-eps-converted-to.pdf used on i
-nput line 95.
-(pdftex.def)             Requested size: 181.99722pt x 180.12758pt.
+nput line 94.
+(pdftex.def)             Requested size: 227.5pt x 225.1639pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.99 
+l.98 
       <./dados/figuras/knnq-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+aess on input line 116
+LaTeX Font Info:    Try loading font information for OMS+aess on input line 115
 .
-LaTeX Font Info:    No file OMSaess.fd. on input line 116.
+LaTeX Font Info:    No file OMSaess.fd. on input line 115.
 
 
 LaTeX Font Warning: Font shape `OMS/aess/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 116.
+(Font)              for symbol `textbullet' on input line 115.
 
 [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{itemize}
-                    <./dados/figuras/rg_omni_1-eps-converted-to.pdf>]) [5]
+l.118  \item C
+              riar a estrutura Omni necessária para a filtragem dos cálculos;
+ <./dados/figuras/rg_omni_1-eps-converted-to.pdf>]) [5]
 \openout2 = `estrutura/textuais/desenvolvimento/conceitos.aux'.
 
 
@@ -1613,14 +1619,15 @@ File: dados/figuras/rg_omni_2-eps-converted-to.pdf Graphic file (type pdf)
  <use dados/figuras/rg_omni_2-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_omni_2-eps-converted-to.pdf used on i
 nput line 62.
-(pdftex.def)             Requested size: 181.99722pt x 151.58646pt.
+(pdftex.def)             Requested size: 273.00278pt x 227.38449pt.
  [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.81 \begin{equation}
-                      <./dados/figuras/rg_omni_2-eps-converted-to.pdf>]
+l.77 a distância entre eles como $borda$.\par
+                                               <./dados/figuras/rg_omni_2-eps-c
+onverted-to.pdf>]
 
 LaTeX Warning: Command \' invalid in math mode on input line 82.
 
@@ -1694,27 +1701,54 @@ t line 149.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.153 A
-        figura \ref{fig:rgex2} ilustra a utilização da propriedade da desi...
+        Figura \ref{fig:rgex2} ilustra a utilização da propriedade da desi...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.153 A
-        figura \ref{fig:rgex2} ilustra a utilização da propriedade da desi...
+        Figura \ref{fig:rgex2} ilustra a utilização da propriedade da desi...
  <./dados/figuras/rg_ex1-eps-converted-to.pdf> <./dados/figuras/btree-eps-conve
 rted-to.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./dados/figuras/btree-eps-converted-to.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) [15pdfTeX warning (ext4): destination with the same identifier (name{figure
-.3.9}) has been already used, duplicate ignored
+>] [15pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.172 É
+         importante notar que nem todos os elementos selecionados durante a ...
+ <./dados/figuras/rg_ex2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <dados/figuras/rg_ex3.eps>
+(epstopdf)                    date: 2017-11-20 18:10:17
+(epstopdf)                    size: 38532 bytes
+(epstopdf)             Output file: <dados/figuras/rg_ex3-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-11-20 18:10:38
+(epstopdf)                    size: 12712 bytes
+(epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_ex3-eps-c
+onverted-to.pdf dados/figuras/rg_ex3.eps>
+(epstopdf)             \includegraphics on input line 179.
+Package epstopdf Info: Output file is already uptodate.
+
+<dados/figuras/rg_ex3-eps-converted-to.pdf, id=384, 195.40797pt x 226.79214pt>
+File: dados/figuras/rg_ex3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use dados/figuras/rg_ex3-eps-converted-to.pdf>
+Package pdftex.def Info: dados/figuras/rg_ex3-eps-converted-to.pdf used on inpu
+t line 179.
+(pdftex.def)             Requested size: 250.25139pt x 290.4452pt.
+) [16pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.59 ...e{estrutura/textuais/desenvolvimento/OMNI}
                                                                             ...
- <./dados/figuras/rg_ex2-eps-converted-to.pdf>] [16]
+ <./dados/figuras/rg_ex3-eps-converted-to.pdf>]
 \openout2 = `estrutura/pos-textuais/referencias.aux'.
 
 
@@ -1766,13 +1800,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 15886 strings out of 494929
- 236437 string characters out of 6180142
- 415363 words of memory out of 5000000
- 18254 multiletter control sequences out of 15000+600000
- 65081 words of font info for 403 fonts, out of 8000000 for 9000
+ 15804 strings out of 494929
+ 235846 string characters out of 6180142
+ 410799 words of memory out of 5000000
+ 18260 multiletter control sequences out of 15000+600000
+ 58106 words of font info for 333 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
- 45i,17n,37p,605b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,37p,588b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -1789,10 +1823,10 @@ mssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi1
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on TCC1_Matsui.pdf (27 pages, 584618 bytes).
+Output written on TCC1_Matsui.pdf (27 pages, 596486 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
- 511 compressed objects within 6 object streams
- 110 named destinations out of 1000 (max. 500000)
- 51982 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 49939 words of extra memory for PDF output out of 51595 (max. 10000000)
 
