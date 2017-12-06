@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  6 DEC 2017 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  6 DEC 2017 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,7 +1314,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
 [2
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<dado_comum.png, id=56, 451.6875pt x 248.93pt>
+<dado_comum.png, id=66, 451.6875pt x 248.93pt>
 File: dado_comum.png Graphic file (type png)
  <use dado_comum.png>
 Package pdftex.def Info: dado_comum.png used on input line 114.
@@ -1322,7 +1322,7 @@ Package pdftex.def Info: dado_comum.png used on input line 114.
  [3
 
 ]
-<rq.png, id=68, 642.4pt x 642.4pt>
+<rq.png, id=80, 642.4pt x 642.4pt>
 File: rq.png Graphic file (type png)
  <use rq.png>
 Package pdftex.def Info: rq.png used on input line 143.
@@ -1338,7 +1338,7 @@ knnq.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
 
-<knnq-eps-converted-to.pdf, id=69, 154.5775pt x 135.50626pt>
+<knnq-eps-converted-to.pdf, id=81, 154.5775pt x 135.50626pt>
 File: knnq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use knnq-eps-converted-to.pdf>
@@ -1367,7 +1367,7 @@ Package epstopdf Info: Source file: <rg_omni_1.eps>
 (epstopdf)             \includegraphics on input line 200.
 Package epstopdf Info: Output file is already uptodate.
 
-<rg_omni_1-eps-converted-to.pdf, id=97, 292.09125pt x 289.08pt>
+<rg_omni_1-eps-converted-to.pdf, id=109, 292.09125pt x 289.08pt>
 File: rg_omni_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rg_omni_1-eps-converted-to.pdf>
@@ -1385,7 +1385,7 @@ Package epstopdf Info: Source file: <rg_omni_2.eps>
 (epstopdf)             \includegraphics on input line 200.
 Package epstopdf Info: Output file is already uptodate.
 
-<rg_omni_2-eps-converted-to.pdf, id=98, 378.41376pt x 315.1775pt>
+<rg_omni_2-eps-converted-to.pdf, id=110, 378.41376pt x 315.1775pt>
 File: rg_omni_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rg_omni_2-eps-converted-to.pdf>
@@ -1410,7 +1410,7 @@ f rg_ex2.eps>
 (epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 
-<rg_ex2-eps-converted-to.pdf, id=147, 258.84175pt x 303.49672pt>
+<rg_ex2-eps-converted-to.pdf, id=159, 258.84175pt x 303.49672pt>
 File: rg_ex2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rg_ex2-eps-converted-to.pdf>
@@ -1421,13 +1421,13 @@ Package pdftex.def Info: rg_ex2-eps-converted-to.pdf used on input line 251.
 ] [11
 
  <./rg_ex2-eps-converted-to.pdf>]
-<same1.jpg, id=173, 444.66125pt x 322.20375pt>
+<same1.jpg, id=186, 444.66125pt x 322.20375pt>
 File: same1.jpg Graphic file (type jpg)
  <use same1.jpg>
 Package pdftex.def Info: same1.jpg used on input line 300.
 (pdftex.def)             Requested size: 123.22359pt x 89.28722pt.
 
-<same2.jpg, id=174, 443.6575pt x 322.20375pt>
+<same2.jpg, id=187, 443.6575pt x 322.20375pt>
 File: same2.jpg Graphic file (type jpg)
  <use same2.jpg>
 Package pdftex.def Info: same2.jpg used on input line 300.
@@ -1436,13 +1436,13 @@ Package pdftex.def Info: same2.jpg used on input line 300.
 
 ] [13
 
- <./same1.jpg> <./same2.jpg>] <onca.jpg, id=187, 1027.84pt x 770.88pt>
+ <./same1.jpg> <./same2.jpg>] <onca.jpg, id=199, 1027.84pt x 770.88pt>
 File: onca.jpg Graphic file (type jpg)
  <use onca.jpg>
 Package pdftex.def Info: onca.jpg used on input line 340.
 (pdftex.def)             Requested size: 123.22359pt x 92.4075pt.
 
-<pantera.jpg, id=188, 617.30624pt x 410.53375pt>
+<pantera.jpg, id=200, 617.30624pt x 410.53375pt>
 File: pantera.jpg Graphic file (type jpg)
  <use pantera.jpg>
 Package pdftex.def Info: pantera.jpg used on input line 340.
@@ -1474,15 +1474,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
  (./Apres_Matsui.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
+Package rerunfilecheck Info: File `Apres_Matsui.out' has not changed.
+(rerunfilecheck)             Checksum: 4EEC981058FA6C20FD094D68B502BCF4;317.
 
-
-Package rerunfilecheck Warning: File `Apres_Matsui.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Apres_Matsui.out':
-(rerunfilecheck)             Before: 0E4DADAA5B8B7B4025AF2CA101367AF4;212
-(rerunfilecheck)             After:  4EEC981058FA6C20FD094D68B502BCF4;317.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1490,10 +1484,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 30456 strings out of 494929
- 610064 string characters out of 6180142
+ 30468 strings out of 494929
+ 610168 string characters out of 6180142
  697272 words of memory out of 5000000
- 33149 multiletter control sequences out of 15000+600000
+ 33161 multiletter control sequences out of 15000+600000
  12827 words of font info for 50 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  50i,16n,67p,10354b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1508,10 +1502,10 @@ ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Apres_Matsui.pdf (17 pages, 894433 bytes).
+Output written on Apres_Matsui.pdf (17 pages, 895326 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
+ 281 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
  44 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
