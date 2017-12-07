@@ -3,6 +3,7 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{T\IeC {\'e}cnica Omni}{6}{0}{2}
 \beamer@sectionintoc {3}{Extratores de Caracter\IeC {\'\i }sticas}{11}{0}{3}
-\beamer@sectionintoc {4}{Objetivos}{15}{0}{4}
-\beamer@sectionintoc {5}{Materiais}{16}{0}{5}
-\beamer@sectionintoc {6}{Considera\IeC {\c c}\IeC {\~o}es Finais}{17}{0}{6}
+\beamer@sectionintoc {4}{Modelagem}{15}{0}{4}
+\beamer@sectionintoc {5}{Objetivos}{16}{0}{5}
+\beamer@sectionintoc {6}{Materiais}{17}{0}{6}
+\beamer@sectionintoc {7}{Considera\IeC {\c c}\IeC {\~o}es Finais}{18}{0}{7}

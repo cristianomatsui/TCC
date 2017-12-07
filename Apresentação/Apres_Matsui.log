@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  6 DEC 2017 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  6 DEC 2017 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,48 +1123,78 @@ istry (CN)
 \mhchem@option@minustextsidebearingleft=\dimen297
 \mhchem@option@minustextsidebearingright=\dimen298
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen299
+\WF@size=\dimen300
+\c@WF@wrappedlines=\count315
+\WF@box=\box77
+\WF@everypar=\toks50
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatflt/floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count316
+\figbox=\box78
+\tabbox=\box79
+\pagebox=\box80
+\ffigcount=\count317
+\ftabcount=\count318
+\fftest=\count319
+\hangcount=\count320
+\nosuccesstryfig=\count321
+\nosuccesstrytab=\count322
+\figgutter=\dimen301
+\tabgutter=\dimen302
+\htdone=\dimen303
+\pageht=\dimen304
+\startpageht=\dimen305
+\tabbredd=\dimen306
+\floatfltwidth=\dimen307
+\fltitemwidth=\dimen308
+\outputpretest=\toks51
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
 Package: pgfpages 2011/01/05 ver 0.02
-\pgf@logicalpages=\count315
-\pgf@firstshipout=\count316
-\pgf@lastshipout=\count317
-\pgf@currentshipout=\count318
-\pgf@cpn=\count319
-\pgf@shipoutnextto=\count320
-\pgfphysicalheight=\dimen299
-\pgfphysicalwidth=\dimen300
-\pgfpages@shipoutbox=\box77
+\pgf@logicalpages=\count323
+\pgf@firstshipout=\count324
+\pgf@lastshipout=\count325
+\pgf@currentshipout=\count326
+\pgf@cpn=\count327
+\pgf@shipoutnextto=\count328
+\pgfphysicalheight=\dimen309
+\pgfphysicalwidth=\dimen310
+\pgfpages@shipoutbox=\box81
 )
-\pgfpages@box@1=\box78
+\pgfpages@box@1=\box82
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 50.
+(hyperref)                removing `\\' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 50.
+(hyperref)                removing `\\' on input line 52.
 
 (./Apres_Matsui.aux)
 \openout1 = `Apres_Matsui.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1202,17 +1232,17 @@ LaTeX Font Info:    ... okay on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen301
-\scratchbox=\box79
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen302
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count329
+\scratchdimen=\dimen311
+\scratchbox=\box83
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen312
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1229,8 +1259,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring OFF on input line 53.
+\AtBeginShipoutBox=\box84
+Package hyperref Info: Link coloring OFF on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1238,11 +1268,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count327
+\c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
 
 (./Apres_Matsui.out) (./Apres_Matsui.out)
 \@outlinefile=\write6
@@ -1273,7 +1303,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 53.
+LaTeX Info: Redefining \includegraphics on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -1281,51 +1311,51 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 53.
+. Activating mapping `default' on line 55.
 .................................................
  (./Apres_Matsui.nav)
-Overfull \hbox (746.93073pt too wide) in paragraph at lines 53--53
+Overfull \hbox (746.93073pt too wide) in paragraph at lines 55--55
  [][]  \OT1/cmr/m/n/6 ([])  
  []
 
 
-Overfull \hbox (187.14937pt too wide) in paragraph at lines 53--53
+Overfull \hbox (187.14937pt too wide) in paragraph at lines 55--55
  [][][][]  
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 85.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 86.
+(hyperref)                setting the option has no effect on input line 88.
 
 (./Apres_Matsui.toc)
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 92.
+(Font)              size <5> substituted on input line 94.
 
 [2
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<dado_comum.png, id=66, 451.6875pt x 248.93pt>
+<dado_comum.png, id=71, 451.6875pt x 248.93pt>
 File: dado_comum.png Graphic file (type png)
  <use dado_comum.png>
-Package pdftex.def Info: dado_comum.png used on input line 114.
+Package pdftex.def Info: dado_comum.png used on input line 116.
 (pdftex.def)             Requested size: 171.14764pt x 94.32089pt.
  [3
 
 ]
-<rq.png, id=80, 642.4pt x 642.4pt>
+<rq.png, id=86, 642.4pt x 642.4pt>
 File: rq.png Graphic file (type png)
  <use rq.png>
-Package pdftex.def Info: rq.png used on input line 143.
+Package pdftex.def Info: rq.png used on input line 145.
 (pdftex.def)             Requested size: 123.22359pt x 123.21393pt.
 Package epstopdf Info: Source file: <knnq.eps>
 (epstopdf)                    date: 2017-11-03 13:44:48
@@ -1335,18 +1365,22 @@ Package epstopdf Info: Source file: <knnq.eps>
 (epstopdf)                    size: 7510 bytes
 (epstopdf)             Command: <repstopdf --outfile=knnq-eps-converted-to.pdf 
 knnq.eps>
-(epstopdf)             \includegraphics on input line 143.
+(epstopdf)             \includegraphics on input line 145.
 Package epstopdf Info: Output file is already uptodate.
 
-<knnq-eps-converted-to.pdf, id=81, 154.5775pt x 135.50626pt>
+<knnq-eps-converted-to.pdf, id=87, 154.5775pt x 135.50626pt>
 File: knnq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use knnq-eps-converted-to.pdf>
-Package pdftex.def Info: knnq-eps-converted-to.pdf used on input line 143.
+Package pdftex.def Info: knnq-eps-converted-to.pdf used on input line 145.
 (pdftex.def)             Requested size: 123.2288pt x 108.02882pt.
 
-Overfull \hbox (21.90004pt too wide) in paragraph at lines 143--143
+Overfull \hbox (21.90004pt too wide) in paragraph at lines 145--145
  []$$[]$ 
+ []
+
+
+Overfull \vbox (4.9169pt too high) detected at line 145
  []
 
 [4
@@ -1357,46 +1391,80 @@ Overfull \hbox (21.90004pt too wide) in paragraph at lines 143--143
 
 ]
 Package epstopdf Info: Source file: <rg_omni_1.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
-(epstopdf)                    size: 131913 bytes
+(epstopdf)                    date: 2017-12-06 23:19:25
+(epstopdf)                    size: 108775 bytes
 (epstopdf)             Output file: <rg_omni_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-03 13:44:48
-(epstopdf)                    size: 123142 bytes
+(epstopdf)                    date: 2017-12-06 23:19:38
+(epstopdf)                    size: 19285 bytes
 (epstopdf)             Command: <repstopdf --outfile=rg_omni_1-eps-converted-to
 .pdf rg_omni_1.eps>
-(epstopdf)             \includegraphics on input line 200.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<rg_omni_1-eps-converted-to.pdf, id=109, 292.09125pt x 289.08pt>
+<rg_omni_1-eps-converted-to.pdf, id=115, 291.17639pt x 287.10204pt>
 File: rg_omni_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rg_omni_1-eps-converted-to.pdf>
-Package pdftex.def Info: rg_omni_1-eps-converted-to.pdf used on input line 200.
+Package pdftex.def Info: rg_omni_1-eps-converted-to.pdf used on input line 202.
 
-(pdftex.def)             Requested size: 154.03183pt x 152.44856pt.
+(pdftex.def)             Requested size: 154.03183pt x 151.87422pt.
 Package epstopdf Info: Source file: <rg_omni_2.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
-(epstopdf)                    size: 98125 bytes
+(epstopdf)                    date: 2017-12-06 23:16:41
+(epstopdf)                    size: 52746 bytes
 (epstopdf)             Output file: <rg_omni_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-03 13:44:48
-(epstopdf)                    size: 62605 bytes
+(epstopdf)                    date: 2017-12-06 23:16:54
+(epstopdf)                    size: 22063 bytes
 (epstopdf)             Command: <repstopdf --outfile=rg_omni_2-eps-converted-to
 .pdf rg_omni_2.eps>
-(epstopdf)             \includegraphics on input line 200.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<rg_omni_2-eps-converted-to.pdf, id=110, 378.41376pt x 315.1775pt>
+<rg_omni_2-eps-converted-to.pdf, id=116, 360.3845pt x 313.28836pt>
 File: rg_omni_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rg_omni_2-eps-converted-to.pdf>
-Package pdftex.def Info: rg_omni_2-eps-converted-to.pdf used on input line 200.
+Package pdftex.def Info: rg_omni_2-eps-converted-to.pdf used on input line 202.
 
-(pdftex.def)             Requested size: 154.03183pt x 128.29062pt.
+(pdftex.def)             Requested size: 162.58974pt x 141.34175pt.
  [7
 
 ] [8
 
- <./rg_omni_1-eps-converted-to.pdf> <./rg_omni_2-eps-converted-to.pdf>] [9
+ <./rg_omni_1-eps-converted-to.pdf> <./rg_omni_2-eps-converted-to.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./rg_omni_2-eps-converted-to.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+Package epstopdf Info: Source file: <desig_tri.eps>
+(epstopdf)                    date: 2017-12-06 21:28:49
+(epstopdf)                    size: 37676 bytes
+(epstopdf)             Output file: <desig_tri-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-12-06 21:29:15
+(epstopdf)                    size: 12954 bytes
+(epstopdf)             Command: <repstopdf --outfile=desig_tri-eps-converted-to
+.pdf desig_tri.eps>
+(epstopdf)             \includegraphics on input line 250.
+Package epstopdf Info: Output file is already uptodate.
+ <desig_tri-eps-converted-to.pdf, id=185, 238.54439pt x 152.93889pt>
+File: desig_tri-eps-converted-to.pdf Graphic file (type pdf)
+
+<use desig_tri-eps-converted-to.pdf>
+Package pdftex.def Info: desig_tri-eps-converted-to.pdf used on input line 250.
+
+(pdftex.def)             Requested size: 119.80544pt x 76.81229pt.
+
+Package floatflt Message: Floating figure 1 set on page 9
+
+Overfull \hbox (183.14764pt too wide) in paragraph at lines 250--250
+[][][][][][]  
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 250
+ [] 
+ []
+
+[9
 
 ]
 Package epstopdf Info: Source file: <rg_ex2.eps>
@@ -1407,54 +1475,74 @@ Package epstopdf Info: Source file: <rg_ex2.eps>
 (epstopdf)                    size: 17769 bytes
 (epstopdf)             Command: <repstopdf --outfile=rg_ex2-eps-converted-to.pd
 f rg_ex2.eps>
-(epstopdf)             \includegraphics on input line 251.
+(epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
-
-<rg_ex2-eps-converted-to.pdf, id=159, 258.84175pt x 303.49672pt>
+ <rg_ex2-eps-converted-to.pdf, id=194, 258.84175pt x 303.49672pt>
 File: rg_ex2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rg_ex2-eps-converted-to.pdf>
-Package pdftex.def Info: rg_ex2-eps-converted-to.pdf used on input line 251.
-(pdftex.def)             Requested size: 171.14764pt x 200.68355pt.
+Package pdftex.def Info: rg_ex2-eps-converted-to.pdf used on input line 263.
+(pdftex.def)             Requested size: 136.91603pt x 160.5422pt.
  [10
 
-] [11
+ <./desig_tri-eps-converted-to.pdf>]
+[11
 
  <./rg_ex2-eps-converted-to.pdf>]
-<same1.jpg, id=186, 444.66125pt x 322.20375pt>
-File: same1.jpg Graphic file (type jpg)
- <use same1.jpg>
-Package pdftex.def Info: same1.jpg used on input line 300.
-(pdftex.def)             Requested size: 123.22359pt x 89.28722pt.
-
-<same2.jpg, id=187, 443.6575pt x 322.20375pt>
+<same2.jpg, id=222, 443.6575pt x 322.20375pt>
 File: same2.jpg Graphic file (type jpg)
  <use same2.jpg>
-Package pdftex.def Info: same2.jpg used on input line 300.
+Package pdftex.def Info: same2.jpg used on input line 312.
 (pdftex.def)             Requested size: 123.22359pt x 89.4888pt.
- [12
+
+<histo_same2.png, id=223, 985.6825pt x 768.8725pt>
+File: histo_same2.png Graphic file (type png)
+ <use histo_same2.png>
+Package pdftex.def Info: histo_same2.png used on input line 312.
+(pdftex.def)             Requested size: 123.22359pt x 96.10883pt.
+
+[12
 
 ] [13
 
- <./same1.jpg> <./same2.jpg>] <onca.jpg, id=199, 1027.84pt x 770.88pt>
+ <./same2.jpg> <./histo_same2.png>]
+<onca.jpg, id=235, 1027.84pt x 770.88pt>
 File: onca.jpg Graphic file (type jpg)
  <use onca.jpg>
-Package pdftex.def Info: onca.jpg used on input line 340.
+Package pdftex.def Info: onca.jpg used on input line 352.
 (pdftex.def)             Requested size: 123.22359pt x 92.4075pt.
 
-<pantera.jpg, id=200, 617.30624pt x 410.53375pt>
+<pantera.jpg, id=236, 617.30624pt x 410.53375pt>
 File: pantera.jpg Graphic file (type jpg)
  <use pantera.jpg>
-Package pdftex.def Info: pantera.jpg used on input line 340.
+Package pdftex.def Info: pantera.jpg used on input line 352.
 (pdftex.def)             Requested size: 123.22359pt x 81.94868pt.
  [14
 
 ]
+<MER.png, id=244, 811.03pt x 655.44875pt>
+File: MER.png Graphic file (type png)
+ <use MER.png>
+Package pdftex.def Info: MER.png used on input line 361.
+(pdftex.def)             Requested size: 273.83728pt x 221.30942pt.
+
+Overfull \vbox (4.36794pt too high) detected at line 361
+ []
+
 [15
 
  <./onca.jpg> <./pantera.jpg>] [16
 
-] [17
+ <./MER.png>] [17
+
+] [18
+
+]
+
+Package hyperref Warning: Option `pdfauthor' has already been used,
+(hyperref)                setting the option has no effect on input line 424.
+
+[19
 
 ]
 \tf@nav=\write7
@@ -1466,31 +1554,37 @@ Package pdftex.def Info: pantera.jpg used on input line 340.
 \tf@snm=\write9
 \openout9 = `Apres_Matsui.snm'.
 
- [18
+ [20
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
  (./Apres_Matsui.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
-Package rerunfilecheck Info: File `Apres_Matsui.out' has not changed.
-(rerunfilecheck)             Checksum: 4EEC981058FA6C20FD094D68B502BCF4;317.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
 
+
+Package rerunfilecheck Warning: File `Apres_Matsui.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Apres_Matsui.out':
+(rerunfilecheck)             Before: 52A107B811A6A8FDFCFDB8990968B4A6;361
+(rerunfilecheck)             After:  F274054F1EFE514509C9A084019BD88F;361.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 460.
  ) 
 Here is how much of TeX's memory you used:
- 30468 strings out of 494929
- 610168 string characters out of 6180142
- 697272 words of memory out of 5000000
- 33161 multiletter control sequences out of 15000+600000
+ 30639 strings out of 494929
+ 612427 string characters out of 6180142
+ 701909 words of memory out of 5000000
+ 33317 multiletter control sequences out of 15000+600000
  12827 words of font info for 50 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 50i,16n,67p,10354b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,16n,67p,10374b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
@@ -1502,10 +1596,10 @@ ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Apres_Matsui.pdf (17 pages, 895326 bytes).
+Output written on Apres_Matsui.pdf (19 pages, 690596 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

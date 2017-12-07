@@ -18,7 +18,9 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{chemfig}
 \usepackage[version=3]{mhchem}
+\usepackage{wrapfig}
 
+\usepackage{floatflt,graphicx}
 % On Overleaf, these lines give you sharper preview images.
 % You might want to `comment them out before you export, though.
 \usepackage{pgfpages}
@@ -115,11 +117,11 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 
 \begin{frame}{Introdução}
   \begin{itemize}
-   \item Consulta por abrangência (\textit{Range query})\newline
-
-	
-   \item Consulta aos k-vizinhos mais próximos (\textit{k-Nearest Neighbors query})
-
+   \item Consultas por similaridade\newline
+      \begin{itemize}
+	  \item Consulta por abrangência(\textit{Range query})\newline
+	  \item Consulta aos k-vizinhos mais próximos (\textit{k-Nearest Neighbors query})
+      \end{itemize}
 	
 	\begin{figure}
 \centering
@@ -221,15 +223,20 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
  
 \end{frame}
 
-\begin{frame}{Técnica Omni}
-
+\begin{frame}{Técnica Omni}	
 	\begin{itemize}
 	 \item Equação de pertinência à \textit{mbOr}\newline
 	    \begin{itemize}
 	      \item Desigualdade triangular\newline
 		\begin{itemize}
 		  \item $d_{f}(s_i) \leq d_{f}(s_q) + d(s_i, s_q)$\newline
+		  
 		  \item $d(s_i, s_q) \geq |d_{f}(s_i) - d_{f}(s_q)|$\newline
+		      \begin{floatingfigure}[!hr]{0.5\textwidth}
+			\vspace{3cm}
+			\hspace{6cm}
+			\includegraphics[width=.35\textwidth]{desig_tri.eps}
+		      \end{floatingfigure}
 		\end{itemize}
 	      \item Conceito de bola\newline
 		\begin{itemize}
@@ -243,6 +250,10 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 \end{frame}
 
 \begin{frame}{Técnica Omni}
+	\begin{itemize}
+	 \item :$|d_f(s_i) - d_f(s_q)| > \xi$
+	\end{itemize}
+
 	\begin{figure}[H]
 			\centering
 			\includegraphics[width=.5\textwidth]{rg_ex2.eps}
@@ -288,11 +299,11 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 \centering
 \begin{minipage}{.4\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{same1.jpg}
+  \includegraphics[width=.9\linewidth]{same2.jpg}
 \end{minipage}%
 \begin{minipage}{.4\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{same2.jpg}
+  \includegraphics[width=.9\linewidth]{histo_same2.png}
 
 \end{minipage}
 \end{figure}
@@ -360,23 +371,67 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 
 \end{frame}
 
-\section{Justificativa}
+\section{Materiais}
 
-\begin{frame}{Justificativa}
+\begin{frame}{Materiais}
   \begin{itemize}
-   \item Descritores de Haralick\newline
-   \begin{itemize}
-      \item Matrizes de co-ocorrência\newline
-      \item Análise dos níveis de cinza na imagem\newline
-      \item Total de 13 características de textura\newline
-	\begin{itemize}
-	    \item Contraste, correlação, entropia...\newline
-	\end{itemize}
-     \item Especialmente útil na área médica
-   \end{itemize}
-   
+   \item PostgreSQL\newline
+   \item Arboretum (GBDI)\newline
+   \item Software para elaboração da interface com o usuário   
   \end{itemize}
 
 \end{frame}
+
+\section{Considerações Finais}
+
+\begin{frame}{Considerações Finais}
+  \begin{itemize}
+   \item Planeja-se utilizar este trabalho para a elaboração de um CBIR médico\newline
+  \end{itemize}
+\end{frame}
+
+
+\institute{Universidade Técnológica Federal do Paraná - Campus Pato Branco\\Departamento Acadêmico de Informática\\Curso de Engenharia de Computação}
+\title{Consultas por similaridade em bases de dados complexas utilizando técnicas OMNI em SGBDR}
+\subtitle{Trabalho de Conclusão de Curso}
+\author{
+Aluno: Cristiano Matsui\\
+Orientador: Dr. Ives Renê Venturini Pola\\
+Coorientadora: Dra. Fernanda Paula Barbosa Pola
+}
+\date{\today}
+
+
+
+\begin{frame}[plain]
+     \vfill
+     \centering
+
+     \begin{beamercolorbox}[sep=8pt,center,colsep=-4bp,rounded=true,shadow=true]{institute}
+        \usebeamerfont{institute}\insertinstitute
+     \end{beamercolorbox}
+
+     {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+
+     \begin{beamercolorbox}[sep=8pt,center,colsep=-4bp,rounded=true,shadow=true]{title}
+        \usebeamerfont{title}\inserttitle\par%
+        \ifx\insertsubtitle\@empty%
+        \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+     \end{beamercolorbox}%
+
+     \vskip1em\par
+
+     \begin{beamercolorbox}[sep=8pt,center,colsep=-4bp,rounded=true,shadow=true]{author}
+        \usebeamerfont{author}\insertauthor
+     \end{beamercolorbox}
+
+     \begin{beamercolorbox}[sep=8pt,center,colsep=-4bp,rounded=true,shadow=true]{date}
+        \usebeamerfont{date}\insertdate
+     \end{beamercolorbox}\vskip0.5em
+
+    \end{frame}
 
 \end{document}
