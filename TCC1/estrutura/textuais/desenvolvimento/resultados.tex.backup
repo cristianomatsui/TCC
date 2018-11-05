@@ -97,8 +97,4 @@ Como ilustrado pelas figuras \ref{fig:focoHC} e \ref{fig:fococatdog}, os número
 \end{figure}
 
 \section{SCRIPTS SQL}
-Os scripts necessários para a parte de manipulação do banco de dados foram todos escritos em PLPGSQL, uma linguagem estrutural estendida da SQL, desenvolvida para o uso
-no SGBD PostgreSQL. Também foi utilizada a extensão \textit{cube} presente no PostgreSQL, para o cálculo das distâncias. Aqui serão discutidos apenas alguns scripts mais importantes para a análise de resultados. Os demais códigos encontram-se integralmente
-nos Apêndices \ref{chap:apendice}.
-
-\subsection{SCRIPTS SEQUENCIAIS}
+Os scripts necessários para a parte de manipulação do banco de dados foram todos escritos em PLPGSQL, uma linguagem 
