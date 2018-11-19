@@ -2,15 +2,98 @@
 
 \chapter{CONCLUSÃO}
 \label{chap:conclusao}
+No presente capítulo será abordada a conclusão do trabalho aqui escrito. Pontos fracos e pontos fortes da técnica utilizada, assim como cenários de melhor empregabilidade da técnica. Também serão discutidos possíveis aprimoramentos deste trabalho, na forma de
+trabalhos ou pesquisas futuras.
 
-Parte final do texto, na qual se apresentam as conclusões do trabalho acadêmico. É importante fazer uma análise crítica do trabalho, destacando os principais resultados e as contribuições do trabalho para a área de pesquisa.
+\section{PERFORMANCE DA TÉCNICA}
+
+Para as consultas por abrangência, a técnica OMNI conseguiu um ganho de performance significativo quando comparada com o método sequencial. A Tabela \ref{tab:performance1} mostra os ganhos de performance da consulta mais rápida em relação ao método
+sequencial. O cálculo de ganho de performance (GP) percentual se dá por: $GP_\% = (T_o/T_s - 1)*100$, sendo $T_o$ o tempo da consulta OMNI mais rápida (quantidade de focos ótima) e $T_s$ o tempo da consulta sequencial.
+
+\begin{table}[H]
+    \centering
+    \caption[Ganho de Performance - CAT\_DOG]{Ganho de Performance - CAT\_DOG.
+    \label{tab:performance1}}
+   % \begin{tabular}{l l l l}
+   \begin{tabular}{l c}
+        \toprule
+            &GP (\%)\\
+        \midrule
+            L$_1$ - FORMA & 399,20 \\
+            L$_2$ - FORMA & 378,24 \\
+            L$_\infty$ - FORMA & 329,30 \\
+            L$_1$ - TEXTURA & 468,91 \\
+            L$_1$ - COR & 397,55 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+O ganho de performance para a base CAT\_DOG foi extremamente satisfatório, dado ao tamanho reduzido e baixa complexidade dos dados. Inicialmente estimou-se que a técnica só teria resultados significativos com bases massivas e com complexidade elevada, cenários
+aonde a poda de cálculos desnecessários traria um maior benefício em questões de tempo de execução.
+
+A base HC apresentou um ganho de performance ainda maior com a técnica OMNI, devido a sua elevada complexidade de dados e quantidade de tuplas a serem analisadas em cada consulta. Isto ilustra o potencial da técnica para bases ainda maiores, ou até mesmo para a manipulação
+de \textit{Big Data}. A Tabela \ref{tab:performance2} contém os ganhos de performance da técnica na base HC.
+
+\begin{table}[H]
+    \centering
+    \caption[Ganho de Performance - HC]{Ganho de Performance - HC.
+    \label{tab:performance2}}
+   % \begin{tabular}{l l l l}
+   \begin{tabular}{l c}
+        \toprule
+            &GP (\%)\\
+        \midrule
+            L$_1$ & 1460,20 \\
+            L$_2$ & 1304,04 \\
+            L$_\infty$ & - \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Porém, a técnica tem as suas limitações, como visto na Seção \ref{sec:limit}. Enquanto consultas sequenciais apresentam pouca perda de desempenho com o aumento do raio da consulta por abrangência, as consultas OMNI são muito mais sensíveis às variações de raio.
+Isso se deve ao fato de raios muito elevados causam um crescimento na \textit{mbOr}, o que acarreta em um número maior de alarmes falsos, aumentando a quantidade de cálculos de distância necessários na etapa de refinamento. Sob a luz dessas informações, é seguro dizer que 
+a técnica OMNI só pode ser empregada viavelmente para consultas que retornem até no máximo cerca de 2\% do número de tuplas presentes na base, como ilustrado pelas Tabelas \ref{tab:limit1} e \ref{tab:limit2}.
+
+Outro ponto interessante a ser notado é que a técnica apresenta uma certa tolerância em relação ao número de focos. Como visto na Seção \ref{sec:temp_cons}, técnica OMNI ainda consegue um desempenho melhor que o do método sequencial mesmo com um número não ótimo de focos.
+
+\section{CUSTOS DA TÉCNICA}
+
+A técnica OMNI prevê que as melhorias de performance em tempo de execução são possíveis através de um custo adicional de espaço em disco, e o tempo necessários
+para a criação das estruturas OMNI utilizadas, como mencionado previamente na Seção \ref{sec:defomni}. A Tabela \ref{tab:custos} contém o espaço em disco
+necessário para armazenar as tabelas utilizadas pelo banco, assim como as estruturas OMNI criadas. O espaço necessário está dividido
+entre espaço em disco para armazenar os dados, e o espaço utilizado pelas estruturas de indexação.
+
+\begin{table}[H]
+    \centering
+    \caption[Custos de armazenamento]{Custos de armazenamento.
+    \label{tab:custos}}
+   % \begin{tabular}{l l l l}
+   \begin{tabular}{l c c}
+        \toprule
+             &Índices (MB)& Dados (MB)\\
+        \midrule
+            SHAPE & 1,62& 4,86 \\
+            COLOR & 0,55& 2,83 \\
+            TEXTURE & 0,55& 2,83 \\
+            SHAPE\_F\_BASE & 36& 1,47 \\
+            HC\_TABLE & 53& 1058 \\
+            COLOR\_F\_BASE & 12& 13 \\
+            TEXTURE\_F\_BASE & 24& 1,47 \\
+            HC\_F\_BASE & 263& 1229 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+O custo de tempo de criação das estruturas OMNI variam entre 30 segundos até 36 minutos, dependendo do tamanho da base e número de focos
+utilizados. Mas este custo pode ser ignorado devido ao fato de que o processo de criação destas estruturas é realizado apenas uma vez,
+e que a base focal é invariante a operações de inserções.
 
 \section{TRABALHOS FUTUROS}
 \label{sec:trabalhosFuturos}
 
-Também deve indicar, se possível e/ou conveniente, como o trabalho pode ser estendido ou aprimorado.
+Como visto neste trabalho, a técnica OMNI possui um grande potencial em acelerar consultas por similaridade, mas as suas limitações restringem um pouco a sua usuabilidade. Dentre os aprimoramentos futuros para este trabalho, destacam-se estudos mais específicos
+sobre os limites da técnica e como expandí-los. Outra melhoria importante seria um algoritmo mais eficiente de consultas por $k$-vizinhos mais próximos que possa ser utilizado com a técnica OMNI.
 
-\section{CONSIDERAÇÕES FINAIS}
-\label{sec:consideracoesFinais}
+Outro trabalho interessante a nível de um comparativo qualitativo seria o de aprimoarar a segmentação e extração de características de imagens, de modo a produzir consultas com um maior índice de acerto, assim
+como consultas que consigam operar com mais de uma característica ao mesmo tempo, mantendo o ganho de performance proposto pela OMNI.
 
-Encerramento do trabalho acadêmico.

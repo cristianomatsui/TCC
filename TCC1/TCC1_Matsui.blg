@@ -4,6 +4,7 @@ The top-level auxiliary file: TCC1_Matsui.aux
 A level-1 auxiliary file: estrutura/pre-textuais/epigrafe.aux
 A level-1 auxiliary file: estrutura/pre-textuais/resumo.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux
+A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-tabelas.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-siglas.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-simbolos.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux
@@ -11,8 +12,11 @@ A level-1 auxiliary file: estrutura/pre-textuais/sumario.aux
 A level-1 auxiliary file: estrutura/textuais/introducao.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/conceitos.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/OMNI.aux
+A level-1 auxiliary file: estrutura/textuais/desenvolvimento/resultados.aux
+A level-1 auxiliary file: estrutura/textuais/conclusao.aux
 A level-1 auxiliary file: estrutura/pos-textuais/referencias.aux
 The style file: abntex2-alf.bst
+A level-1 auxiliary file: estrutura/pos-textuais/apendices.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -33,44 +37,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 27 entries,
+You've used 30 entries,
             6714 wiz_defined-function locations,
-            1396 strings with 14691 characters,
-and the built_in function-call counts, 28049 in all, are:
-= -- 2803
-> -- 767
-< -- 402
-+ -- 696
-- -- 229
-* -- 1909
-:= -- 3517
-add.period$ -- 97
-call.type$ -- 28
-change.case$ -- 269
-chr.to.int$ -- 70
-cite$ -- 21
-duplicate$ -- 2011
-empty$ -- 1640
-format.name$ -- 1095
-if$ -- 6255
+            1427 strings with 15418 characters,
+and the built_in function-call counts, 32197 in all, are:
+= -- 3253
+> -- 867
+< -- 495
++ -- 818
+- -- 259
+* -- 2188
+:= -- 4023
+add.period$ -- 110
+call.type$ -- 31
+change.case$ -- 301
+chr.to.int$ -- 79
+cite$ -- 24
+duplicate$ -- 2389
+empty$ -- 1814
+format.name$ -- 1235
+if$ -- 7114
 int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 452
-newline$ -- 117
-num.names$ -- 105
-pop$ -- 541
+missing$ -- 505
+newline$ -- 134
+num.names$ -- 120
+pop$ -- 606
 preamble$ -- 1
-purify$ -- 110
+purify$ -- 122
 quote$ -- 0
-skip$ -- 2322
+skip$ -- 2706
 stack$ -- 1
-substring$ -- 1166
-swap$ -- 843
-text.length$ -- 36
+substring$ -- 1343
+swap$ -- 996
+text.length$ -- 43
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 6
 warning$ -- 0
-while$ -- 168
+while$ -- 191
 width$ -- 0
-write$ -- 364
+write$ -- 415

@@ -81,6 +81,7 @@
 % Define a numeração das equações de forma sequencial
 \counterwithout{equation}{chapter}
 
+
 % -----------------------------------------------------------------------------
 % Comandos de dados
 % -----------------------------------------------------------------------------

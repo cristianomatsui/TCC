@@ -32,7 +32,7 @@
 \include{estrutura/pre-textuais/folha-rosto}
 
 \begin{document}
-
+\counterwithout{lstlisting}{chapter}
 \pretextual
 \setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
 \imprimircapa                                               	           % Comando para imprimir Capa
@@ -45,10 +45,11 @@
 %\include{estrutura/pre-textuais/abstract}             		           % Resumo em Inglês
 \include{estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras}   % Lista de Figuras
 %\include{estrutura/pre-textuais/listas/listas-ilustracoes/lista-quadros}   % Lista de Quadros
-%\include{estrutura/pre-textuais/listas/lista-tabelas}         		   % Lista de Tabelas
+\include{estrutura/pre-textuais/listas/lista-tabelas}         		   % Lista de Tabelas
 \include{estrutura/pre-textuais/listas/lista-siglas}          		   % Lista de Abreviaturas e Siglas
 \include{estrutura/pre-textuais/listas/lista-simbolos}        		   % Lista de Símbolos
 \include{estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos}   % Lista de Algoritmos
+%\include{estrutura/pre-textuais/listas/listas-diversas/lista-codigos}	   % Lista de Codigos
 \include{estrutura/pre-textuais/sumario}               			   % Sumário
 
 \textual
@@ -57,14 +58,14 @@
 %\include{estrutura/textuais/desenvolvimento/revisao-de-literatura}         % Revisão de Literatura
 \include{estrutura/textuais/desenvolvimento/conceitos}                     % Conceitos
 \include{estrutura/textuais/desenvolvimento/OMNI}                          % OMNI
-%\include{estrutura/textuais/desenvolvimento/resultados}                    % Resultados
+\include{estrutura/textuais/desenvolvimento/resultados}                    % Resultados
 %\include{estrutura/textuais/desenvolvimento/orientacoes}                   % Capítulo com Orientações de uso do Template
-%\include{estrutura/textuais/conclusao}                 			   % Conclusão
+\include{estrutura/textuais/conclusao}                 			   % Conclusão
 
 \postextual
 % INSERE ELEMENTOS PÓS-TEXTUAIS
 \include{estrutura/pos-textuais/referencias}           			   % Referências
-%\include{estrutura/pos-textuais/apendices}             			   % Apêndices
+\include{estrutura/pos-textuais/apendices}             			   % Apêndices
 %\include{estrutura/pos-textuais/anexos}               			   % Anexos
 
 \end{document}

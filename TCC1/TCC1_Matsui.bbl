@@ -13,6 +13,14 @@
 ISSN 1097-024X.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1002/spe.898}.}
 
+\bibitem[Block, Bloh e Schellnhuber 1990]{Block1990}
+\abntrefinfo{Block, Bloh e Schellnhuber}{BLOCK; BLOH; SCHELLNHUBER}{1990}
+{BLOCK, A.; BLOH, W. von; SCHELLNHUBER, H.~J. Efficient box-counting
+  determination of generalized fractal dimensions.
+\textbf{Phys. Rev. A}, American Physical Society, v.~42, p. 1869--1874, Aug
+  1990.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevA.42.1869}.}
+
 \bibitem[Bugatti et al. 2014]{Bugatti2014}
 \abntrefinfo{Bugatti et al.}{BUGATTI et al.}{2014}
 {BUGATTI, P.~H. et al. Prosper: Perceptual similarity queries in medical cbir
@@ -103,6 +111,14 @@ ISBN 0-934613-18-4. Dispon{\'\i}vel em:
   \textbf{Proceedings IEEE Workshop on Content-Based Access of Image and Video
   Libraries (CBAIVL 2001)}. [S.l.: s.n.], 2001. p. 89--93.}
 
+\bibitem[Mo e Huang 2012]{Mo2012}
+\abntrefinfo{Mo e Huang}{MO; HUANG}{2012}
+{MO, D.; HUANG, S.~H. Fractal-based intrinsic dimension estimation and its
+  application in dimensionality reduction.
+\textbf{IEEE Transactions on Knowledge and Data Engineering}, v.~24, n.~1, p.
+  59--71, Jan 2012.
+ISSN 1041-4347.}
+
 \bibitem[Pola 2010]{POLA2010}
 \abntrefinfo{Pola}{POLA}{2010}
 {POLA, I. R.~V.
@@ -111,6 +127,12 @@ ISBN 0-934613-18-4. Dispon{\'\i}vel em:
 Agosto 2010. Tese (Doutorado em Ci{\^e}ncia da Computa{\c c}\~ao) --- Instituto
   de Ci\^encias Matem\'aticas e de Computa{\c c}\~ao, Universidade de S\~ao
   Paulo, São Carlos, 2010.}
+
+\bibitem[PostgreSQL 2017]{POSTGRESQL2017}
+\abntrefinfo{PostgreSQL}{POSTGRESQL}{2017}
+{POSTGRESQL. \textbf{PostgreSQL 10 Documentation}. 2017.
+Dispon{\'\i}vel em: \url{https://www.postgresql.org/docs/10/}. Acesso em: 25 de
+  outubro de 2018.}
 
 \bibitem[{SANTOS FILHO} et al. 2001]{Traina2001}
 \abntrefinfo{{SANTOS FILHO} et al.}{{SANTOS FILHO} et al.}{2001}

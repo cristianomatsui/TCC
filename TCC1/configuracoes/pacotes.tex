@@ -17,7 +17,7 @@
 \usepackage{booktabs}                                       % Réguas horizontais em tabelas
 \usepackage{color, colortbl}                                % Controle das cores
 \usepackage{float}                                          % Necessário para tabelas/figuras em ambiente multi-colunas
-\usepackage{graphicx}                                       % Inclusão de gráficos e figuras
+\usepackage[final]{graphicx}                                       % Inclusão de gráficos e figuras
 \usepackage{icomma}                                         % Uso de vírgulas em expressões matemáticas
 \usepackage{indentfirst}                                    % Indenta o primeiro parágrafo de cada seção
 \usepackage{microtype}                                      % Melhora a justificação do documento
@@ -40,8 +40,102 @@
 %\usepackage{scalefnt}                                      % Permite redimensionar tamanho da fonte
 %\usepackage{subfig}                                        % Posicionamento de figuras
 %\usepackage{upgreek}                                       % Fonte letras gregas
+\usepackage{listings}
+\usepackage{xcolor}
+
+\newfloat{lstfloat}{htbp}{lop}
+\floatname{lstfloat}{Listing}
+\def\lstfloatautorefname{Listing} % needed for hyperref/auroref
+
+
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm,exscale} % matematicas
+\usepackage{listingsutf8}	% algoritmos e codigos fonte
+\usepackage[shortcuts]{extdash}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+\usepackage[normalem]{ulem}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstset{ %
+  backgroundcolor=\color{backcolour},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{codegray},    % comment style
+  deletekeywords={NULL},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{codegreen},       % keyword style
+  identifierstyle=\color{blue},
+  language=SQL,                    % the language of the code
+  morekeywords={*, REPLACE, FUNCTION, NOW, OLD, NEW, RETURN,RETURNS, LANGUAGE, RAISE, NOTICE, DECLARE, FOR, LOOP, FLOAT8, IF, BEGIN},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  columns=flexible,
+  stringstyle=\color{codepurple},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 space
+  literate=%
+		{á}{{\'a}}1
+		{í}{{\'i}}1
+		{ç}{{\c{c}}}1
+		{ã}{{\~a}}1
+		{õ}{{\~o}}1
+		{é}{{\'e}}1
+		{ý}{{\'y}}1
+		{ú}{{\'u}}1
+		{ó}{{\'o}}1
+		{ě}{{\v{e}}}1
+		{š}{{\v{s}}}1
+		{č}{{\v{c}}}1
+		{ř}{{\v{r}}}1
+		{ž}{{\v{z}}}1
+		{ď}{{\v{d}}}1
+		{ť}{{\v{t}}}1
+		{ň}{{\v{n}}}1
+		{ů}{{\r{u}}}1
+		{Á}{{\'A}}1
+		{Í}{{\'I}}1
+		{É}{{\'E}}1
+		{Ý}{{\'Y}}1
+		{Ú}{{\'U}}1
+		{Ó}{{\'O}}1
+		{Ě}{{\v{E}}}1
+		{Š}{{\v{S}}}1
+		{Č}{{\v{C}}}1
+		{Ř}{{\v{R}}}1
+		{Ž}{{\v{Z}}}1
+		{Ď}{{\v{D}}}1
+		{Ť}{{\v{T}}}1
+		{Ň}{{\v{N}}}1
+		{Ů}{{\r{U}}}1
+}
+
 
 \newtheorem{mydef}{Definição}
 
 % Redefine a fonte para uma fonte similar a Arial (fonte Helvetica)
 \renewcommand*\familydefault{\sfdefault}
+\renewcommand{\lstlistingname}{Código}
+\newcommand\purl[1]{\protect{#1}} % "protected url"
+\usepackage[caption = false]{subfig}

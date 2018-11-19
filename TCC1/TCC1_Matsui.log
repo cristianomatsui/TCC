@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  22 NOV 2017 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  18 NOV 2018 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **TCC1_Matsui.tex
 (./TCC1_Matsui.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./configuracoes/utfpr-abntex2.cls
 Document Class: configuracoes/utfpr-abntex2 2016/07/07 v1.0
-(/usr/local/share/texmf/tex/latex/abntex2/abntex2.cls
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2016/02/26 v-1.9.6 abnTeX2
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -25,8 +25,10 @@ ment class
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-Class memoir Info: An `ifetex' package is being emulated on input line 265.
+(/usr/share/texlive/texmf-dist/tex/latex/ifetex/ifetex.sty
+Package: ifetex 2011/12/15 v1.2 ifetex
 
+(/usr/share/texlive/texmf-dist/tex/plain/ifetex/ifetex.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -316,7 +318,6 @@ Package delarray [2008/07/23] emulated by memoir.
 Package enumerate [2008/07/23] emulated by memoir.
 Package epigraph [2008/07/23] emulated by memoir.
 Package ifmtarg [2008/07/23] emulated by memoir.
-Package ifetex [2008/07/23] emulated by memoir.
 Package index [2008/07/23] emulated by memoir.
 Package makeidx [2008/07/23] emulated by memoir.
 Package moreverb [2008/07/23] emulated by memoir.
@@ -556,10 +557,10 @@ Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 \openout2 = `configuracoes/pacotes.aux'.
 
 (./configuracoes/pacotes.tex
-(/usr/local/share/texmf/tex/latex/abntex2/abntex2cite.sty
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 
-(/usr/local/share/texmf/tex/latex/abntex2/abntex2abrev.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip260
 \ABCIauxlen=\skip261
 \c@ABCIaux=\count165
@@ -1141,7 +1142,127 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
 )
-\c@mydef=\count189
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count189
+\lst@gtempboxa=\box42
+\lst@token=\toks38
+\lst@length=\count190
+\lst@currlwidth=\dimen175
+\lst@column=\count191
+\lst@pos=\count192
+\lst@lostspace=\dimen176
+\lst@width=\dimen177
+\lst@newlines=\count193
+\lst@lineno=\count194
+\lst@maxwidth=\dimen178
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count266
+\lst@skipnumbers=\count267
+\lst@framebox=\box43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+\@float@every@lstfloat=\toks39
+\c@lstfloat=\count268
+
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks40
+\thm@bodyfont=\toks41
+\thm@headfont=\toks42
+\thm@notefont=\toks43
+\thm@headpunct=\toks44
+\thm@preskip=\skip286
+\thm@postskip=\skip287
+\thm@headsep=\skip288
+\dth@everypar=\toks45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen179
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
+Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ncctools/extdash.sty
+Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box44
+\UL@hyphenbox=\box45
+\UL@skip=\skip289
+\UL@hook=\toks46
+\UL@height=\dimen180
+\UL@pe=\count269
+\UL@pixel=\dimen181
+\ULC@box=\box46
+Package: ulem 2012/05/18
+\ULdepth=\dimen182
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+\c@mydef=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen183
+\captionmargin@=\dimen184
+\captionwidth=\dimen185
+\caption@tempdima=\dimen186
+\caption@indent=\dimen187
+\caption@parindent=\dimen188
+\caption@hangindent=\dimen189
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+\c@KVtest=\count271
+\sf@farskip=\skip290
+\sf@captopadj=\dimen190
+\sf@capskip=\skip291
+\sf@nearskip=\skip292
+\c@subfigure=\count272
+\c@subfigure@save=\count273
+\c@subtable=\count274
+\c@subtable@save=\count275
+\sf@top=\skip293
+\sf@bottom=\skip294
 )
 \@input{configuracoes/configuracoes-pdf.aux}
 \openout2 = `configuracoes/configuracoes-pdf.aux'.
@@ -1149,7 +1270,6 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 (./configuracoes/configuracoes-pdf.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 Package hyperref Info: Option `breaklinks' set `true' on input line 14.
-Package color Info: Redefining color blue on input line 18.
 \TCC1_Matsui@idxfile=\write4
 \openout4 = `TCC1_Matsui.idx'.
 
@@ -1166,6 +1286,7 @@ Writing index file TCC1_Matsui.idx
 (./estrutura/pre-textuais/folha-rosto.tex) (./TCC1_Matsui.aux
 (./estrutura/pre-textuais/epigrafe.aux) (./estrutura/pre-textuais/resumo.aux)
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux)
+(./estrutura/pre-textuais/listas/lista-tabelas.aux)
 (./estrutura/pre-textuais/listas/lista-siglas.aux)
 (./estrutura/pre-textuais/listas/lista-simbolos.aux)
 (./estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux)
@@ -1175,7 +1296,9 @@ LaTeX Warning: Label `eq:knnq' multiply defined.
 
 ) (./estrutura/textuais/desenvolvimento/conceitos.aux)
 (./estrutura/textuais/desenvolvimento/OMNI.aux)
-(./estrutura/pos-textuais/referencias.aux))
+(./estrutura/textuais/desenvolvimento/resultados.aux)
+(./estrutura/textuais/conclusao.aux) (./estrutura/pos-textuais/referencias.aux)
+(./estrutura/pos-textuais/apendices.aux))
 \openout1 = `TCC1_Matsui.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -1197,7 +1320,7 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 34.
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-\AtBeginShipoutBox=\box42
+\AtBeginShipoutBox=\box47
 Package hyperref Info: Link coloring ON on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1206,7 +1329,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count190
+\c@section@level=\count276
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1214,21 +1337,21 @@ LaTeX Info: Redefining \nameref on input line 34.
 LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
-\myptabbox=\box43
-\myptabboxwidth=\skip286
+\myptabbox=\box48
+\myptabboxwidth=\skip295
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
-\scratchdimen=\dimen175
-\scratchbox=\box44
-\nofMPsegments=\count192
-\nofMParguments=\count193
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count194
-\MPscratchDim=\dimen176
-\MPnumerator=\count266
-\makeMPintoPDFobject=\count267
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count277
+\scratchdimen=\dimen191
+\scratchbox=\box49
+\nofMPsegments=\count278
+\nofMParguments=\count279
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count280
+\MPscratchDim=\dimen192
+\MPnumerator=\count281
+\makeMPintoPDFobject=\count282
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1261,6 +1384,10 @@ Package microtype Info: Loading generic settings for font family
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 34.
+\c@lstlisting=\count283
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 
 [1
 
@@ -1277,6 +1404,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 39.
 LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1374,6 +1503,19 @@ l.5 \cleardoublepage
 
 
 ])
+\openout2 = `estrutura/pre-textuais/listas/lista-tabelas.aux'.
+
+ (./estrutura/pre-textuais/listas/lista-tabelas.tex
+(./TCC1_Matsui.lot)pdfTeX warning (ext4): destination with the same identifier 
+(name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5 \cleardoublepage
+                     [6
+
+
+
+])
 \openout2 = `estrutura/pre-textuais/listas/lista-siglas.aux'.
 
  (./estrutura/pre-textuais/listas/lista-siglas.texpdfTeX warning (ext4): destin
@@ -1382,7 +1524,7 @@ gnored
 <to be read again> 
                    \relax 
 l.12 \end{siglas}
-                  [6
+                  [7
 
 
 
@@ -1396,7 +1538,7 @@ ination with the same identifier (name{page.}) has been already used, duplicate
 <to be read again> 
                    \relax 
 l.17 \end{simbolos}
-                    [7
+                    [8
 
 
 
@@ -1407,17 +1549,17 @@ l.17 \end{simbolos}
 
 
 (./estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.tex
-\c@loadepth=\count268
-\cftbeforealgocfskip=\skip287
-\cftalgocfindent=\skip288
-\cftalgocfnumwidth=\skip289
+\c@loadepth=\count284
+\cftbeforealgocfskip=\skip296
+\cftalgocfindent=\skip297
+\cftalgocfnumwidth=\skip298
 
 (./TCC1_Matsui.loa)pdfTeX warning (ext4): destination with the same identifier 
 (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.16 \cleardoublepage
-                      [8
+                      [9
 
 
 
@@ -1426,16 +1568,34 @@ l.16 \cleardoublepage
 \openout2 = `estrutura/pre-textuais/sumario.aux'.
 
  (./estrutura/pre-textuais/sumario.tex
-(./TCC1_Matsui.toc)pdfTeX warning (ext4): destination with the same identifier 
-(name{page.}) has been already used, duplicate ignored
+(./TCC1_Matsui.tocpdfTeX warning (ext4): destination with the same identifier (
+name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 ...line {5}CONCLUS\IeC {\~A}O}{30}{chapter.5}
+                                                   [10
+
+
+
+]
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 44.
+)
+
+Class memoir Warning: The material used in the headers is too large
+(15.6779pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 7.
+
+
+Overfull \vbox (1.1779pt too high) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.7 \cleardoublepage
-                     [9
-
-
-
-])
+                     [11])
 \openout2 = `estrutura/textuais/introducao.aux'.
 
  (./estrutura/textuais/introducao.tex [1
@@ -1445,17 +1605,17 @@ l.7 \cleardoublepage
 
 ]
 Package epstopdf Info: Source file: <dados/figuras/rqu.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 224571 bytes
 (epstopdf)             Output file: <dados/figuras/rqu-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 56926 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rqu-eps-conv
 erted-to.pdf dados/figuras/rqu.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rqu-eps-converted-to.pdf, id=154, 157.58875pt x 147.55125pt>
+<dados/figuras/rqu-eps-converted-to.pdf, id=243, 157.58875pt x 147.55125pt>
 File: dados/figuras/rqu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rqu-eps-converted-to.pdf>
@@ -1463,17 +1623,17 @@ Package pdftex.def Info: dados/figuras/rqu-eps-converted-to.pdf used on input l
 ine 43.
 (pdftex.def)             Requested size: 181.99722pt x 170.41432pt.
 Package epstopdf Info: Source file: <dados/figuras/knnq.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 17383 bytes
 (epstopdf)             Output file: <dados/figuras/knnq-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 7510 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/knnq-eps-con
 verted-to.pdf dados/figuras/knnq.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/knnq-eps-converted-to.pdf, id=161, 154.5775pt x 135.50626pt>
+<dados/figuras/knnq-eps-converted-to.pdf, id=250, 154.5775pt x 135.50626pt>
 File: dados/figuras/knnq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/knnq-eps-converted-to.pdf>
@@ -1490,18 +1650,18 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
 l.78 \end{figure}
                   <./dados/figuras/rqu-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <dados/figuras/rg_omni_1.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 131913 bytes
 (epstopdf)             Output file: <dados/figuras/rg_omni_1-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 123142 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_omni_1-ep
 s-converted-to.pdf dados/figuras/rg_omni_1.eps>
 (epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_omni_1-eps-converted-to.pdf, id=188, 292.09125pt x 289.08pt>
+<dados/figuras/rg_omni_1-eps-converted-to.pdf, id=276, 292.09125pt x 289.08pt>
 File: dados/figuras/rg_omni_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_omni_1-eps-converted-to.pdf>
@@ -1530,25 +1690,25 @@ LaTeX Font Warning: Font shape `OMS/aess/m/n' undefined
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.118  \item C
-              riar a estrutura Omni necessária para a filtragem dos cálculos;
+              riar a estrutura OMNI necessária para a filtragem dos cálculos;
  <./dados/figuras/rg_omni_1-eps-converted-to.pdf>]) [5]
 \openout2 = `estrutura/textuais/desenvolvimento/conceitos.aux'.
 
 
 (./estrutura/textuais/desenvolvimento/conceitos.tex
 Package epstopdf Info: Source file: <dados/figuras/desig_tri.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 81834 bytes
 (epstopdf)             Output file: <dados/figuras/desig_tri-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 27125 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/desig_tri-ep
 s-converted-to.pdf dados/figuras/desig_tri.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/desig_tri-eps-converted-to.pdf, id=236, 521.95pt x 155.58125pt>
+<dados/figuras/desig_tri-eps-converted-to.pdf, id=323, 521.95pt x 155.58125pt>
 File: dados/figuras/desig_tri-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/desig_tri-eps-converted-to.pdf>
@@ -1561,17 +1721,17 @@ nput line 42.
 
 ]
 Package epstopdf Info: Source file: <dados/figuras/minko.eps>
-(epstopdf)                    date: 2017-11-13 19:51:10
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 51012 bytes
 (epstopdf)             Output file: <dados/figuras/minko-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-13 19:51:23
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 17712 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/minko-eps-co
 nverted-to.pdf dados/figuras/minko.eps>
 (epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/minko-eps-converted-to.pdf, id=250, 404.41289pt x 165.32771pt>
+<dados/figuras/minko-eps-converted-to.pdf, id=338, 404.41289pt x 165.32771pt>
 File: dados/figuras/minko-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/minko-eps-converted-to.pdf>
@@ -1602,18 +1762,18 @@ l.108 M
 
 ]
 Package epstopdf Info: Source file: <dados/figuras/rg_omni_2.eps>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 98125 bytes
 (epstopdf)             Output file: <dados/figuras/rg_omni_2-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-11-03 13:44:48
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 62605 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_omni_2-ep
 s-converted-to.pdf dados/figuras/rg_omni_2.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_omni_2-eps-converted-to.pdf, id=318, 378.41376pt x 315.1775pt
+<dados/figuras/rg_omni_2-eps-converted-to.pdf, id=405, 378.41376pt x 315.1775pt
 >
 File: dados/figuras/rg_omni_2-eps-converted-to.pdf Graphic file (type pdf)
  <use dados/figuras/rg_omni_2-eps-converted-to.pdf>
@@ -1633,18 +1793,18 @@ LaTeX Warning: Command \' invalid in math mode on input line 82.
 
 Missing character: There is no � in font cmr8!
 Package epstopdf Info: Source file: <dados/figuras/rg_ex1.eps>
-(epstopdf)                    date: 2017-11-13 21:35:04
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 39370 bytes
 (epstopdf)             Output file: <dados/figuras/rg_ex1-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2017-11-13 21:52:58
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 18366 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_ex1-eps-c
 onverted-to.pdf dados/figuras/rg_ex1.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_ex1-eps-converted-to.pdf, id=335, 254.10692pt x 176.14403pt>
+<dados/figuras/rg_ex1-eps-converted-to.pdf, id=425, 254.10692pt x 176.14403pt>
 File: dados/figuras/rg_ex1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_ex1-eps-converted-to.pdf>
@@ -1659,17 +1819,17 @@ t line 123.
 l.127 
       ]
 Package epstopdf Info: Source file: <dados/figuras/btree.eps>
-(epstopdf)                    date: 2017-11-13 22:15:50
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 62002 bytes
 (epstopdf)             Output file: <dados/figuras/btree-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-13 22:16:24
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 20752 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/btree-eps-co
 nverted-to.pdf dados/figuras/btree.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/btree-eps-converted-to.pdf, id=343, 419.05353pt x 195.64651pt>
+<dados/figuras/btree-eps-converted-to.pdf, id=433, 419.05353pt x 195.64651pt>
 File: dados/figuras/btree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/btree-eps-converted-to.pdf>
@@ -1677,18 +1837,18 @@ Package pdftex.def Info: dados/figuras/btree-eps-converted-to.pdf used on input
  line 134.
 (pdftex.def)             Requested size: 364.00139pt x 169.95135pt.
 Package epstopdf Info: Source file: <dados/figuras/rg_ex2.eps>
-(epstopdf)                    date: 2017-11-19 23:27:47
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 85020 bytes
 (epstopdf)             Output file: <dados/figuras/rg_ex2-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2017-11-19 23:27:54
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 28333 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_ex2-eps-c
 onverted-to.pdf dados/figuras/rg_ex2.eps>
 (epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_ex2-eps-converted-to.pdf, id=344, 258.84175pt x 303.49672pt>
+<dados/figuras/rg_ex2-eps-converted-to.pdf, id=434, 258.84175pt x 303.49672pt>
 File: dados/figuras/rg_ex2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_ex2-eps-converted-to.pdf>
@@ -1723,18 +1883,18 @@ l.172 É
          importante notar que nem todos os elementos selecionados durante a ...
  <./dados/figuras/rg_ex2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <dados/figuras/rg_ex3.eps>
-(epstopdf)                    date: 2017-11-20 18:10:17
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 38532 bytes
 (epstopdf)             Output file: <dados/figuras/rg_ex3-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2017-11-20 18:10:38
+(epstopdf)                    date: 2018-04-24 14:51:51
 (epstopdf)                    size: 12712 bytes
 (epstopdf)             Command: <repstopdf --outfile=dados/figuras/rg_ex3-eps-c
 onverted-to.pdf dados/figuras/rg_ex3.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_ex3-eps-converted-to.pdf, id=384, 195.40797pt x 226.79214pt>
+<dados/figuras/rg_ex3-eps-converted-to.pdf, id=476, 195.40797pt x 226.79214pt>
 File: dados/figuras/rg_ex3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_ex3-eps-converted-to.pdf>
@@ -1746,50 +1906,412 @@ t line 179.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.59 ...e{estrutura/textuais/desenvolvimento/OMNI}
+l.60 ...e{estrutura/textuais/desenvolvimento/OMNI}
                                                                             ...
  <./dados/figuras/rg_ex3-eps-converted-to.pdf>]
+\openout2 = `estrutura/textuais/desenvolvimento/resultados.aux'.
+
+
+(./estrutura/textuais/desenvolvimento/resultados.tex
+<dados/figuras/cat325.jpg, id=484, 500.87125pt x 376.40625pt>
+File: dados/figuras/cat325.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat325.jpg>
+Package pdftex.def Info: dados/figuras/cat325.jpg used on input line 34.
+(pdftex.def)             Requested size: 90.99861pt x 68.38197pt.
+
+<dados/figuras/cat6243.jpg, id=485, 360.34625pt x 271.0125pt>
+File: dados/figuras/cat6243.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat6243.jpg>
+Package pdftex.def Info: dados/figuras/cat6243.jpg used on input line 35.
+(pdftex.def)             Requested size: 90.99861pt x 68.43527pt.
+
+<dados/figuras/dog2032.jpg, id=486, 500.87125pt x 334.24875pt>
+File: dados/figuras/dog2032.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog2032.jpg>
+Package pdftex.def Info: dados/figuras/dog2032.jpg used on input line 36.
+(pdftex.def)             Requested size: 90.99861pt x 60.72319pt.
+
+<dados/figuras/dog10641.jpg, id=487, 501.875pt x 375.4025pt>
+File: dados/figuras/dog10641.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog10641.jpg>
+Package pdftex.def Info: dados/figuras/dog10641.jpg used on input line 37.
+(pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
+ [17
+
+
+
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 54.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.65 
+      <./dados/figuras/cat325.jpg> <./dados/figuras/cat6243.jpg> <./dados/figur
+as/dog2032.jpg> <./dados/figuras/dog10641.jpg>] [19]
+Package epstopdf Info: Source file: <dados/figuras/focoHC.eps>
+(epstopdf)                    date: 2018-11-13 18:19:27
+(epstopdf)                    size: 15433 bytes
+(epstopdf)             Output file: <dados/figuras/focoHC-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2018-11-13 18:21:20
+(epstopdf)                    size: 9918 bytes
+(epstopdf)             Command: <repstopdf --outfile=dados/figuras/focoHC-eps-c
+onverted-to.pdf dados/figuras/focoHC.eps>
+(epstopdf)             \includegraphics on input line 95.
+Package epstopdf Info: Output file is already uptodate.
+
+<dados/figuras/focoHC-eps-converted-to.pdf, id=517, 434.62375pt x 316.18124pt>
+File: dados/figuras/focoHC-eps-converted-to.pdf Graphic file (type pdf)
+
+<use dados/figuras/focoHC-eps-converted-to.pdf>
+Package pdftex.def Info: dados/figuras/focoHC-eps-converted-to.pdf used on inpu
+t line 95.
+(pdftex.def)             Requested size: 273.00278pt x 198.61629pt.
+Package epstopdf Info: Source file: <dados/figuras/fococatdog.eps>
+(epstopdf)                    date: 2018-11-05 18:00:29
+(epstopdf)                    size: 15187 bytes
+(epstopdf)             Output file: <dados/figuras/fococatdog-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2018-11-05 18:01:22
+(epstopdf)                    size: 9899 bytes
+(epstopdf)             Command: <repstopdf --outfile=dados/figuras/fococatdog-e
+ps-converted-to.pdf dados/figuras/fococatdog.eps>
+(epstopdf)             \includegraphics on input line 103.
+Package epstopdf Info: Output file is already uptodate.
+
+<dados/figuras/fococatdog-eps-converted-to.pdf, id=518, 428.60126pt x 316.18124
+pt>
+File: dados/figuras/fococatdog-eps-converted-to.pdf Graphic file (type pdf)
+ <use dados/figuras/fococatdog-eps-converted-to.pdf>
+Package pdftex.def Info: dados/figuras/fococatdog-eps-converted-to.pdf used on 
+input line 103.
+(pdftex.def)             Requested size: 273.00278pt x 201.39522pt.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 
+       <./dados/figuras/focoHC-eps-converted-to.pdf> <./dados/figuras/fococatdo
+g-eps-converted-to.pdf>]
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <5> on input line 124.
+ [21] [22] [23pdfTeX warning (ext4): destination with the same identifier (name
+{table.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.263 
+      ] [24pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.326 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.326 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.326 
+      ] [25pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.4.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.388 O
+       utra forma implementada foi a expansão do raio em tempo de execuçã...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.6}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.388 O
+       utra forma implementada foi a expansão do raio em tempo de execuçã...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.7}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.388 O
+       utra forma implementada foi a expansão do raio em tempo de execuçã...
+] <dados/figuras/cat50.jpg, id=669, 300.12125pt x 196.735pt>
+File: dados/figuras/cat50.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat50.jpg>
+Package pdftex.def Info: dados/figuras/cat50.jpg used on input line 426.
+(pdftex.def)             Requested size: 90.99861pt x 59.65135pt.
+
+<dados/figuras/cat9211.jpg, id=670, 297.11pt x 314.17375pt>
+File: dados/figuras/cat9211.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat9211.jpg>
+Package pdftex.def Info: dados/figuras/cat9211.jpg used on input line 427.
+(pdftex.def)             Requested size: 90.99861pt x 96.22313pt.
+
+<dados/figuras/dog10089.jpg, id=671, 501.875pt x 375.4025pt>
+File: dados/figuras/dog10089.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog10089.jpg>
+Package pdftex.def Info: dados/figuras/dog10089.jpg used on input line 428.
+(pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
+
+<dados/figuras/dog3125.jpg, id=672, 215.80624pt x 198.7425pt>
+File: dados/figuras/dog3125.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog3125.jpg>
+Package pdftex.def Info: dados/figuras/dog3125.jpg used on input line 429.
+(pdftex.def)             Requested size: 90.99861pt x 83.80182pt.
+
+<dados/figuras/cat5010.jpg, id=673, 501.875pt x 375.4025pt>
+File: dados/figuras/cat5010.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat5010.jpg>
+Package pdftex.def Info: dados/figuras/cat5010.jpg used on input line 430.
+(pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
+
+<dados/figuras/cat4258.jpg, id=674, 501.875pt x 369.38pt>
+File: dados/figuras/cat4258.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat4258.jpg>
+Package pdftex.def Info: dados/figuras/cat4258.jpg used on input line 431.
+(pdftex.def)             Requested size: 90.99861pt x 66.97025pt.
+ [26pdfTeX warning (ext4): destination with the same identifier (name{table.4.8
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.434 
+      ] <dados/figuras/dog6431.jpg, id=690, 320.19624pt x 240.9pt>
+File: dados/figuras/dog6431.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog6431.jpg>
+Package pdftex.def Info: dados/figuras/dog6431.jpg used on input line 437.
+(pdftex.def)             Requested size: 90.99861pt x 68.46239pt.
+
+<dados/figuras/cat3864.jpg, id=691, 200.75pt x 177.66376pt>
+File: dados/figuras/cat3864.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat3864.jpg>
+Package pdftex.def Info: dados/figuras/cat3864.jpg used on input line 438.
+(pdftex.def)             Requested size: 90.99861pt x 80.53621pt.
+
+<dados/figuras/cat6114.jpg, id=692, 231.86626pt x 173.64874pt>
+File: dados/figuras/cat6114.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat6114.jpg>
+Package pdftex.def Info: dados/figuras/cat6114.jpg used on input line 439.
+(pdftex.def)             Requested size: 90.99861pt x 68.15198pt.
+
+<dados/figuras/cat8027.jpg, id=693, 149.55875pt x 140.525pt>
+File: dados/figuras/cat8027.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat8027.jpg>
+Package pdftex.def Info: dados/figuras/cat8027.jpg used on input line 440.
+(pdftex.def)             Requested size: 90.99861pt x 85.50354pt.
+
+<dados/figuras/dog12048.jpg, id=694, 200.75pt x 181.67876pt>
+File: dados/figuras/dog12048.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog12048.jpg>
+Package pdftex.def Info: dados/figuras/dog12048.jpg used on input line 441.
+(pdftex.def)             Requested size: 90.99861pt x 82.35623pt.
+
+<dados/figuras/dog4639.jpg, id=695, 144.54pt x 159.59625pt>
+File: dados/figuras/dog4639.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog4639.jpg>
+Package pdftex.def Info: dados/figuras/dog4639.jpg used on input line 442.
+(pdftex.def)             Requested size: 90.99861pt x 100.47797pt.
+
+<dados/figuras/dog11868.jpg, id=696, 199.74625pt x 190.7125pt>
+File: dados/figuras/dog11868.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog11868.jpg>
+Package pdftex.def Info: dados/figuras/dog11868.jpg used on input line 448.
+(pdftex.def)             Requested size: 90.99861pt x 86.88199pt.
+
+<dados/figuras/cat12219.jpg, id=697, 308.15125pt x 409.53pt>
+File: dados/figuras/cat12219.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat12219.jpg>
+Package pdftex.def Info: dados/figuras/cat12219.jpg used on input line 449.
+(pdftex.def)             Requested size: 90.99861pt x 120.93527pt.
+
+<dados/figuras/dog9322.jpg, id=698, 500.87125pt x 376.40625pt>
+File: dados/figuras/dog9322.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog9322.jpg>
+Package pdftex.def Info: dados/figuras/dog9322.jpg used on input line 450.
+(pdftex.def)             Requested size: 90.99861pt x 68.38197pt.
+
+<dados/figuras/cat9185.jpg, id=699, 416.55624pt x 501.875pt>
+File: dados/figuras/cat9185.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat9185.jpg>
+Package pdftex.def Info: dados/figuras/cat9185.jpg used on input line 451.
+(pdftex.def)             Requested size: 90.99861pt x 109.63171pt.
+
+<dados/figuras/cat4439.jpg, id=700, 184.69pt x 236.885pt>
+File: dados/figuras/cat4439.jpg Graphic file (type jpg)
+
+<use dados/figuras/cat4439.jpg>
+Package pdftex.def Info: dados/figuras/cat4439.jpg used on input line 452.
+(pdftex.def)             Requested size: 90.99861pt x 116.71443pt.
+
+<dados/figuras/dog10028.jpg, id=701, 501.875pt x 375.4025pt>
+File: dados/figuras/dog10028.jpg Graphic file (type jpg)
+
+<use dados/figuras/dog10028.jpg>
+Package pdftex.def Info: dados/figuras/dog10028.jpg used on input line 453.
+(pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.456 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.456 
+       <./dados/figuras/cat50.jpg> <./dados/figuras/cat9211.jpg> <./dados/figur
+as/dog10089.jpg> <./dados/figuras/dog3125.jpg> <./dados/figuras/cat5010.jpg> <.
+/dados/figuras/cat4258.jpg> <./dados/figuras/dog6431.jpg> <./dados/figuras/cat3
+864.jpg> <./dados/figuras/cat6114.jpg> <./dados/figuras/cat8027.jpg> <./dados/f
+iguras/dog12048.jpg> <./dados/figuras/dog4639.jpg>] [28pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.4.16}) has been already used, 
+duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.489 
+       <./dados/figuras/dog11868.jpg> <./dados/figuras/cat12219.jpg> <./dados/f
+iguras/dog9322.jpg> <./dados/figuras/cat9185.jpg> <./dados/figuras/cat4439.jpg>
+ <./dados/figuras/dog10028.jpg>]) [29pdfTeX warning (ext4): destination with th
+e same identifier (name{table.4.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 ...utura/textuais/desenvolvimento/resultados}
+                                                                      % Resu...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.10}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 ...utura/textuais/desenvolvimento/resultados}
+                                                                      % Resu...
+]
+\openout2 = `estrutura/textuais/conclusao.aux'.
+
+ (./estrutura/textuais/conclusao.tex [30
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.11}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.56 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.56 
+     ] [31pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.5.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.96 
+     ]) [32]
 \openout2 = `estrutura/pos-textuais/referencias.aux'.
 
-
-(./estrutura/pos-textuais/referencias.tex (./TCC1_Matsui.bbl (./TCC1_Matsui.brf
-)
+ (./estrutura/pos-textuais/referencias.tex (./TCC1_Matsui.bbl
+(./TCC1_Matsui.brf)
 \tf@brf=\write5
 \openout5 = `TCC1_Matsui.brf'.
 
 
 bibitemlist
-[17
+[33
 
 
 
-])) [18] 
+])) [34]
+\openout2 = `estrutura/pos-textuais/apendices.aux'.
+
+ (./estrutura/pos-textuais/apendices.tex [35
+
+
+
+
+]) [36
+
+]
+
+Class memoir Warning: The material used in the headers is too large
+(15.6779pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 71.
+
+
 AED: lastpage setting LastPage
 \tf@lof=\write6
 \openout6 = `TCC1_Matsui.lof'.
 
-\tf@loa=\write7
-\openout7 = `TCC1_Matsui.loa'.
+\tf@lot=\write7
+\openout7 = `TCC1_Matsui.lot'.
 
-\tf@toc=\write8
-\openout8 = `TCC1_Matsui.toc'.
+\tf@loa=\write8
+\openout8 = `TCC1_Matsui.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+\tf@toc=\write9
+\openout9 = `TCC1_Matsui.toc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
 (./TCC1_Matsui.aux (./estrutura/pre-textuais/epigrafe.aux)
 (./estrutura/pre-textuais/resumo.aux)
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux)
+(./estrutura/pre-textuais/listas/lista-tabelas.aux)
 (./estrutura/pre-textuais/listas/lista-siglas.aux)
 (./estrutura/pre-textuais/listas/lista-simbolos.aux)
 (./estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux)
 (./estrutura/pre-textuais/sumario.aux) (./estrutura/textuais/introducao.aux)
 (./estrutura/textuais/desenvolvimento/conceitos.aux)
 (./estrutura/textuais/desenvolvimento/OMNI.aux)
-(./estrutura/pos-textuais/referencias.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+(./estrutura/textuais/desenvolvimento/resultados.aux)
+(./estrutura/textuais/conclusao.aux) (./estrutura/pos-textuais/referencias.aux)
+(./estrutura/pos-textuais/apendices.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `TCC1_Matsui.brf' has not changed.
-(rerunfilecheck)             Checksum: 20A8B9998FA4A74BB4A4E3A13615B141;1061.
+(rerunfilecheck)             Checksum: D0D9AE15C0F66210D5674A5A8FFCBA96;1207.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1797,36 +2319,39 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 15804 strings out of 494929
- 235846 string characters out of 6180142
- 410799 words of memory out of 5000000
- 18260 multiletter control sequences out of 15000+600000
- 58106 words of font info for 333 fonts, out of 8000000 for 9000
- 18 hyphenation exceptions out of 8191
- 45i,17n,37p,588b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19732 strings out of 493029
+ 293685 string characters out of 6136234
+ 686516 words of memory out of 5000000
+ 22142 multiletter control sequences out of 15000+600000
+ 63997 words of font info for 356 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 45i,17n,51p,588b,1396s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on TCC1_Matsui.pdf (27 pages, 596486 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/rsfs/rsfs10.pfb>
+Output written on TCC1_Matsui.pdf (47 pages, 1129594 bytes).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 49939 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1069 PDF objects out of 1200 (max. 8388607)
+ 903 compressed objects within 10 object streams
+ 277 named destinations out of 1000 (max. 500000)
+ 52795 words of extra memory for PDF output out of 61914 (max. 10000000)
 
