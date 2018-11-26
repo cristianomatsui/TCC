@@ -4,19 +4,199 @@
 \partapendices
 
 % Primeiro apêndice------------------------------------------------------------
-\chapter{Nome do apêndice} % Edite para alterar o título deste apêndice
+\chapter{SCRIPTS OMNI} % Edite para alterar o título deste apêndice
 \label{chap:apendice}
 
-Lembre-se que a diferença entre apêndice e anexo diz respeito à autoria do texto e/ou material ali colocado.
+Neste apêndice, estão alguns dos demais scripts e códigos utilizados para a criação das estruturas OMNI, assim como 
+os scripts SQL utilizados para a criação das tabelas utilizadas pelo SGBD. Foram descritos aqui apenas scripts
+referentes à base CAT\_DOG. Os scripts OMNI para a base HC são virtualmente os mesmos, alterando apenas o nome
+de algumas tabelas para as tabelas análogas da outra base.
 
-Caso o material ou texto suplementar ou complementar seja de sua autoria, então ele deverá ser colocado como um apêndice. Porém, caso a autoria seja de terceiros, então o material ou texto deverá ser colocado como anexo.
+\begin{lstlisting}[caption={Criação das tabelas primárias do banco}, captionpos=t,basicstyle=\tiny]
+CREATE TABLE COMPLEX_DATA (
+ID_CD VARCHAR(15) PRIMARY KEY);
 
-Caso seja conveniente, podem ser criados outros apêndices para o seu trabalho acadêmico. Basta recortar e colar este trecho neste mesmo documento. Lembre-se de alterar o "label"{} do apêndice.
+CREATE TABLE SHAPE (
+ID_FT INTEGER PRIMARY KEY,
+CD_REF VARCHAR(15),
+IS_FOCUS BOOLEAN DEFAULT 'FALSE',
+FEATURE FLOAT8[],
+CONSTRAINT CD_FK FOREIGN KEY (CD_REF) REFERENCES COMPLEX_DATA (ID_CD)
+ON DELETE CASCADE ON UPDATE CASCADE); 
 
-Não é aconselhável colocar tudo que é complementar em um único apêndice. Organize os apêndices de modo que, em cada um deles, haja um único tipo de conteúdo. Isso facilita a leitura e compreensão para o leitor do trabalho.
+CREATE TABLE COLOR (
+ID_FT INTEGER PRIMARY KEY,
+CD_REF VARCHAR(15),
+IS_FOCUS BOOLEAN DEFAULT 'FALSE',
+FEATURE FLOAT8[],
+CONSTRAINT CD_FK FOREIGN KEY (CD_REF) REFERENCES COMPLEX_DATA (ID_CD)
+ON DELETE CASCADE ON UPDATE CASCADE); 
 
-% Novo apêndice----------------------------------------------------------------
+CREATE TABLE TEXTURE (
+ID_FT INTEGER PRIMARY KEY,
+CD_REF VARCHAR(15),
+IS_FOCUS BOOLEAN DEFAULT 'FALSE',
+FEATURE FLOAT8[],
+CONSTRAINT CD_FK FOREIGN KEY (CD_REF) REFERENCES COMPLEX_DATA (ID_CD)
+ON DELETE CASCADE ON UPDATE CASCADE); 
+\end{lstlisting}
 
+\begin{lstlisting}[caption={Criação das tabelas OMNI}, captionpos=t,basicstyle=\tiny]
+CREATE TABLE SHAPE_F_BASE(
+ID_FOCUS INTEGER,
+ID_FEATURE INTEGER,
+DIST_L1 FLOAT8,
+DIST_L2 FLOAT8,
+DIST_LINF FLOAT8,
+PRIMARY KEY (ID_FOCUS, ID_FEATURE),
+CONSTRAINT SHAPEFOCUS_FK FOREIGN KEY (ID_FOCUS) REFERENCES SHAPE (ID_FT)
+ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT SHAPEFEATURE_FK FOREIGN KEY (ID_FEATURE) REFERENCES SHAPE(ID_FT)
+ON DELETE CASCADE ON UPDATE CASCADE);
 
+CREATE TABLE COLOR_F_BASE(
+ID_FOCUS INTEGER,
+ID_FEATURE INTEGER,
+DIST_L1 FLOAT8,
+DIST_L2 FLOAT8,
+DIST_LINF FLOAT8,
+PRIMARY KEY (ID_FOCUS, ID_FEATURE),
+CONSTRAINT COLORFOCUS_FK FOREIGN KEY (ID_FOCUS) REFERENCES COLOR (ID_FT)
+ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT COLORFEATURE_FK FOREIGN KEY (ID_FEATURE) REFERENCES COLOR(ID_FT)
+ON DELETE CASCADE ON UPDATE CASCADE);
+
+CREATE TABLE TEXTURE_F_BASE(
+ID_FEATURE INTEGER,
+ID_FOCUS INTEGER,
+DIST_L1 FLOAT8,
+DIST_L2 FLOAT8,
+DIST_LINF FLOAT8,
+PRIMARY KEY (ID_FOCUS, ID_FEATURE),
+CONSTRAINT TEXTUREFOCUS_FK FOREIGN KEY (ID_FOCUS) REFERENCES TEXTURE (ID_FT)
+ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT TEXTUREFEATURE_FK FOREIGN KEY (ID_FEATURE) REFERENCES TEXTURE(ID_FT)
+ON DELETE CASCADE ON UPDATE CASCADE);
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Inserção das distâncias na tabela de focos}, captionpos=t,basicstyle=\tiny]
+CREATE OR REPLACE FUNCTION insertShapeDistance() 
+RETURNS VOID AS $$
+BEGIN
+  INSERT INTO shape_f_base (id_focus, id_feature, dist_l1, dist_l2, dist_linf)(
+  select S1.id_ft, S2.id_ft, cube(S1.feature) <#> cube(S2.feature),
+  cube(S1.feature) <->  cube(S2.feature), cube(S1.feature) <=>  cube(S2.feature)
+  from shape S1, shape S2 
+  where S1.is_focus = TRUE AND S1 <> S2) ;
+END;
+$$ LANGUAGE plpgsql;  
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Exclusão da base focal}, captionpos=t,basicstyle=\tiny]
+CREATE OR REPLACE FUNCTION wipe_shape_focus_base () 
+RETURNS VOID AS $$
+BEGIN
+  update shape set is_focus = false where is_focus = true;
+  delete from shape_f_base;
+  RAISE NOTICE 'Shape Focus Base wiped';
+END;$$
+LANGUAGE PLPGSQL;
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Criação da base focal OMNI}, captionpos=t,basicstyle=\tiny]
+CREATE OR REPLACE FUNCTION createShapeFocusBase(num integer)
+RETURNS VOID AS $$
+DECLARE fprev_id integer; fnext_id integer; distance float8; 
+n_inserted integer := 0; border float8;
+BEGIN
+  PERFORM wipe_shape_focus_base();
+  select id_ft into fprev_id from shape  -- SELECIONA UM DADO RANDOM
+  order by random()
+  LIMIT 1;
+  LOOP
+    select S2.id_ft, cube(S1.feature) <-> cube(S2.feature) as dist 
+    into fnext_id, distance from shape S1, shape S2
+    where S1.id_ft = fprev_id AND S2.is_focus = 'False'
+    order by dist DESC
+    LIMIT 1;
+
+    update shape
+    set is_focus = 'True'
+    where id_ft = fnext_id;
+
+    n_inserted = n_inserted + 1;
+    num = num - 1;
+    RAISE NOTICE 'Num = %, n_inserted = %', num, n_inserted;
+    EXIT WHEN num = 0;
+    IF n_inserted = 2 THEN
+      select cube(S1.feature) <-> cube(S2.feature) into border 
+      from shape S1, shape S2  --CALCULA O VALOR DA BORDA
+      where S1.id_ft = fprev_id and S2.id_ft = fnext_id;
+      fprev_id = fnext_id;
+
+      LOOP					
+	select S2.id_ft, abs(border - (cube(S1.feature) <-> cube(S2.feature))) 
+	as err into fnext_id, distance from shape S1, shape S2
+	where S1.id_ft = fprev_id AND S2.is_focus = 'False'
+	order by err ASC	-- minimiza o erro
+	LIMIT 1;
+
+	update shape
+	set is_focus = 'True'
+	where id_ft = fnext_id;
+
+	fprev_id = fnext_id;					
+	num = num - 1;
+	EXIT WHEN num <= 0;
+      END LOOP;
+      EXIT WHEN num = 0;
+    END IF;
+
+    fprev_id = fnext_id;
+    END LOOP;
+  PERFORM insertShapeDistance();
+END;$$
+LANGUAGE PLPGSQL;
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Range Query sequencial - L2}, captionpos=t,basicstyle=\tiny]
+CREATE OR REPLACE FUNCTION rangeQueryShapeL2 (center_id integer, radius FLOAT8) RETURNS SETOF genericQuery AS $$
+BEGIN
+  RETURN QUERY SELECT DISTINCT * FROM 
+  (SELECT T2.id_ft, (cube(T1.feature) <-> cube(T2.feature)) 
+  AS dist FROM SHAPE T1, SHAPE T2 
+  WHERE T1.id_ft = center_id) 
+  AS quer WHERE dist <= radius ORDER BY dist;
+END;$$
+LANGUAGE PLPGSQL;
+\end{lstlisting}
+\newpage
+\begin{lstlisting}[caption={Range OMNI com 5 focos - L2}, captionpos=t,basicstyle=\tiny]
+CREATE OR REPLACE FUNCTION rangeOmniShapeL2F5 (center_id integer, radius FLOAT8) 
+RETURNS SETOF genericQuery AS $$
+DECLARE rec_id RECORD;feature_aux FLOAT8[]; 
+distance FLOAT8; dist_fc FLOAT8[];
+BEGIN
+  select T1.feature into feature_aux FROM Shape T1 where T1.id_ft = center_id;
+  dist_fc = array(select distinct dist_l2 from SHAPE_F_BASE where id_feature = center_id);
+  FOR rec_id IN SELECT id_feature from SHAPE_F_BASE WHERE ((dist_l2 < (radius + dist_fc[1])) 
+  AND (dist_l2 > dist_fc[1] - radius)) INTERSECT
+  (SELECT id_feature from SHAPE_F_BASE WHERE ((dist_l2 < (radius + dist_fc[2])) 
+  AND (dist_l2 > dist_fc[2] - radius))) INTERSECT
+  (SELECT id_feature from SHAPE_F_BASE WHERE ((dist_l2 < (radius + dist_fc[3])) 
+  AND (dist_l2 > dist_fc[3] - radius))) INTERSECT
+  (SELECT id_feature from SHAPE_F_BASE WHERE ((dist_l2 < (radius + dist_fc[4])) 
+  AND (dist_l2 > dist_fc[4] - radius))) INTERSECT
+  (SELECT id_feature from SHAPE_F_BASE WHERE ((dist_l2 < (radius + dist_fc[5])) 
+  AND (dist_l2 > dist_fc[5] - radius))) LOOP
+    select (cube(feature_aux) <-> cube(feature)) INTO distance 
+    FROM SHAPE T1 WHERE rec_id.id_feature = T1.id_ft ;
+    IF (distance < radius) THEN
+      RETURN NEXT (rec_id.id_feature, distance);			       
+    end if;				
+  END LOOP;
+END;$$
+LANGUAGE PLPGSQL;
+\end{lstlisting}
 
 \end{apendicesenv}

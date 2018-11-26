@@ -11,35 +11,34 @@
 \contentsline {section}{\numberline {2.1}ESPA\IeC {\c C}OS M\IeC {\'E}TRICOS}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}FUN\IeC {\c C}\IeC {\~O}ES DE DIST\IeC {\^A}NCIA}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}DIST\IeC {\^A}NCIA MINKOWSKI}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}DIST\IeC {\^A}NCIA CANBERRA}{8}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}ESTRUTURAS DE INDEXA\IeC {\c C}\IeC {\~A}O}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}EXTRATORES DE CARACTER\IeC {\'I}STICAS}{9}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}T\IeC {\'E}CNICA OMNI}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}CONCEITOS E DEFINI\IeC {\c C}\IeC {\~O}ES OMNI}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}USO DA BASE DE FOCOS}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}ESCOLHA DOS FOCOS}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}INDEXA\IeC {\c C}\IeC {\~A}O DAS COORDENADAS OMNI}{13}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}RESULTADOS}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}BASES DE DADOS}{17}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}BASE CAT\textunderscore DOG}{17}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}BASE HC}{18}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}M\IeC {\'E}TRICAS DOS TESTES}{18}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}EXPLAIN ANALYZE}{19}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}TEMPO DE PLANEJAMENTO}{19}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O}{19}{subsubsection.4.2.1.2}
-\contentsline {section}{\numberline {4.3}N\IeC {\'U}MERO DE FOCOS}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}SCRIPTS SQL}{20}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}SCRIPTS SEQUENCIAIS}{21}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}SCRIPTS OMNI}{22}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}TEMPOS DE CONSULTAS}{23}{section.4.5}
-\contentsline {section}{\numberline {4.6}AN\IeC {\'A}LISE QUALITATIVA DAS CONSULTAS}{26}{section.4.6}
-\contentsline {section}{\numberline {4.7}LIMITA\IeC {\c C}\IeC {\~O}ES DA T\IeC {\'E}CNICA}{28}{section.4.7}
-\contentsline {chapter}{\chapternumberline {5}CONCLUS\IeC {\~A}O}{30}{chapter.5}
-\contentsline {section}{\numberline {5.1}PERFORMANCE DA T\IeC {\'E}CNICA}{30}{section.5.1}
-\contentsline {section}{\numberline {5.2}CUSTOS DA T\IeC {\'E}CNICA}{31}{section.5.2}
-\contentsline {section}{\numberline {5.3}TRABALHOS FUTUROS}{31}{section.5.3}
-\contentsline {chapter}{Refer\^encias}{33}{section*.11}
+\contentsline {chapter}{\chapternumberline {3}T\IeC {\'E}CNICA OMNI}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}CONCEITOS E DEFINI\IeC {\c C}\IeC {\~O}ES OMNI}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}USO DA BASE DE FOCOS}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}ESCOLHA DOS FOCOS}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}INDEXA\IeC {\c C}\IeC {\~A}O DAS COORDENADAS OMNI}{12}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}RESULTADOS}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}BASES DE DADOS}{16}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}BASE CAT\textunderscore DOG}{16}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}BASE HC}{17}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}M\IeC {\'E}TRICAS DOS TESTES}{17}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}EXPLAIN ANALYZE}{18}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}TEMPO DE PLANEJAMENTO}{18}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O}{18}{subsubsection.4.2.1.2}
+\contentsline {section}{\numberline {4.3}N\IeC {\'U}MERO DE FOCOS}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}SCRIPTS SQL}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}SCRIPTS SEQUENCIAIS}{20}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}SCRIPTS OMNI}{21}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}TEMPOS DE CONSULTAS}{22}{section.4.5}
+\contentsline {section}{\numberline {4.6}AN\IeC {\'A}LISE QUALITATIVA DAS CONSULTAS}{25}{section.4.6}
+\contentsline {section}{\numberline {4.7}LIMITA\IeC {\c C}\IeC {\~O}ES DA T\IeC {\'E}CNICA}{27}{section.4.7}
+\contentsline {chapter}{\chapternumberline {5}CONCLUS\IeC {\~A}O}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}PERFORMANCE DA T\IeC {\'E}CNICA}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}CUSTOS DA T\IeC {\'E}CNICA}{30}{section.5.2}
+\contentsline {section}{\numberline {5.3}TRABALHOS FUTUROS}{30}{section.5.3}
+\contentsline {chapter}{Refer\^encias}{32}{section*.10}
 \vspace {\cftbeforepartskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{35}{section*.12}
-\contentsline {appendix}{\chapternumberline {A}Nome do ap\IeC {\^e}ndice}{36}{appendix.A}
+\contentsline {part}{Ap\^endices}{34}{section*.11}
+\contentsline {appendix}{\chapternumberline {A}SCRIPTS OMNI}{35}{appendix.A}

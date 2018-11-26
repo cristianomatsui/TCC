@@ -8,7 +8,7 @@ A técnica OMNI, sua concepção, construção e uso é retirada do trabalho de 
 
 \section{CONCEITOS E DEFINIÇÕES OMNI}
 \label{sec:defomni}
-Como apresentado anteriormente, as técnicas da família OMNI baseiam-se em em uma série de elementos chamada de 
+Como apresentado anteriormente, a técnica OMNI baseia-se em em uma série de elementos chamada de 
 OMNI-focos. Estes focos são elementos presentes na base de dados previamente escolhidos, e possuem como função 
 servirem de marco para o cálculo das coordenadas Omni de cada elemento presente no banco.
 
@@ -29,7 +29,7 @@ servirem de marco para o cálculo das coordenadas Omni de cada elemento presente
 \end {mydef}
 
 Para distinguir a distância $d(f_k, s_i)$ como uma coordenada, é utilizada a notação $df_k(s_i) = d(f_k, s_i)$.\par
-									%TODO Armazenada em uma tabela do banco, indexado por uma B-Tree
+									
 Quando um novo objeto é inserido na base de dados, as suas coordenadas OMNI são calculadas e armazenadas. Em uma pesquisa por
 similaridade, estas coordenadas são utilizadas para podar o número de cálculos de distância, como ilustrado pela Figura \ref{fig:rqomni1}.\par
 
@@ -136,7 +136,7 @@ a distância do objeto $s_i$ até o foco, e um identificador do objeto.
 \label{fig:btree}
 \end{figure}
 
-Analisando geometricamente, é possível perceber que um elemento candidato a estar presente no conjunto de resposta deve ter a sua distância em relação ao foco maior ou igual a distância do elemento central de consulta menos o valor do
+A partir de uma análise geométrica, é possível perceber que um elemento candidato a estar presente no conjunto de resposta deve ter a sua distância em relação ao foco maior ou igual a distância do elemento central de consulta menos o valor do
 raio da consulta, formando, assim, um limite inferior. Analogamente, o limite superior pode ser definido utilizando a distância do elemento central da consulta até o foco mais o valor do raio da consulta.
 
 \begin{equation} \label{eq:omnirq}
@@ -181,5 +181,4 @@ Para este exemplo, o elemento $s_{10}$ é escolhido como um novo foco $f_2$. O e
 \label{fig:rgex3}
 \end{figure}
 
-%TODO kaggle.com
 

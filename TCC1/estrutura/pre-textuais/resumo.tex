@@ -4,22 +4,23 @@
 \begin{SingleSpacing}
     
 % Não altere esta seção do texto--------------------%TODO ISSO AQUI É HARD CODED--------------------------
-\imprimirautorcitacao. \imprimirtitulo. \imprimirdata. 26 f. \imprimirprojeto\ – \imprimirprograma, \imprimirinstituicao. \imprimirlocal, \imprimirdata.\\ 
+\imprimirautorcitacao. \imprimirtitulo. \imprimirdata. 39 f. \imprimirprojeto\ – \imprimirprograma, \imprimirinstituicao. \imprimirlocal, \imprimirdata.\\ 
 %---------------------------------------------------------------------------------------
 					
 A necessidade de armazenamento de mídias cada vez maiores em termos de tamanho de armazenamento e complexas é uma tendência que aumentou consideravelmente
 com os avanços da tecnologia e comunicação. Estes dados conhecidos como dados complexos exigem uma complexidade estrutural
 de armazenamento e análise maior do que dados simples como palavras ou números, além de requererem operadores especiais
-de consultas, como a consulta por abrangência (Rq) e a consulta aos k-vizinhos mais próximos (kNNq). Dentre o conjunto de dados complexos
+de consultas, como a consulta por abrangência - \textit{range query} (Rq) e a consulta aos k-vizinhos mais próximos - \textit{k-nearest neighbors query} (kNNq). Dentre o conjunto de dados complexos
 destacam-se as imagens, que precisam ser comparadas de acordo com características extraídas como cor, forma ou textura. Esta
 comparação é realizada na forma de um cálculo de distância entre o valor da característica da imagem central da consulta em relação
-a todas as outras imagens da base de dados. O tempo de consulta pode aumentar significativamente com o aumento da base de dados. 
-Para contornar o problema da maldição da cardinalidade, este trabalho tem como proposta aplicar uma técnica (Omni) utilizada para promover 
-uma etapa de filtragem do número de imagens a terem as suas distâncias calculadas, evitando a comparação com toda a base de dados.
-Após a modelagem e construção de um banco de dados que suporte esta técnica, será implementado um sistema de recuperação de imagens
-(CBIR).\\
+a todas as outras imagens da base de dados. O tempo de consulta aumenta significativamente com o aumento da base de dados e da complexidade destes. 
+Para contornar o problema da maldição da cardinalidade, este trabalho tem como proposta a aplicação da técnica OMNI utilizada para promover 
+uma etapa de filtragem do número de imagens a terem as suas distâncias calculadas, evitando a comparação com toda a base de dados. Esta técnica
+possui custos adicionais de espaço de armazenamento para as suas estruturas, mas consegue acelerar consultas por similaridade, reduzindo
+o tempo de execução necessário.
+\\
 
-\textbf{Palavras-chave}: Dados Complexos. OMNI. CBIR. Rq. kNNq.
+\textbf{Palavras-chave}: Dados Complexos. OMNI. Rq. Consulta por Similaridade. Otimização.
 
 \end{SingleSpacing}
 \end{resumo}

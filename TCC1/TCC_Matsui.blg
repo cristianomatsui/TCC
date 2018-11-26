@@ -1,7 +1,9 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: TCC1_Matsui.aux
+The top-level auxiliary file: TCC_Matsui.aux
+A level-1 auxiliary file: estrutura/pre-textuais/epigrafe.aux
 A level-1 auxiliary file: estrutura/pre-textuais/resumo.aux
+A level-1 auxiliary file: estrutura/pre-textuais/abstract.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-tabelas.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-siglas.aux
@@ -38,7 +40,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 29 entries,
             6714 wiz_defined-function locations,
-            1416 strings with 15145 characters,
+            1418 strings with 15213 characters,
 and the built_in function-call counts, 29761 in all, are:
 = -- 2959
 > -- 815

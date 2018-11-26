@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  20 NOV 2018 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  23 NOV 2018 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**TCC1_Matsui.tex
-(./TCC1_Matsui.tex
+**TCC_Matsui.tex
+(./TCC_Matsui.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./configuracoes/utfpr-abntex2.cls
@@ -1270,11 +1270,11 @@ Package caption Info: Unknown document class (or package),
 (./configuracoes/configuracoes-pdf.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 Package hyperref Info: Option `breaklinks' set `true' on input line 14.
-\TCC1_Matsui@idxfile=\write4
-\openout4 = `TCC1_Matsui.idx'.
+\TCC_Matsui@idxfile=\write4
+\openout4 = `TCC_Matsui.idx'.
 
 
-Writing index file TCC1_Matsui.idx 
+Writing index file TCC_Matsui.idx 
 )
 \@input{estrutura/pre-textuais/capa.aux}
 \openout2 = `estrutura/pre-textuais/capa.aux'.
@@ -1283,8 +1283,9 @@ Writing index file TCC1_Matsui.idx
 \@input{estrutura/pre-textuais/folha-rosto.aux}
 \openout2 = `estrutura/pre-textuais/folha-rosto.aux'.
 
-(./estrutura/pre-textuais/folha-rosto.tex) (./TCC1_Matsui.aux
-(./estrutura/pre-textuais/resumo.aux)
+(./estrutura/pre-textuais/folha-rosto.tex) (./TCC_Matsui.aux
+(./estrutura/pre-textuais/epigrafe.aux) (./estrutura/pre-textuais/resumo.aux)
+(./estrutura/pre-textuais/abstract.aux)
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux)
 (./estrutura/pre-textuais/listas/lista-tabelas.aux)
 (./estrutura/pre-textuais/listas/lista-siglas.aux)
@@ -1299,7 +1300,7 @@ LaTeX Warning: Label `eq:knnq' multiply defined.
 (./estrutura/textuais/desenvolvimento/resultados.aux)
 (./estrutura/textuais/conclusao.aux) (./estrutura/pos-textuais/referencias.aux)
 (./estrutura/pos-textuais/apendices.aux))
-\openout1 = `TCC1_Matsui.aux'.
+\openout1 = `TCC_Matsui.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
@@ -1452,6 +1453,21 @@ l.39 \imprimirfolhaderosto{}
 
 
 ]
+\openout2 = `estrutura/pre-textuais/epigrafe.aux'.
+
+ (./estrutura/pre-textuais/epigrafe.tex
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 7.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 \include{estrutura/pre-textuais/epigrafe}
+                                                            			   % Epígrafe
+[3
+
+
+]
 \openout2 = `estrutura/pre-textuais/resumo.aux'.
 
  (./estrutura/pre-textuais/resumo.tex
@@ -1459,8 +1475,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 13.
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--22
 
@@ -1471,7 +1485,29 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.26 \end{resumo}
-                  [3
+                  [4
+
+
+])
+\openout2 = `estrutura/pre-textuais/abstract.aux'.
+
+ (./estrutura/pre-textuais/abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \end{resumo}
+                  [5
+
 
 
 ])
@@ -1480,12 +1516,12 @@ l.26 \end{resumo}
 
 
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.tex
-(./TCC1_Matsui.lof)pdfTeX warning (ext4): destination with the same identifier 
-(name{page.}) has been already used, duplicate ignored
+(./TCC_Matsui.lof)pdfTeX warning (ext4): destination with the same identifier (
+name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.5 \cleardoublepage
-                     [4
+                     [6
 
 
 
@@ -1493,12 +1529,12 @@ l.5 \cleardoublepage
 \openout2 = `estrutura/pre-textuais/listas/lista-tabelas.aux'.
 
  (./estrutura/pre-textuais/listas/lista-tabelas.tex
-(./TCC1_Matsui.lot)pdfTeX warning (ext4): destination with the same identifier 
-(name{page.}) has been already used, duplicate ignored
+(./TCC_Matsui.lot)pdfTeX warning (ext4): destination with the same identifier (
+name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.5 \cleardoublepage
-                     [5
+                     [7
 
 
 
@@ -1511,7 +1547,7 @@ gnored
 <to be read again> 
                    \relax 
 l.12 \end{siglas}
-                  [6
+                  [8
 
 
 
@@ -1525,7 +1561,7 @@ ination with the same identifier (name{page.}) has been already used, duplicate
 <to be read again> 
                    \relax 
 l.17 \end{simbolos}
-                    [7
+                    [9
 
 
 
@@ -1541,12 +1577,12 @@ l.17 \end{simbolos}
 \cftalgocfindent=\skip297
 \cftalgocfnumwidth=\skip298
 
-(./TCC1_Matsui.loa)pdfTeX warning (ext4): destination with the same identifier 
-(name{page.}) has been already used, duplicate ignored
+(./TCC_Matsui.loa)pdfTeX warning (ext4): destination with the same identifier (
+name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.16 \cleardoublepage
-                      [8
+                      [10
 
 
 
@@ -1555,12 +1591,12 @@ l.16 \cleardoublepage
 \openout2 = `estrutura/pre-textuais/sumario.aux'.
 
  (./estrutura/pre-textuais/sumario.tex
-(./TCC1_Matsui.tocpdfTeX warning (ext4): destination with the same identifier (
-name{page.}) has been already used, duplicate ignored
+(./TCC_Matsui.tocpdfTeX warning (ext4): destination with the same identifier (n
+ame{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...ANCE DA T\IeC {\'E}CNICA}{29}{section.5.1}
-                                                   [9
+l.37 ...ANCE DA T\IeC {\'E}CNICA}{40}{section.5.1}
+                                                   [11
 
 
 
@@ -1582,10 +1618,10 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.7 \cleardoublepage
-                     [10])
+                     [12])
 \openout2 = `estrutura/textuais/introducao.aux'.
 
- (./estrutura/textuais/introducao.tex [1
+ (./estrutura/textuais/introducao.tex [12
 
 
 
@@ -1602,7 +1638,7 @@ erted-to.pdf dados/figuras/rqu.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rqu-eps-converted-to.pdf, id=236, 157.58875pt x 147.55125pt>
+<dados/figuras/rqu-eps-converted-to.pdf, id=247, 157.58875pt x 147.55125pt>
 File: dados/figuras/rqu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rqu-eps-converted-to.pdf>
@@ -1620,7 +1656,7 @@ verted-to.pdf dados/figuras/knnq.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/knnq-eps-converted-to.pdf, id=243, 154.5775pt x 135.50626pt>
+<dados/figuras/knnq-eps-converted-to.pdf, id=254, 154.5775pt x 135.50626pt>
 File: dados/figuras/knnq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/knnq-eps-converted-to.pdf>
@@ -1629,8 +1665,8 @@ line 74.
 (pdftex.def)             Requested size: 181.99722pt x 159.55687pt.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
 (Font)              Font shape `T1/aess/m/sl' tried instead on input line 78.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
-}) has been already used, duplicate ignored
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1648,15 +1684,15 @@ s-converted-to.pdf dados/figuras/rg_omni_1.eps>
 (epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_omni_1-eps-converted-to.pdf, id=268, 292.09125pt x 289.08pt>
+<dados/figuras/rg_omni_1-eps-converted-to.pdf, id=279, 292.09125pt x 289.08pt>
 File: dados/figuras/rg_omni_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_omni_1-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_omni_1-eps-converted-to.pdf used on i
 nput line 94.
 (pdftex.def)             Requested size: 227.5pt x 225.1639pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
-}) has been already used, duplicate ignored
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1671,14 +1707,14 @@ LaTeX Font Warning: Font shape `OMS/aess/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 115.
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
-) has been already used, duplicate ignored
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.118  \item C
               riar a estrutura OMNI necessária para a filtragem dos cálculos;
- <./dados/figuras/rg_omni_1-eps-converted-to.pdf>]) [5]
+ <./dados/figuras/rg_omni_1-eps-converted-to.pdf>]) [16]
 \openout2 = `estrutura/textuais/desenvolvimento/conceitos.aux'.
 
 
@@ -1695,14 +1731,14 @@ s-converted-to.pdf dados/figuras/desig_tri.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/desig_tri-eps-converted-to.pdf, id=320, 521.95pt x 155.58125pt>
+<dados/figuras/desig_tri-eps-converted-to.pdf, id=330, 521.95pt x 155.58125pt>
 File: dados/figuras/desig_tri-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/desig_tri-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/desig_tri-eps-converted-to.pdf used on i
 nput line 42.
 (pdftex.def)             Requested size: 364.00139pt x 108.50255pt.
- [6
+ [17
 
 
 
@@ -1718,31 +1754,31 @@ nverted-to.pdf dados/figuras/minko.eps>
 (epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/minko-eps-converted-to.pdf, id=335, 404.41289pt x 165.32771pt>
+<dados/figuras/minko-eps-converted-to.pdf, id=345, 404.41289pt x 165.32771pt>
 File: dados/figuras/minko-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/minko-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/minko-eps-converted-to.pdf used on input
  line 76.
-(pdftex.def)             Requested size: 318.49861pt x 130.20634pt.
- [7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
-}) has been already used, duplicate ignored
+(pdftex.def)             Requested size: 250.25139pt x 102.30534pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.80 
-      <./dados/figuras/desig_tri-eps-converted-to.pdf>] [8pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.2.5}) has been already used
-, duplicate ignored
+      <./dados/figuras/desig_tri-eps-converted-to.pdf>] [19pdfTeX warning (ext4
+): destination with the same identifier (name{figure.2.5}) has been already use
+d, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.121 ...dentificação de emoções humanas).\par
                                                    <./dados/figuras/minko-eps-c
-onverted-to.pdf>]) [9]
+onverted-to.pdf>]) [20]
 \openout2 = `estrutura/textuais/desenvolvimento/OMNI.aux'.
 
- (./estrutura/textuais/desenvolvimento/OMNI.tex [10
+ (./estrutura/textuais/desenvolvimento/OMNI.tex [21
 
 
 
@@ -1759,14 +1795,14 @@ s-converted-to.pdf dados/figuras/rg_omni_2.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_omni_2-eps-converted-to.pdf, id=393, 378.41376pt x 315.1775pt
+<dados/figuras/rg_omni_2-eps-converted-to.pdf, id=403, 378.41376pt x 315.1775pt
 >
 File: dados/figuras/rg_omni_2-eps-converted-to.pdf Graphic file (type pdf)
  <use dados/figuras/rg_omni_2-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_omni_2-eps-converted-to.pdf used on i
 nput line 62.
 (pdftex.def)             Requested size: 273.00278pt x 227.38449pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1790,14 +1826,14 @@ onverted-to.pdf dados/figuras/rg_ex1.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_ex1-eps-converted-to.pdf, id=413, 254.10692pt x 176.14403pt>
+<dados/figuras/rg_ex1-eps-converted-to.pdf, id=423, 254.10692pt x 176.14403pt>
 File: dados/figuras/rg_ex1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_ex1-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_ex1-eps-converted-to.pdf used on inpu
 t line 123.
 (pdftex.def)             Requested size: 250.25139pt x 173.47734pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}
+ [23pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1815,7 +1851,7 @@ nverted-to.pdf dados/figuras/btree.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/btree-eps-converted-to.pdf, id=421, 419.05353pt x 195.64651pt>
+<dados/figuras/btree-eps-converted-to.pdf, id=431, 419.05353pt x 195.64651pt>
 File: dados/figuras/btree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/btree-eps-converted-to.pdf>
@@ -1834,14 +1870,14 @@ onverted-to.pdf dados/figuras/rg_ex2.eps>
 (epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_ex2-eps-converted-to.pdf, id=422, 258.84175pt x 303.49672pt>
+<dados/figuras/rg_ex2-eps-converted-to.pdf, id=432, 258.84175pt x 303.49672pt>
 File: dados/figuras/rg_ex2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_ex2-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_ex2-eps-converted-to.pdf used on inpu
 t line 149.
 (pdftex.def)             Requested size: 250.25139pt x 293.43747pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1860,7 +1896,7 @@ rted-to.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./dados/figuras/btree-eps-converted-to.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [14pdfTeX warning (ext4): destination with the same identifier (name{figure.
+>] [25pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1880,14 +1916,14 @@ onverted-to.pdf dados/figuras/rg_ex3.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/rg_ex3-eps-converted-to.pdf, id=463, 195.40797pt x 226.79214pt>
+<dados/figuras/rg_ex3-eps-converted-to.pdf, id=474, 195.40797pt x 226.79214pt>
 File: dados/figuras/rg_ex3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/rg_ex3-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/rg_ex3-eps-converted-to.pdf used on inpu
 t line 179.
 (pdftex.def)             Requested size: 250.25139pt x 290.4452pt.
-) [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+) [26pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1899,48 +1935,48 @@ l.60 ...e{estrutura/textuais/desenvolvimento/OMNI}
 
 
 (./estrutura/textuais/desenvolvimento/resultados.tex
-<dados/figuras/cat325.jpg, id=472, 500.87125pt x 376.40625pt>
+<dados/figuras/cat325.jpg, id=482, 500.87125pt x 376.40625pt>
 File: dados/figuras/cat325.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat325.jpg>
 Package pdftex.def Info: dados/figuras/cat325.jpg used on input line 34.
 (pdftex.def)             Requested size: 90.99861pt x 68.38197pt.
 
-<dados/figuras/cat6243.jpg, id=473, 360.34625pt x 271.0125pt>
+<dados/figuras/cat6243.jpg, id=483, 360.34625pt x 271.0125pt>
 File: dados/figuras/cat6243.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat6243.jpg>
 Package pdftex.def Info: dados/figuras/cat6243.jpg used on input line 35.
 (pdftex.def)             Requested size: 90.99861pt x 68.43527pt.
 
-<dados/figuras/dog2032.jpg, id=474, 500.87125pt x 334.24875pt>
+<dados/figuras/dog2032.jpg, id=484, 500.87125pt x 334.24875pt>
 File: dados/figuras/dog2032.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog2032.jpg>
 Package pdftex.def Info: dados/figuras/dog2032.jpg used on input line 36.
 (pdftex.def)             Requested size: 90.99861pt x 60.72319pt.
 
-<dados/figuras/dog10641.jpg, id=475, 501.875pt x 375.4025pt>
+<dados/figuras/dog10641.jpg, id=485, 501.875pt x 375.4025pt>
 File: dados/figuras/dog10641.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog10641.jpg>
 Package pdftex.def Info: dados/figuras/dog10641.jpg used on input line 37.
 (pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
- [16
+ [27
 
 
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 54.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.65 
       <./dados/figuras/cat325.jpg> <./dados/figuras/cat6243.jpg> <./dados/figur
-as/dog2032.jpg> <./dados/figuras/dog10641.jpg>] [18]
+as/dog2032.jpg> <./dados/figuras/dog10641.jpg>] [29]
 Package epstopdf Info: Source file: <dados/figuras/focoHC.eps>
 (epstopdf)                    date: 2018-11-13 18:19:27
 (epstopdf)                    size: 15433 bytes
@@ -1953,7 +1989,7 @@ onverted-to.pdf dados/figuras/focoHC.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/focoHC-eps-converted-to.pdf, id=505, 434.62375pt x 316.18124pt>
+<dados/figuras/focoHC-eps-converted-to.pdf, id=515, 434.62375pt x 316.18124pt>
 File: dados/figuras/focoHC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dados/figuras/focoHC-eps-converted-to.pdf>
@@ -1972,14 +2008,14 @@ ps-converted-to.pdf dados/figuras/fococatdog.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<dados/figuras/fococatdog-eps-converted-to.pdf, id=506, 428.60126pt x 316.18124
+<dados/figuras/fococatdog-eps-converted-to.pdf, id=516, 428.60126pt x 316.18124
 pt>
 File: dados/figuras/fococatdog-eps-converted-to.pdf Graphic file (type pdf)
  <use dados/figuras/fococatdog-eps-converted-to.pdf>
 Package pdftex.def Info: dados/figuras/fococatdog-eps-converted-to.pdf used on 
 input line 103.
 (pdftex.def)             Requested size: 273.00278pt x 201.39522pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1995,13 +2031,13 @@ l.113
 g-eps-converted-to.pdf>]
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 124.
- [20] [21] [22pdfTeX warning (ext4): destination with the same identifier (name
+ [31] [32] [33pdfTeX warning (ext4): destination with the same identifier (name
 {table.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.263 
-      ] [23pdfTeX warning (ext4): destination with the same identifier (name{ta
+      ] [34pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2019,7 +2055,7 @@ l.326
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.326 
-      ] [24pdfTeX warning (ext4): destination with the same identifier (name{ta
+      ] [35pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.4.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2040,137 +2076,137 @@ as been already used, duplicate ignored
                                                   \fi \fi 
 l.388 O
        utra forma implementada foi a expansão do raio em tempo de execuçã...
-] <dados/figuras/cat50.jpg, id=657, 300.12125pt x 196.735pt>
+] <dados/figuras/cat50.jpg, id=667, 300.12125pt x 196.735pt>
 File: dados/figuras/cat50.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat50.jpg>
 Package pdftex.def Info: dados/figuras/cat50.jpg used on input line 426.
 (pdftex.def)             Requested size: 90.99861pt x 59.65135pt.
 
-<dados/figuras/cat9211.jpg, id=658, 297.11pt x 314.17375pt>
+<dados/figuras/cat9211.jpg, id=668, 297.11pt x 314.17375pt>
 File: dados/figuras/cat9211.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat9211.jpg>
 Package pdftex.def Info: dados/figuras/cat9211.jpg used on input line 427.
 (pdftex.def)             Requested size: 90.99861pt x 96.22313pt.
 
-<dados/figuras/dog10089.jpg, id=659, 501.875pt x 375.4025pt>
+<dados/figuras/dog10089.jpg, id=669, 501.875pt x 375.4025pt>
 File: dados/figuras/dog10089.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog10089.jpg>
 Package pdftex.def Info: dados/figuras/dog10089.jpg used on input line 428.
 (pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
 
-<dados/figuras/dog3125.jpg, id=660, 215.80624pt x 198.7425pt>
+<dados/figuras/dog3125.jpg, id=670, 215.80624pt x 198.7425pt>
 File: dados/figuras/dog3125.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog3125.jpg>
 Package pdftex.def Info: dados/figuras/dog3125.jpg used on input line 429.
 (pdftex.def)             Requested size: 90.99861pt x 83.80182pt.
 
-<dados/figuras/cat5010.jpg, id=661, 501.875pt x 375.4025pt>
+<dados/figuras/cat5010.jpg, id=671, 501.875pt x 375.4025pt>
 File: dados/figuras/cat5010.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat5010.jpg>
 Package pdftex.def Info: dados/figuras/cat5010.jpg used on input line 430.
 (pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
 
-<dados/figuras/cat4258.jpg, id=662, 501.875pt x 369.38pt>
+<dados/figuras/cat4258.jpg, id=672, 501.875pt x 369.38pt>
 File: dados/figuras/cat4258.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat4258.jpg>
 Package pdftex.def Info: dados/figuras/cat4258.jpg used on input line 431.
 (pdftex.def)             Requested size: 90.99861pt x 66.97025pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{table.4.8
+ [36pdfTeX warning (ext4): destination with the same identifier (name{table.4.8
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.434 
-      ] <dados/figuras/dog6431.jpg, id=676, 320.19624pt x 240.9pt>
+      ] <dados/figuras/dog6431.jpg, id=688, 320.19624pt x 240.9pt>
 File: dados/figuras/dog6431.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog6431.jpg>
 Package pdftex.def Info: dados/figuras/dog6431.jpg used on input line 437.
 (pdftex.def)             Requested size: 90.99861pt x 68.46239pt.
 
-<dados/figuras/cat3864.jpg, id=677, 200.75pt x 177.66376pt>
+<dados/figuras/cat3864.jpg, id=689, 200.75pt x 177.66376pt>
 File: dados/figuras/cat3864.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat3864.jpg>
 Package pdftex.def Info: dados/figuras/cat3864.jpg used on input line 438.
 (pdftex.def)             Requested size: 90.99861pt x 80.53621pt.
 
-<dados/figuras/cat6114.jpg, id=678, 231.86626pt x 173.64874pt>
+<dados/figuras/cat6114.jpg, id=690, 231.86626pt x 173.64874pt>
 File: dados/figuras/cat6114.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat6114.jpg>
 Package pdftex.def Info: dados/figuras/cat6114.jpg used on input line 439.
 (pdftex.def)             Requested size: 90.99861pt x 68.15198pt.
 
-<dados/figuras/cat8027.jpg, id=679, 149.55875pt x 140.525pt>
+<dados/figuras/cat8027.jpg, id=691, 149.55875pt x 140.525pt>
 File: dados/figuras/cat8027.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat8027.jpg>
 Package pdftex.def Info: dados/figuras/cat8027.jpg used on input line 440.
 (pdftex.def)             Requested size: 90.99861pt x 85.50354pt.
 
-<dados/figuras/dog12048.jpg, id=680, 200.75pt x 181.67876pt>
+<dados/figuras/dog12048.jpg, id=692, 200.75pt x 181.67876pt>
 File: dados/figuras/dog12048.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog12048.jpg>
 Package pdftex.def Info: dados/figuras/dog12048.jpg used on input line 441.
 (pdftex.def)             Requested size: 90.99861pt x 82.35623pt.
 
-<dados/figuras/dog4639.jpg, id=681, 144.54pt x 159.59625pt>
+<dados/figuras/dog4639.jpg, id=693, 144.54pt x 159.59625pt>
 File: dados/figuras/dog4639.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog4639.jpg>
 Package pdftex.def Info: dados/figuras/dog4639.jpg used on input line 442.
 (pdftex.def)             Requested size: 90.99861pt x 100.47797pt.
 
-<dados/figuras/dog11868.jpg, id=682, 199.74625pt x 190.7125pt>
+<dados/figuras/dog11868.jpg, id=694, 199.74625pt x 190.7125pt>
 File: dados/figuras/dog11868.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog11868.jpg>
 Package pdftex.def Info: dados/figuras/dog11868.jpg used on input line 448.
 (pdftex.def)             Requested size: 90.99861pt x 86.88199pt.
 
-<dados/figuras/cat12219.jpg, id=683, 308.15125pt x 409.53pt>
+<dados/figuras/cat12219.jpg, id=695, 308.15125pt x 409.53pt>
 File: dados/figuras/cat12219.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat12219.jpg>
 Package pdftex.def Info: dados/figuras/cat12219.jpg used on input line 449.
 (pdftex.def)             Requested size: 90.99861pt x 120.93527pt.
 
-<dados/figuras/dog9322.jpg, id=684, 500.87125pt x 376.40625pt>
+<dados/figuras/dog9322.jpg, id=696, 500.87125pt x 376.40625pt>
 File: dados/figuras/dog9322.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog9322.jpg>
 Package pdftex.def Info: dados/figuras/dog9322.jpg used on input line 450.
 (pdftex.def)             Requested size: 90.99861pt x 68.38197pt.
 
-<dados/figuras/cat9185.jpg, id=685, 416.55624pt x 501.875pt>
+<dados/figuras/cat9185.jpg, id=697, 416.55624pt x 501.875pt>
 File: dados/figuras/cat9185.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat9185.jpg>
 Package pdftex.def Info: dados/figuras/cat9185.jpg used on input line 451.
 (pdftex.def)             Requested size: 90.99861pt x 109.63171pt.
 
-<dados/figuras/cat4439.jpg, id=686, 184.69pt x 236.885pt>
+<dados/figuras/cat4439.jpg, id=698, 184.69pt x 236.885pt>
 File: dados/figuras/cat4439.jpg Graphic file (type jpg)
 
 <use dados/figuras/cat4439.jpg>
 Package pdftex.def Info: dados/figuras/cat4439.jpg used on input line 452.
 (pdftex.def)             Requested size: 90.99861pt x 116.71443pt.
 
-<dados/figuras/dog10028.jpg, id=687, 501.875pt x 375.4025pt>
+<dados/figuras/dog10028.jpg, id=699, 501.875pt x 375.4025pt>
 File: dados/figuras/dog10028.jpg Graphic file (type jpg)
 
 <use dados/figuras/dog10028.jpg>
 Package pdftex.def Info: dados/figuras/dog10028.jpg used on input line 453.
 (pdftex.def)             Requested size: 90.99861pt x 68.06215pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2186,7 +2222,7 @@ l.456
 as/dog10089.jpg> <./dados/figuras/dog3125.jpg> <./dados/figuras/cat5010.jpg> <.
 /dados/figuras/cat4258.jpg> <./dados/figuras/dog6431.jpg> <./dados/figuras/cat3
 864.jpg> <./dados/figuras/cat6114.jpg> <./dados/figuras/cat8027.jpg> <./dados/f
-iguras/dog12048.jpg> <./dados/figuras/dog4639.jpg>] [27pdfTeX warning (ext4): d
+iguras/dog12048.jpg> <./dados/figuras/dog4639.jpg>] [38pdfTeX warning (ext4): d
 estination with the same identifier (name{figure.4.16}) has been already used, 
 duplicate ignored
 
@@ -2195,7 +2231,7 @@ duplicate ignored
 l.489 
        <./dados/figuras/dog11868.jpg> <./dados/figuras/cat12219.jpg> <./dados/f
 iguras/dog9322.jpg> <./dados/figuras/cat9185.jpg> <./dados/figuras/cat4439.jpg>
- <./dados/figuras/dog10028.jpg>]) [28pdfTeX warning (ext4): destination with th
+ <./dados/figuras/dog10028.jpg>]) [39pdfTeX warning (ext4): destination with th
 e same identifier (name{table.4.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2212,7 +2248,7 @@ l.61 ...utura/textuais/desenvolvimento/resultados}
 ]
 \openout2 = `estrutura/textuais/conclusao.aux'.
 
- (./estrutura/textuais/conclusao.tex [29
+ (./estrutura/textuais/conclusao.tex [40
 
 
 
@@ -2228,38 +2264,38 @@ l.56
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.56 
-     ] [30pdfTeX warning (ext4): destination with the same identifier (name{tab
+     ] [41pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.5.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.96 
-     ]) [31]
+     ]) [42]
 \openout2 = `estrutura/pos-textuais/referencias.aux'.
 
- (./estrutura/pos-textuais/referencias.tex (./TCC1_Matsui.bbl
-(./TCC1_Matsui.brf)
+ (./estrutura/pos-textuais/referencias.tex (./TCC_Matsui.bbl
+(./TCC_Matsui.brf)
 \tf@brf=\write5
-\openout5 = `TCC1_Matsui.brf'.
+\openout5 = `TCC_Matsui.brf'.
 
 
 bibitemlist
-[32
+[43
 
 
 
-])) [33]
+])) [44]
 \openout2 = `estrutura/pos-textuais/apendices.aux'.
 
- (./estrutura/pos-textuais/apendices.tex [34
+ (./estrutura/pos-textuais/apendices.tex [45
 
 
 
 
-] [35
+] [46
 
-] [36] [37])
-[38]
+] [47] [48])
+[49]
 
 Class memoir Warning: The material used in the headers is too large
 (15.6779pt) for the given head height (14.5pt), it is recommended to
@@ -2269,20 +2305,21 @@ either increase the head height or redesign the header
 
 AED: lastpage setting LastPage
 \tf@lof=\write6
-\openout6 = `TCC1_Matsui.lof'.
+\openout6 = `TCC_Matsui.lof'.
 
 \tf@lot=\write7
-\openout7 = `TCC1_Matsui.lot'.
+\openout7 = `TCC_Matsui.lot'.
 
 \tf@loa=\write8
-\openout8 = `TCC1_Matsui.loa'.
+\openout8 = `TCC_Matsui.loa'.
 
 \tf@toc=\write9
-\openout9 = `TCC1_Matsui.toc'.
+\openout9 = `TCC_Matsui.toc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
-(./TCC1_Matsui.aux (./estrutura/pre-textuais/resumo.aux)
+(./TCC_Matsui.aux (./estrutura/pre-textuais/epigrafe.aux)
+(./estrutura/pre-textuais/resumo.aux) (./estrutura/pre-textuais/abstract.aux)
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux)
 (./estrutura/pre-textuais/listas/lista-tabelas.aux)
 (./estrutura/pre-textuais/listas/lista-siglas.aux)
@@ -2296,8 +2333,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
 (./estrutura/pos-textuais/apendices.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
-Package rerunfilecheck Info: File `TCC1_Matsui.brf' has not changed.
-(rerunfilecheck)             Checksum: 159EB8302987C7F5B71C4CEDF3B4EEBE;1153.
+Package rerunfilecheck Info: File `TCC_Matsui.brf' has not changed.
+(rerunfilecheck)             Checksum: 3845A4760A22D7361D385265FCF22425;1173.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2308,13 +2345,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 19913 strings out of 493029
- 296073 string characters out of 6136234
- 694310 words of memory out of 5000000
- 22160 multiletter control sequences out of 15000+600000
- 63997 words of font info for 356 fonts, out of 8000000 for 9000
+ 19933 strings out of 493029
+ 296744 string characters out of 6136234
+ 697178 words of memory out of 5000000
+ 22168 multiletter control sequences out of 15000+600000
+ 63715 words of font info for 354 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 45i,17n,51p,428b,2038s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,51p,587b,2038s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -2334,10 +2371,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/rsfs/rsfs10.pfb>
-Output written on TCC1_Matsui.pdf (48 pages, 1148374 bytes).
+Output written on TCC_Matsui.pdf (50 pages, 1151359 bytes).
 PDF statistics:
- 1271 PDF objects out of 1440 (max. 8388607)
- 1102 compressed objects within 12 object streams
- 446 named destinations out of 1000 (max. 500000)
- 52779 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1288 PDF objects out of 1440 (max. 8388607)
+ 1117 compressed objects within 12 object streams
+ 450 named destinations out of 1000 (max. 500000)
+ 52795 words of extra memory for PDF output out of 61914 (max. 10000000)
 

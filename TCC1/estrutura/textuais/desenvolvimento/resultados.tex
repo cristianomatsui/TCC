@@ -116,7 +116,7 @@ Os scripts sequenciais das consultas realizam a pesquisa vasculhando toda a base
 parte do critério de seleção, seja dentro do raio de abrangência indicado, ou dentre os $k$ elementos mais próximos do elemento central.
 Abaixo, códigos utilizados para consultas sequenciais na base cat\_dog.
 
-\begin{lstlisting}[caption={Consulta por abrangência sequêncial utilizando forma e distância euclidiana\\}, captionpos=t,basicstyle=\tiny] 
+\begin{lstlisting}[caption={Consulta por abrangência sequencial utilizando forma e distância euclidiana\\}, captionpos=t,basicstyle=\tiny] 
 CREATE OR REPLACE FUNCTION rangeQueryShapeL2 (center_id integer, radius FLOAT8) 
 RETURNS SETOF genericQuery AS $$
 BEGIN
@@ -128,7 +128,7 @@ END;$$
 LANGUAGE PLPGSQL;
 \end{lstlisting}
 
-\begin{lstlisting}[caption={Consulta k-vizinhos mais próximos sequêncial utilizando cor e distância city-block}, captionpos=t,basicstyle=\tiny]
+\begin{lstlisting}[caption={Consulta k-vizinhos mais próximos sequencial utilizando cor e distância city-block}, captionpos=t,basicstyle=\tiny]
 CREATE OR REPLACE FUNCTION kNNColorL1 (center_id integer, k_neigh integer) 
 RETURNS SETOF genericQuery AS $$
 BEGIN
@@ -143,13 +143,13 @@ LANGUAGE PLPGSQL;
 
 Como a base HC apresenta apenas um grande vetor como característica, foram necessárias apenas 3 funções, uma para cada distância Minkowski utilizada.
 
-\begin{lstlisting}[caption={Consulta por abrangência sequêncial utilizando distância Chebyshev para a base HC}, captionpos=t, basicstyle=\tiny]
+\begin{lstlisting}[caption={Consulta por abrangência sequencial utilizando distância Chebyshev para a base HC}, captionpos=t, basicstyle=\tiny]
 CREATE OR REPLACE FUNCTION rq_HC_LInf (center_id integer, radius FLOAT8) 
 RETURNS SETOF genericQuery AS $$
 BEGIN
 	RETURN QUERY SELECT DISTINCT * FROM 
 	(SELECT T2.COD, (cube(T1.feature) <=> cube(T2.feature)) AS dist   -- <-> indica calculo de
-	FROM HC_TABLE T1, HC_TABLE T2 WHERE T1.cod = center_id) as quer   -- distancia LInfinite
+	FROM HC_TABLE T1, HC_TABLE T2 WHERE T1.cod = center_id) as quer   -- distancia Chebyshev
 	WHERE dist <= radius ORDER BY dist;		
 END;$$
 LANGUAGE PLPGSQL;

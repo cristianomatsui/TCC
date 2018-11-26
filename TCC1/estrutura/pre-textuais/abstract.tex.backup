@@ -7,14 +7,21 @@
 \imprimirautorcitacao. \imprimirtitleabstract. \imprimirdata. 39 f. \imprimirprojeto\ – \imprimirprograma, \imprimirinstituicao. \imprimirlocal, \imprimirdata.\\
 %---------------------------------------------------------------------------------------
 
+ Dentre o conjunto de dados complexos
+destacam-se as imagens, que precisam ser comparadas de acordo com características extraídas como cor, forma ou textura. Esta
+comparação é realizada na forma de um cálculo de distância entre o valor da característica da imagem central da consulta em relação
+a todas as outras imagens da base de dados. O tempo de consulta aumenta significativamente com o aumento da base de dados e da complexidade destes. 
+Para contornar o problema da maldição da cardinalidade, este trabalho tem como proposta a aplicação da técnica OMNI utilizada para promover 
+uma etapa de filtragem do número de imagens a terem as suas distâncias calculadas, evitando a comparação com toda a base de dados. Esta técnica
+possui custos adicionais de espaço de armazenamento para as suas estruturas, mas consegue acelerar consultas por similaridade, reduzindo
+o tempo de execução necessário.
+
 The necessity of storing evergrowing media in terms of storage size and complexity is a tendency that grew considerably with technology and comunication advances.
 These data known as complex data demand a much bigger structural storage and analysis complexity when compared with simple data such as words or numbers, besides requiring special queries
 operators, like \textit{Range query} (Rq) and \textit{k-Nearest Neighbors query} (kNNq). Among the complex data set the images are highlighted, which need to be compared using extracted features such as color, shape
-or texture. This comparison is done by distance calculations between the feature value of the central image of the query in relation to all the remaining images in the database. Query time increases significantly with 
-the increase of database size and complexity. To work around the cardinality curse problem, this study proposes the application of the OMNI technique, used to promote a filtering step of the number of images to have their
-distances calculated, avoiding comparing with the entire database. This technique has additional storage costs for its structures, but can accelerate similarity queries, reducing required execution time.\\
+or texture. This comparison is done by distance calculations between the feature value of the central image of the query in relation to all the remaining images in the database.
 
-\textbf{Keywords}: Complex Data. OMNI. Rq. Similarity Query. Optimization.
+\textbf{Keywords}: Word. Second Word. Another word.
 
 \end{SingleSpacing}
 \end{resumo}
