@@ -1,9 +1,9 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {portuguese}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
-\beamer@sectionintoc {2}{T\IeC {\'e}cnica Omni}{6}{0}{2}
-\beamer@sectionintoc {3}{Extratores de Caracter\IeC {\'\i }sticas}{11}{0}{3}
-\beamer@sectionintoc {4}{Modelagem}{15}{0}{4}
-\beamer@sectionintoc {5}{Objetivos}{16}{0}{5}
-\beamer@sectionintoc {6}{Materiais}{17}{0}{6}
-\beamer@sectionintoc {7}{Considera\IeC {\c c}\IeC {\~o}es Finais}{18}{0}{7}
+\beamer@sectionintoc {2}{T\IeC {\'e}cnica OMNI}{6}{0}{2}
+\beamer@sectionintoc {3}{Bases de Dados}{11}{0}{3}
+\beamer@sectionintoc {4}{Modelagem}{16}{0}{4}
+\beamer@sectionintoc {5}{Objetivos}{17}{0}{5}
+\beamer@sectionintoc {6}{Materiais}{18}{0}{6}
+\beamer@sectionintoc {7}{Considera\IeC {\c c}\IeC {\~o}es Finais}{19}{0}{7}

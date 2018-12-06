@@ -43,10 +43,10 @@
   
 % Here's where the presentation starts, with the info for the title slide
 \institute{Universidade Técnológica Federal do Paraná - Campus Pato Branco\\Departamento Acadêmico de Informática\\Curso de Engenharia de Computação}
-\title{Consultas por similaridade em bases de dados complexas utilizando técnicas OMNI em SGBDR}
+\title{Consultas por similaridade em bases de dados complexos utilizando técnica OMNI em SGBDR}
 \subtitle{Trabalho de Conclusão de Curso}
 \author{
-Aluno: Cristiano Matsui\\
+Aluno: Cristiano José Mendes Matsui\\
 Orientador: Dr. Ives Renê Venturini Pola\\
 Coorientadora: Dra. Fernanda Paula Barbosa Pola
 }
@@ -156,22 +156,22 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
    
    \item Torna-se necessário otimizar estes procedimentos\newline
    
-   \item Uso da técnica Omni
+   \item Uso da técnica OMNI
   \end{itemize}
 
  
 \end{frame}
 
-\section{Técnica Omni}
+\section{Técnica OMNI}
 
-\begin{frame}{Técnica Omni}
+\begin{frame}{Técnica OMNI}
 
   \begin{itemize}
    \item Reduz o número de cálculos de distância desnecessários\newline
    
    \item Uso de uma base de focos\newline
    
-   \item \textit{minimum bounding Omni region - mbOr}\newline
+   \item \textit{minimum bounding OMNI region - mbOr}\newline
    
    \item Uso da desigualdade triangular
 
@@ -181,7 +181,7 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 \end{frame}
 
 
-\begin{frame}{Técnica Omni}
+\begin{frame}{Técnica OMNI}
 
 	\begin{figure}
 	    \centering
@@ -193,7 +193,7 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 	    \end{minipage}%
 	    \begin{minipage}{.5\textwidth}
 	      \centering
-	      \includegraphics[width=.9\linewidth]{rg_omni_2.eps}
+	      \includegraphics[width=.95\linewidth]{rg_omni_2.eps}
 
 
 	    \end{minipage}
@@ -201,11 +201,11 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
  
 \end{frame}
 
-\begin{frame}{Técnica Omni}
+\begin{frame}{Técnica OMNI}
   
   \begin{itemize}
     
-   \item Coordenadas Omni \newline
+   \item Coordenadas OMNI \newline
    
    \item Número de focos
       \begin{itemize}
@@ -216,14 +216,14 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
     \item Custo do uso da base de focos
       \begin{itemize}
 	\item Espaço em disco\newline
-	\item Tempo para o cálculo das coordenadas Omni\newline
+	\item Tempo para o cálculo das coordenadas OMNI
       \end{itemize}	
   \end{itemize}
 
  
 \end{frame}
 
-\begin{frame}{Técnica Omni}	
+\begin{frame}{Técnica OMNI}	
 	\begin{itemize}
 	 \item Equação de pertinência à \textit{mbOr}\newline
 	    \begin{itemize}
@@ -232,11 +232,11 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 		  \item $d_{f}(s_i) \leq d_{f}(s_q) + d(s_i, s_q)$\newline
 		  
 		  \item $d(s_i, s_q) \geq |d_{f}(s_i) - d_{f}(s_q)|$\newline
-		      \begin{floatingfigure}[!hr]{0.5\textwidth}
-			\vspace{3cm}
-			\hspace{6cm}
+		      \begin{figure}[!H]
+			\vspace{-2.5cm}
+			\hspace{4cm}
 			\includegraphics[width=.35\textwidth]{desig_tri.eps}
-		      \end{floatingfigure}
+		      \end{figure}
 		\end{itemize}
 	      \item Conceito de bola\newline
 		\begin{itemize}
@@ -249,19 +249,33 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 
 \end{frame}
 
-\begin{frame}{Técnica Omni}
+\begin{frame}{Técnica OMNI}
 	\begin{itemize}
-	 \item :$|d_f(s_i) - d_f(s_q)| > \xi$
+	 \item $|d_f(s_i) - d_f(s_q)| > \xi$\newline
+	 \item Não pertence à \textit{mbOr}!
 	\end{itemize}
 
 	\begin{figure}[H]
 			\centering
-			\includegraphics[width=.5\textwidth]{rg_ex2.eps}
+			\includegraphics[width=.4\textwidth]{rg_ex2.eps}
 	\end{figure}
 
 \end{frame}
 
-\section{Extratores de Características}
+\section{Bases de Dados}
+
+\begin{frame}{Bases de Dados}
+  \begin{itemize}
+   \item Duas bases de dados utilizadas\newline
+      \begin{itemize}
+	  \item CAT\_DOG - 25000 imagens\newline
+	  \item HC - 500000 imagens\newline
+      \end{itemize}
+      
+  \end{itemize}
+
+\end{frame}
+
 
 \begin{frame}{Extratores de Características}
   \begin{itemize}
@@ -332,7 +346,7 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
    \item Análise de forma\newline
    \begin{itemize}
       \item Principal análise feita pelo olho humano\newline
-      \item Análise de contornos\newline
+      \item Análise de bordas\newline
    \end{itemize}
    
   \end{itemize}
@@ -350,20 +364,29 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 
 \end{frame}
 
+\section{Modelagem}
+\begin{frame}{Modelagem}
+    	\begin{figure}[H]
+			\centering
+			\includegraphics[width=.8\textwidth]{MER.png}
+	\end{figure}
+
+\end{frame}
+
 \section{Objetivos}
 
 \begin{frame}{Objetivos}
   \begin{itemize}
    \item Objetivos Gerais
    \begin{itemize}
-      \item Construção de um sistema de consultas em SGBDR por similaridade em uma base de imagens utilizando técnicas da família Omni para reduzir o custo computacional das operações de consulta\newline
+      \item Construção de um sistema de consultas em SGBDR por similaridade em uma base de imagens utilizando técnicas da família OMNI para reduzir o custo computacional das operações de consulta\newline
    \end{itemize}
    \item Objetivos Específicos
    \begin{itemize}
       \item Modelar o banco de dados para atender a problemática apresentada;
       \item Aplicar os extratores de características das imagens utilizadas;
       \item Inserir no banco de dados as imagens e os valores de suas características;
-      \item Criar a estrutura Omni necessária para a filtragem dos cálculos;
+      \item Criar a estrutura OMNI necessária para a filtragem dos cálculos;
       \item Analisar e comparar os resultados obtidos.
    \end{itemize}
    
@@ -376,23 +399,36 @@ Coorientadora: Dra. Fernanda Paula Barbosa Pola
 \begin{frame}{Materiais}
   \begin{itemize}
    \item PostgreSQL\newline
-   \item Arboretum (GBDI)\newline
+   \item Arboretum (GBDI)
+   \begin{itemize}
+      \item Artemis - Extratores de características
+      \item Hermes - Funções de distância\newline
+   \end{itemize}
    \item Software para elaboração da interface com o usuário   
   \end{itemize}
 
 \end{frame}
+
+
 
 \section{Considerações Finais}
 
 \begin{frame}{Considerações Finais}
   \begin{itemize}
    \item Planeja-se utilizar este trabalho para a elaboração de um CBIR médico\newline
+   \begin{itemize}
+      \item Suporte para pesquisas por similaridade\newline
+         \begin{itemize}
+	    \item Totalmente inserido dentro de um SGBDR\newline
+	    \item Utilizando técnicas OMNI
+	  \end{itemize}
+   \end{itemize}
   \end{itemize}
 \end{frame}
 
 
 \institute{Universidade Técnológica Federal do Paraná - Campus Pato Branco\\Departamento Acadêmico de Informática\\Curso de Engenharia de Computação}
-\title{Consultas por similaridade em bases de dados complexas utilizando técnicas OMNI em SGBDR}
+\title{Consultas por similaridade em bases de dados complexos utilizando técnica OMNI em SGBDR}
 \subtitle{Trabalho de Conclusão de Curso}
 \author{
 Aluno: Cristiano Matsui\\

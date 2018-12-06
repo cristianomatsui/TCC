@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {portuguese}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Objetivos}{6}{0}{2}
+\beamer@sectionintoc {3}{T\IeC {\'e}cnica OMNI}{7}{0}{3}
+\beamer@sectionintoc {4}{Bases de Dados}{13}{0}{4}
+\beamer@sectionintoc {5}{Resultados do Trabalho}{16}{0}{5}
+\beamer@sectionintoc {6}{Limita\IeC {\c c}\IeC {\~o}es e Custos}{26}{0}{6}
+\beamer@sectionintoc {7}{Considera\IeC {\c c}\IeC {\~o}es Finais}{29}{0}{7}
